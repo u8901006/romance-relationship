@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Romance Relationship · 浪漫關係研究日報</title>
+<title>Romance Relationship &middot; 浪漫關係研究日報</title>
 <style>
   :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -12,20 +12,52 @@
   .logo { font-size: 48px; text-align: center; margin-bottom: 16px; }
   h1 { text-align: center; font-size: 24px; color: var(--text); margin-bottom: 8px; }
   .subtitle { text-align: center; color: var(--accent); font-size: 14px; margin-bottom: 48px; }
-  .message { text-align: center; color: var(--muted); font-size: 15px; line-height: 1.8; }
+  .count { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 32px; }
+  ul { list-style: none; }
+  li { margin-bottom: 8px; }
+  a { color: var(--text); text-decoration: none; display: block; padding: 14px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; transition: all 0.2s; font-size: 15px; }
+  a:hover { background: var(--accent-soft); border-color: var(--accent); transform: translateX(4px); }
+  .links-banner { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; }
+  .banner-link { display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--text); transition: all 0.2s; }
+  .banner-link:hover { background: var(--accent-soft); border-color: var(--accent); transform: translateX(4px); }
+  .banner-icon { font-size: 24px; flex-shrink: 0; }
+  .banner-name { font-size: 14px; font-weight: 600; flex: 1; }
+  .banner-arrow { font-size: 16px; color: var(--accent); font-weight: 700; }
   footer { margin-top: 56px; text-align: center; font-size: 12px; color: var(--muted); }
-  footer a { color: var(--muted); text-decoration: none; }
+  footer a { display: inline; padding: 0; background: none; border: none; color: var(--muted); }
   footer a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="logo">💕</div>
+  <div class="logo">💑</div>
   <h1>Romance Relationship</h1>
-  <p class="subtitle">浪漫關係研究日報 · 每日自動更新</p>
-  <p class="message">首期日報即將生成，請稍候...</p>
+  <p class="subtitle">浪漫關係研究日報 &middot; 每日自動更新</p>
+  <p class="count">共 1 期日報</p>
+  <ul>
+    <li><a href="romance-2026-04-23.html">📅 2026年4月23日（週四）</a></li>
+  </ul>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">🏥</span>
+      <span class="banner-name">李政洋身心診所首頁</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">📜</span>
+      <span class="banner-name">訂閱電子報</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="banner-link" target="_blank">
+      <span class="banner-icon">☕</span>
+      <span class="banner-name">Buy Me a Coffee</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+  </div>
+
   <footer>
-    <p>Powered by PubMed + Zhipu AI · <a href="https://github.com/u8901006/romance-relationship">GitHub</a></p>
+    <p>Powered by PubMed + Zhipu AI &middot; <a href="https://github.com/u8901006/romance-relationship">GitHub</a></p>
   </footer>
 </div>
 </body>
