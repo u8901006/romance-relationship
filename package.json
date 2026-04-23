@@ -1,0 +1,14 @@
+{
+  "name": "romance-relationship",
+  "version": "1.0.0",
+  "description": "Romantic Love & Close-Relationship Research Daily Report",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch_papers.js",
+    "report": "node scripts/generate_report.js",
+    "index": "node scripts/generate_index.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
