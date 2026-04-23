@@ -68,27 +68,35 @@ async function searchPapers(query, retmax = 50) {
 
 async function fetchDetails(pmids) {
   if (!pmids.length) return [];
-  const ids = pmids.join(",");
-  const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
-  try {
-    const xml = await fetchUrl(url, 60000);
-    return parseXml(xml);
-  } catch (e) {
-    console.error(`[ERROR] PubMed fetch failed: ${e.message}`);
-    return [];
+  const allPapers = [];
+  const BATCH = 50;
+  for (let i = 0; i < pmids.length; i += BATCH) {
+    const batch = pmids.slice(i, i + BATCH);
+    const ids = batch.join(",");
+    const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
+    try {
+      console.error(`[INFO] Fetching batch ${Math.floor(i / BATCH) + 1} (${batch.length} PMIDs)...`);
+      const xml = await fetchUrl(url, 60000);
+      const papers = parseXml(xml);
+      allPapers.push(...papers);
+    } catch (e) {
+      console.error(`[ERROR] PubMed fetch batch failed: ${e.message}`);
+    }
+    if (i + BATCH < pmids.length) await new Promise((r) => setTimeout(r, 500));
   }
+  return allPapers;
 }
 
 function parseXml(xml) {
   const papers = [];
-  const articleRegex = /<PubmedArticle>([\s\S]*?)<\/PubmedArticle>/g;
+  const articleRegex = /<PubmedArticle\b[^>]*>([\s\S]*?)<\/PubmedArticle>/g;
   let match;
   while ((match = articleRegex.exec(xml)) !== null) {
     const block = match[1];
-    const title = extractTag(block, "ArticleTitle");
-    const journal = extractTag(block, "<Title>", "</Title>");
+    const title = extractFirst(block, "ArticleTitle");
+    const journal = extractFirst(block, "Title");
     const abstract = extractAbstract(block);
-    const pmid = extractTag(block, "<PMID", "</PMID>").replace(/^[^>]*>/, "");
+    const pmid = extractFirst(block, "PMID");
     const dateStr = extractPubDate(block);
     const keywords = extractKeywords(block);
     const link = pmid ? `https://pubmed.ncbi.nlm.nih.gov/${pmid}/` : "";
@@ -96,20 +104,15 @@ function parseXml(xml) {
       papers.push({ pmid, title, journal, date: dateStr, abstract, url: link, keywords });
     }
   }
+  console.error(`[INFO] Parsed ${papers.length} articles from XML`);
   return papers;
 }
 
-function extractTag(block, openTag, closeTag) {
-  if (!closeTag) closeTag = `</${openTag.split(/[< >]/).filter(Boolean)[0]}>`;
-  if (openTag.startsWith("<")) {
-    const startIdx = block.indexOf(openTag);
-    if (startIdx === -1) return "";
-    const contentStart = block.indexOf(">", startIdx) + 1;
-    const endIdx = block.indexOf(closeTag, contentStart);
-    if (endIdx === -1) return "";
-    return block.slice(contentStart, endIdx).replace(/<[^>]+>/g, "").trim();
-  }
-  return "";
+function extractFirst(block, tagName) {
+  const re = new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`);
+  const m = block.match(re);
+  if (!m) return "";
+  return m[1].replace(/<[^>]+>/g, "").trim();
 }
 
 function extractAbstract(block) {
