@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-17",
+  "count": 6,
+  "papers": [
+    {
+      "pmid": "42143232",
+      "title": "Assessment of myocardial performance using three-dimensional echocardiography in cancer patients exposed to anthracycline-based chemotherapy and/or targeted therapy - a scoping review.",
+      "journal": "BMC cardiovascular disorders",
+      "date": "2026 May 16",
+      "abstract": "BACKGROUND: Chemotherapy and targeted therapies, including anthracycline-based regimens or their combination, have significantly improved cancer patient survival; however, they are associated with cancer therapy-related cardiac dysfunction (CTRCD), which may not be adequately detected using conventional two-dimensional echocardiography. PURPOSE: To identify the available evidence on the application of three-dimensional echocardiography (3DE) in the evaluation of myocardial performance in patients undergoing anthracycline-based chemotherapy and/or targeted therapy using cancer patients as a cohort study. METHODS: This scoping review was performed based on the Joanna Briggs Institute (JBI) framework of conducting scoping reviews and was reported in following the Preferred Reporting Items of systematic reviews and meta-analyses extension to Scoping Reviews (PRISMA-ScR). It searched five electronic databases (MEDLINE through PubMed, Embase, Scopus, Web of Science and Cochrane Library) dating back to November 2025. Records were independently screened and data extracted by two reviewers, any disagreement in this process was resolved by discussing with one another and when required, consulting with a third reviewer. A synthesis of 5 eligible observational studies was done using a narrative approach. RESULTS: The studies that were included involved mostly breast cancer patients who were using anthracycline-based chemotherapy as a single agent or together with the use of HER2-targeted therapy. One of the studies assessed patients with chronic myeloid leukaemia receiving long term tyrosine kinase inhibitor (TKI) therapy whose treatment had not been exposed to anthracyclines. 3D measurements were taken to evaluate the baseline and follow-up assessment. Three-dimensional strain metrics, of which global longitudinal strain (GLS), global circumferential strain (GCS), and global area strain (GAS) were reported to identify features suggestive of subclinical myocardial dysfunction p",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42143232/",
+      "keywords": []
+    },
+    {
+      "pmid": "42142495",
+      "title": "Longitudinal associations between depressive symptoms and exposure to intimate partner sexual violence in men: findings from a nationally representative sample.",
+      "journal": "Psychiatry research",
+      "date": "2026 May 13",
+      "abstract": "BACKGROUND: Research on sexual violence exposure in men has primarily focused on child sexual abuse, with considerably less attention paid to adult experiences, including sexual violence occurring within intimate relationships. This study examines associations between men's exposure to intimate partner sexual violence (IPSV) and depressive symptoms. METHOD: Data were drawn from Ten to Men, Australia's largest longitudinal study of men's health (n = 16,021 at wave one). Data were collected across four waves between 2013-14 and 2022. Men aged &#x2265;18 years at wave one completed the IPSV item and were included in the analysis (n = 13,328). The study examined whether exposure to IPSV was associated with moderate-to-severe depressive (PHQ-9) symptoms across waves. Population-averaged associations were estimated using logistic regression with generalised estimating equations. Potential moderators were assessed, including demographic characteristics, substance misuse, social support, help-seeking, and sexual functioning. RESULTS: The prevalence of reported IPSV was 2.5% (n = 337). Men exposed to IPSV had 68% higher odds of moderate-to-severe depressive symptoms across the study period, relative to unexposed men (OR=1.68, 95% CI: 1.35- 2.09, p&lt;. 001). No assessed moderators reached significance, suggesting the association between IPSV and depressive symptoms was consistent across demographic and psychosocial profiles. IMPLICATIONS: These findings highlight the importance of recognising IPSV as a significant mental health concern among men, who may represent an under-identified group in clinical settings. Findings emphasise a need for greater investment in research and services targeting violence-exposed men, ensuring accessible, gender- and trauma-informed care.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42142495/",
+      "keywords": []
+    },
+    {
+      "pmid": "41921623",
+      "title": "Targeted discovery of diverse isoindolinone derivatives with neurofunctional bioactivities from the endophytic fungus Diaporthe hubeiensis ZMU-49-3 via genome mining coupled with the HSQC-based DeepSAT strategy.",
+      "journal": "Fitoterapia",
+      "date": "2026 Jun",
+      "abstract": "Neurodegenerative diseases driven by chronic oxidative stress underscore the critical need for novel natural antioxidants with neuroprotective potential. To systematically identify such leads, we implemented an integrated strategy coupling genome mining with HSQC-based DeepSAT metabolite prediction to guide the chemical investigation of the endophytic fungus Diaporthe hubeiensis ZMU-49-3 from Acacia confusa Merr. This targeted approach yielded thirteen isoindolinone derivatives (1-13), including seven novel natural products (1-6 and 12), that significantly expand the chemical diversity of Diaporthe species. Genomic analysis identified a specific polyketide synthase gene cluster (hub), suggesting the biosynthetic potential of this strain to produce these unique isoindolinone scaffolds. In biological assays, selected compounds not only exhibited potent ABTS radical scavenging capacities but also significantly attenuated intracellular ROS accumulation in HepG2 cells in a dose-dependent manner, supporting their activity in a cellular context. Furthermore, compounds 1 and 12 displayed moderate inhibitory activities against hMAO-A and hMAO-B. Molecular docking simulations were consistent with these findings, revealing that the compact monocyclic architectures of 1 and 12 allow favorable accommodation within the enzymatic pockets, potentially stabilized by specific hydrogen bonding and hydrophobic interactions. Overall, this study highlights these antioxidative isoindolinones as promising scaffolds for further evaluation and demonstrates that the DeepSAT-coupled genomic strategy can effectively prioritize bioactive phenolic chemotypes from complex fungal extracts.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41921623/",
+      "keywords": []
+    },
+    {
+      "pmid": "42142684",
+      "title": "UNDERSTANDING DEVELOPMENTAL TRANSITIONS OF FEAR LEARNING CIRCUITS: INSIGHTS FROM BEHAVIORAL NEUROSCIENCE.",
+      "journal": "Neuroscience and biobehavioral reviews",
+      "date": "2026 May 15",
+      "abstract": "Childhood is a period of peak developmental plasticity, involving drastic changes in the maturation of the neural circuitry underlying fear learning. Disruption and atypical development of fear learning are candidate mechanisms underlying child psychopathology. While there is a lack of understanding behind the maturation of fear learning systems in humans, rodent studies in this area delineate the normative development of fear learning systems early in life, and the effects of early threatening and fearful experiences on this developmental trajectory. Here, we review the rodent literature on developmental fear learning, as well as human studies that show translational convergence in typical development and children exposed to early life threat. We identify several gaps in research, including the role that caregivers play in regulating fear learning at different developmental stages and the intergenerational transmission of learned fear. Finally, we provide recommendations on how to address these gaps in a way that would improve our developmental frameworks of fear learning.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42142684/",
+      "keywords": []
+    },
+    {
+      "pmid": "42142109",
+      "title": "Tinkerbell Moments: Reframing Emergency Department Relational Collapse Through a Neurobiological Lens.",
+      "journal": "Journal of emergency nursing",
+      "date": "2026 May 16",
+      "abstract": "The emergency department is both the most acute test case for relational failure in health care and the most compelling environment for relational redesign. This paper introduces the concept of Tinkerbell moments-sparks of patient need that go unrecognized because the system lacks the bandwidth to look-as a clinical framework for understanding how the emergency department's design failures cascade into patient harm and staff moral injury. Drawing on polyvagal theory, social baseline theory, and attachment science, the paper presents 4 bedside tools for emergency nursing practice: a 5-level patient Maslow hierarchy that maps patient behavior to unmet needs rather than pathology, a behavioral translation table that reframes common patient labels, a 10-second diagnostic pause protocol, and the patient dignity question. These tools operationalize a neurobiological understanding of patient behavior in the emergency setting, equipping stretcher-side nurses with a framework that transforms how they interpret and respond to patient distress. The paper argues that what clinicians commonly label as \"difficult\" patient behavior is diagnostic information about system design failure-not evidence of patient pathology.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42142109/",
+      "keywords": []
+    },
+    {
+      "pmid": "42085772",
+      "title": "Sonophysical mechanisms of bubble fragmentation near an ultrasonically vibrating boundary: influence of frequency and amplitude on interfacial intensification.",
+      "journal": "Ultrasonics sonochemistry",
+      "date": "2026 Jun",
+      "abstract": "Ultrasonic cavitation has been increasingly employed to intensify wet dust removal by enhancing gas-liquid interfacial renewal and local mixing. However, the coupled effects of ultrasonic frequency and vibration amplitude on bubble collapse dynamics, fragmentation behavior, and cavitation sustainability remain insufficiently quantified. In this study, a numerical investigation is conducted to elucidate the collapse and breakup characteristics of a millimeter-scale single bubble near an ultrasonically vibrating wall, representing a typical cavitation-assisted scrubbing environment. A two-phase Volume of Fluid (VOF) model is used to resolve transient interface deformation, asymmetric collapse, and microjet formation under ultrasonic excitation. The effects of ultrasonic frequency (20-40&#xa0;kHz) and vibration amplitude (5-30&#xa0;&#x3bc;m) on bubble morphology, air volume fraction evolution, flow-field velocity, and fragmentation degree are systematically examined. The results show that collapse is dominated by directional contraction toward the vibrating boundary and the formation of high-speed penetrating microjets, which govern bubble breakup and interfacial generation. Increasing frequency and amplitude intensifies fragmentation and jet impact strength; however, excessive excitation promotes rapid depletion of residual bubble structures and suppresses sustained cavitation activity. Within the investigated range, the combination of 25&#xa0;kHz and 20&#xa0;&#x3bc;m provides a favorable balance between collapse intensity and cavitation persistence, enabling sustained fragmentation and enhanced interfacial complexity. Our study offers mechanistic insights and parameter-selection guidance for ultrasonic cavitation-assisted intensification of wet dust scrubbing and related gas-liquid-solid processes.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42085772/",
+      "keywords": []
+    }
+  ]
+}
