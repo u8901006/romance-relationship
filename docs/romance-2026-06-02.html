@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Romance Relationship &middot; 浪漫關係研究日報 &middot; 2026年6月2日</title>
+<meta name="description" content="2026年6月2日 浪漫關係研究日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; animation: fadeUp 0.5s ease 0.4s both; }
+  .banner-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .banner-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .banner-icon { font-size: 28px; flex-shrink: 0; }
+  .banner-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .banner-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💑</div>
+    <div class="header-text">
+      <h1>Romance Relationship &middot; 浪漫關係研究日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年6月2日</span>
+        <span class="badge badge-count">📊 35 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻以《Behavioral and Brain Sciences》關於「浪漫關係對男性比對女性更重要」的專題論壇為核心，探討了演化、文化、權力與新興科技（如AI伴侶）對性別依賴的交織影響，為伴侶治療與老年心理學提供了全新的臨床視角。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>男女情感連結的不對稱結構解釋了關係依賴上的性別差異</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; The asymmetric structure of male-female bonding explains gender differences in relationship dependence.</p>
+          <p>提出「束縛理論」，指出男性因情感接收區域較窄而將情感需求主要投射於伴侶，這種生物行為架構解釋了男性在關係中更努力、更難分手及分手後更痛苦的現象。</p>
+          <div class="card-footer">
+            <span class="tag">浪漫依附</span><span class="tag">演化心理學</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42223004/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">👴🏻</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>老年男性在失去女性伴侶後出現受損的情感調節</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Impaired emotional regulation in the elderly men following female partner loss.</p>
+          <p>透過依附理論探討老年男性在伴侶死亡或失智時的極度脆弱性，源於其情感調節與獎勵處理機制受損，以及社會支持網絡有限。</p>
+          <div class="card-footer">
+            <span class="tag">依戀理論</span><span class="tag">分手與失落</span><span class="tag">情感調節</span><span class="tag">壓力與健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42223001/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🧔🏼</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>文化而非天性：傳統陽剛之氣如何塑造男性對關係的態度</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Culture, not nature: How traditional masculinity shapes male attitudes toward relationships.</p>
+          <p>反駁生物決定論，主張男性對浪漫關係的依賴是文化建構的產物，並引用男人圈與非自願獨身者次文化的實證研究支持此觀點。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">跨文化研究</span><span class="tag">情感調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222979/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">⚠️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>絕望連結：競爭性擇偶景觀下男性的浪漫關係依賴</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Desperate to connect: Men's dependence on romantic relationship in a competitive mating landscape.</p>
+          <p>將男性情感依賴與擇偶市場動態結合，指出在競爭壓力與有限情感網絡下，浪漫失敗會嚴重威脅自尊，甚至導致行為偏差與意識形態激進化。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">壓力與健康</span><span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222958/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🤖</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>數位時代的合成愛情：AI 媒介的情感投資與性別化浪漫依賴</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Synthetic love in the digital age: AI-mediated emotional investment and gendered romantic dependence.</p>
+          <p>探討AI約會平台與虛擬伴侶等數位技術如何重塑伴侶搜尋與悲傷過程，並警告這些技術可能加劇男性的情感依賴與分手後的脆弱性。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">浪漫依附</span><span class="tag">壓力與健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222950/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#6</span>
+            <span class="emoji-icon">🗣️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>浪漫關係對女性是否較不重要，因為男性提供的情感支持品質較低？</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Do romantic relationships matter less to women than to men because men provide lower-quality emotional support?</p>
+          <p>提出更簡潔的解釋，認為性別差異的核心不在於男性表達情感的傾向低，而在於男性提供的情感支持品質普遍低於女性。</p>
+          <div class="card-footer">
+            <span class="tag">伴侶治療</span><span class="tag">溝通模式</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222961/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#7</span>
+            <span class="emoji-icon">🏳️‍🌈</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>測試關係中的性別差異需要納入同性伴侶</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Testing sex differences in the relationship context needs the inclusion of gay and lesbian couples.</p>
+          <p>主張若要驗證「關係對男性更重要」的假設，必須引入男同性戀與女同性戀伴侶作為對照組，以區分是「生理性別」還是「伴侶性別」造成的影響。</p>
+          <div class="card-footer">
+            <span class="tag">LGBTQ+關係</span><span class="tag">社會心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222981/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#8</span>
+            <span class="emoji-icon">👶</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>親職角色作為男女相互依賴模式的轉折點</h3>
+          <p class="journal-source">The Behavioral and brain sciences &middot; Parenthood as an inflection point for men and women's patterns of interdependence.</p>
+          <p>指出初為人母時會暫時逆轉相互依賴模式，母親因照顧需求而高度依賴伴侶，這種初始依賴隨後會固化為性別角色分工，最終使男性從關係中獲益更多。</p>
+          <div class="card-footer">
+            <span class="tag">育兒與家庭</span><span class="tag">婚姻與家庭</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222956/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>性與浪漫是進化上的親密夥伴</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>從演化理論支持浪漫關係對男性更重要的觀點，認為人類在單配偶制下，性與浪漫的脫鉤可能只是不符演化史的現代發展。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">性行為與親密</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42223003/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌐</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>只有無性別社會才能解決男性的情感支持問題</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>主張男性更依賴浪漫關係的現象源於高度性別化的心理問題處理方式，唯有建立無性別社會才能消除此悖論。</p>
+          <div class="card-footer">
+            <span class="tag">跨文化研究</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222997/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌍</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>重新評估浪漫依賴：超越西方視角的性別脆弱性與文化現實</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>批判目標文章的西方中心主義，呼籲將非西方與社經多元視角納入情感依賴的性別角色與結構不公框架中。</p>
+          <div class="card-footer">
+            <span class="tag">跨文化研究</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222996/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⏳</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>情境的考量：性別差異隨生命階段、歷史背景與個人特質而變</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>肯定浪漫關係對男性更重要的平均趨勢，但強調此性別差異並非靜態，未來研究應納入年齡、歷史與個人等情境因素。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222986/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚖️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>為何浪漫關係對男性比女性重要？承諾問題與有用男性的市場競爭</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>透過投資差異解釋男性較難建立兄弟社交網絡的原因，並指出女性在選擇伴侶時會傾向挑選最浪漫的男性。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222985/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">✂️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>人類「浪漫」關係中的簡約原則與基本機制</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>認為無需引入情感支持多寡的解釋，單純以適用於所有生物的性擇理論以及西方社會的家庭法，就能更簡潔地解釋四種性別差異模式。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222983/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🚫</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>男性在親密關係中的依賴對男性福祉之外有更廣泛的危害</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>以矛盾性別主義理論挑戰目標文章，指出男性對女性的依賴會產生維持性別不平等及促進對女性攻擊的意識形態。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">伴侶衝突</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222982/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚖️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>誰從浪漫關係中獲益最多，誰承擔負擔？</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>強調親密關係研究需探討文化與社會化規範如何影響任何性別的收益，並評估女性通常承擔的角色負擔以促進社會變革。</p>
+          <div class="card-footer">
+            <span class="tag">婚姻與家庭</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222978/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>浪漫關係對男性比女性更重要嗎？一個演化心理學視角</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>提供終極演化解釋，認為觀察到的性別差異反映了性別分化擇偶策略、社會聯盟形成以及女性存活對後代繁殖成功的更大重要性。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222975/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🤔</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>得出「浪漫關係對男性比女性更重要」的結論太過簡單</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>肯定文獻紀錄的貢獻，但認為結論過於簡化，呼籲考慮更多建立關係的動機、更多操作化指標以及更多樣化的人口群體。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222972/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎯</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>納入錯誤管理理論能更全面解釋為何浪漫關係對男性更重要</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>引入錯誤管理理論，預測男性演化出高估女性性興趣的傾向，而女性演化出對男性承諾的懷疑，以此解釋關係的形成與終止。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222971/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>從記憶視角看浪漫關係中的性別差異</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>提出認知機制（特別是自傳體記憶）的補充視角，認為女性較強的情感記憶有助於關係洞察與情感抽離，而男性較弱的情感記憶則加劇分手後的痛苦。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">分手與失落</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222970/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🕊️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>浪漫關係中的道德</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>強調男女浪漫關係的美不在於比較，其後果是無私愛的自然表現，且浪漫關係透過文化、生活方式與人生哲學來繁榮。</p>
+          <div class="card-footer">
+            <span class="tag">道德與倫理</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222968/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎯</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>運用自我決定論探討浪漫關係重要性的性別差異</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>透過自我決定論指出，浪漫關係對男女「非親密」需求的不同滿足方式，使得「關係對男性更重要」的性別差異變得更加模糊。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">關係滿意度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222967/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔍</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>浪漫依賴的文化視角</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>強調將關係流動性、支持規範與陽剛氣概理想等文化框架整合進模型中，因社會文化背景不僅塑造依賴程度，也塑造關係本質。</p>
+          <div class="card-footer">
+            <span class="tag">跨文化研究</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222966/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📺</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>為何「女性更浪漫」的信念在實證證據下依然持續？</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>探討大眾媒體對浪漫愛的描繪如何塑造並維持「女性更浪漫」的錯覺，並指出這種以男性視角為主體的媒體再現使該信念跨性別地根深蒂固。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">跨文化研究</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222965/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📜</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>浪漫關係對男性比女性更重要：基於達爾文性伴侶適應度效應的性別差異</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>結合達爾文終極演化解釋，並引入女性娼妓較高的可及性、東西方文化差異與女性更年期等因素來補充說明性別差異。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222964/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👑</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>如果男性獲益更多，女性是否應該要求更多？關於關係依賴與擇偶選擇性的評論</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>提出可測試的推論：若女性從關係中獲益較少，她們在進入關係時應該更加挑剔，並引用人格與伴侶研究證據支持此預測。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222960/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💎</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>深刻的浪漫關係對女性比對男性更重要</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>反駁目標文章，認為其實證發現反而顯示男性的愛態度較膚淺，真正的浪漫不僅是強烈的性慾，更包含平靜與深刻行動的能力。</p>
+          <div class="card-footer">
+            <span class="tag">浪漫依附</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222953/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎭</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>利他的道德認知有助男性維持其獲益較多的浪漫關係</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>將模型擴展至道德認知領域，提出男性會利用「利伴侶的道德雙重標準」來原諒女性的日常關係違規，以維持自己獲益較多的關係。</p>
+          <div class="card-footer">
+            <span class="tag">道德與倫理</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222951/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💎</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>男性是更依賴還是更有權力？</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>從權力平衡觀點反駁，指出女性在情感、認知與行為上投資較多，反而使男性處於較高權力地位，因此男性應是較不依賴而非更依賴。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">伴侶衝突</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222949/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌐</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>更廣泛的性別不平等塑造了為何浪漫關係對男性更重要</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>主張這種福祉差異根植於更廣泛的性別不平等，性別社會化與善意性別主義使關係在社會、情感與實用上惠及男性，同時過度負擔女性。</p>
+          <div class="card-footer">
+            <span class="tag">跨文化研究</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222948/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm"> Kiss</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>性關係對男性比對女性更重要</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>贊同目標文章假設，但認為其模型低估了性動機差異的角色，性關係本身對男性的重要性可能才是解釋浪漫依賴的關鍵。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">性行為與親密</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222947/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📉</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>證據稀少，聲稱廣泛：浪漫關係對男性更重要嗎？</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>批評目標文章引用的四種性別模式中僅有兩種穩健，且沒有足夠證據支持情感匱乏是主要驅動力，認為其標題宣稱缺乏支持。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">浪漫依附</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222946/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔎</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>揭開浪漫關係中的性別動態：一項全面分析</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>挑戰女性情感投資較多的迷思，指出男性獲得更大心理益處且分手後更痛苦，但批評其依賴西方樣本限制了普遍性。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">跨文化研究</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222945/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧩</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>浪漫關係解釋中演化框架的不一致使用</h3>
+          <p class="journal-source">The Behavioral and brain sciences</p>
+          <p>指出目標文章在連結短期擇偶動機與關係啟動上需要釐清，且在使用性策略理論與策略多元論時存在不一致的問題。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42222943/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>評估亞洲 15 個國家男男性行為者的整體 PrEP 接受度、每日與事件驅動型 PrEP 使用情況</h3>
+          <p class="journal-source">Sexual health</p>
+          <p>跨國調查顯示，處於浪漫關係中與近期接受過 HIV 檢測是 MSM 採用每日 PrEP 的正相關因素，凸顯伴侶關係對預防醫學行為的影響。</p>
+          <div class="card-footer">
+            <span class="tag">LGBTQ+關係</span><span class="tag">性行為與親密</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42219253/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">社會心理學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">25</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">演化心理學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:32%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">浪漫依附</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:32%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">跨文化研究</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:16%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">壓力與健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:12%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">情感調節</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">分手與失落</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶衝突</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">婚姻與家庭</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">LGBTQ+關係</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">性行為與親密</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">道德與倫理</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:8%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">關係滿意度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">溝通模式</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">依戀理論</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">育兒與家庭</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">性別差異</span><span class="keyword">情感依賴</span><span class="keyword">演化心理學</span><span class="keyword">伴侶治療</span><span class="keyword">擇偶市場</span><span class="keyword">數位親密關係</span><span class="keyword">依附理論</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">🏥</span>
+      <span class="banner-name">李政洋身心診所首頁</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">📜</span>
+      <span class="banner-name">訂閱電子報</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="banner-link" target="_blank">
+      <span class="banner-icon">☕</span>
+      <span class="banner-name">Buy Me a Coffee</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：GLM-5-Turbo</span>
+    <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
