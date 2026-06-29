@@ -1,0 +1,60 @@
+{
+  "date": "2026-06-30",
+  "count": 6,
+  "papers": [
+    {
+      "pmid": "42365499",
+      "title": "Childhood Maltreatment and Adult Attachment: A Three-Level Meta-Analytic Review.",
+      "journal": "Trauma, violence &amp; abuse",
+      "date": "2026 Jun 28",
+      "abstract": "Childhood maltreatment is widely recognized as a significant risk factor for the development of insecure attachment. However, empirical evidence on the strength and direction of this relationship remains mixed. To address this gap, we conducted two three-level meta-analyses to (a) estimate the overall associations between childhood maltreatment and adult attachment and (b) examine key moderators of these associations. A comprehensive literature search was conducted across five databases. Two three-level meta-analyses were employed to account for the dependence among effect sizes within studies. The analyses comprised 1,304 effect sizes derived from 228 independent samples across 211 studies, with 82,376 participants. Results revealed significant and positive correlations between childhood maltreatment and both attachment anxiety (r&#x2009;=&#x2009;0.23) and avoidance (r&#x2009;=&#x2009;0.20), with stronger associations observed for emotional maltreatment and when multidimensional measurement tools were employed. These findings suggest that adverse caregiving experiences have an enduring impact on attachment across the lifespan. This highlights the importance of implementing policies to reduce the incidence of childhood maltreatment and developing intervention programs to help affected adults rebuild secure attachment bonds.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42365499/",
+      "keywords": []
+    },
+    {
+      "pmid": "42367046",
+      "title": "How Ligand Protonation and Hydrogen Bonding Govern Oxygen Reduction Reaction Selectivity by a Dinuclear Copper Catalyst: Insights from DFT Calculations.",
+      "journal": "Inorganic chemistry",
+      "date": "2026 Jun 29",
+      "abstract": "Density functional theory (DFT) calculations are employed to investigate the mechanism and selectivity of the oxygen reduction reaction (ORR) catalyzed by a dinuclear copper complex 1 [Cu2L2] (L = polypyridine-polyamide) in neutral aqueous solution. The ligand of complex 1 undergoes a protonation step to form the active species [LNHCuII---CuII]+ which initiates the catalytic cycle. This species undergoes a sequence of one-electron reduction, proton transfer, and another one-electron reduction to generate the reduced species [LNHCuI---CuILNH], which binds and activates O2 to form a peroxo-bridged intermediate [LNHCuII(&#x3bc;-1,2-O22-)CuIILNH]. A two-proton-coupled one-electron transfer step followed by a one-electron reduction yields the key intermediate [LNHCuI(&#x3bc;-1,1-HOOH)CuILNH], featuring a coordinated hydrogen peroxide unit. This species undergoes intramolecular O-O bond homolysis with a low overall barrier of 7.1 kcal/mol, producing the bis-hydroxo intermediate [OH-CuIILNH---LNHCuII-OH]. Notably, an extensive intramolecular hydrogen-bonding network within the [LNHCuI(&#x3bc;-1,1-HOOH)CuILNH] intermediate kinetically suppresses the release of hydrogen peroxide, governing the high ORR selectivity of the catalyst. This study provides atomistic insights into O2 activation, the structural evolution of intermediates, and critical electron/proton transfer steps, establishing a theoretical blueprint for designing nonprecious metal ORR catalysts through the strategic integration of the second-sphere hydrogen-bonding network.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42367046/",
+      "keywords": []
+    },
+    {
+      "pmid": "42365568",
+      "title": "Development of a double-pharmacophore workflow for screening subtype-selective M3 muscarinic acetylcholine receptor antagonists.",
+      "journal": "Molecular diversity",
+      "date": "2026 Jun 28",
+      "abstract": "M3 subtype of muscarinic acetylcholine receptors (mAChRs) is a very important drug target validated for irritable bowel syndrome (IBS), over active bladder (OAB), and chronic obstructive pulmonary disease (COPD). The M2 subtype has high sequence and structural similarity with M3. This makes it difficult to design selective inhibitors for M3 subtype. To address this problem, a three-dimensional quantitative structure-activity relationship (3D-QSAR) pharmacophore model was generated to estimate M2 specific inhibitory constant (Ki). The predictions were compared with a reported 3D-QSAR M3 pharmacophore model to calculate M3/M2 selectivity ratio. This double-pharmacophore workflow was validated over known M3 antagonists. It was then applied to virtually screen a focused PubChem library with 'piperazine-triazole' scaffold. The top-ranked M3 selective candidates (10673583 and 46934496) were further studied for their molecular interactions at the orthosteric binding pocket of both M2 and M3 in silico, such as Molecular Mechanics/Poisson-Boltzmann Surface Area (MM/PBSA) and, Molecular Mechanics/Generalized Born Surface Area (MM/GBSA). The results predicted strong hydrogen bonding along with hydrophobic, hydrophilic, and &#x3c0;-&#x3c0; interactions of the M3 receptor-ligand complexes over M2.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42365568/",
+      "keywords": []
+    },
+    {
+      "pmid": "42365493",
+      "title": "Is \"Nurse\" Necessary? Questioning Redundancies in Breastfeeding Research Searches.",
+      "journal": "Journal of human lactation : official journal of International Lactation Consultant Association",
+      "date": "2026 Jun 28",
+      "abstract": "BACKGROUND: Rigorous systematic reviews in breastfeeding research depend on precise and transparent search strategies. However, the term nursing has dual meaning-referring both to breastfeeding and to the nursing profession-creating potential ambiguity in literature searches. RESEARCH AIM: To examine the methodological impact of including the terms nurse and nursing in breastfeeding-related search strategies, and to highlight implications for research quality and policy development. METHODS: During a global systematic review on partner support and breastfeeding self-efficacy, seven databases were searched from inception to January 2025. Screening revealed a substantial number of irrelevant records related to the nursing profession. A modified search excluding the truncation \"nurs\" from titles and abstracts was subsequently conducted in Medline Complete (EBSCOhost) and Embase to assess its impact on retrieval volume and relevance. RESULTS: Initial searches retrieved 21,214 records, with considerable screening burden attributable to irrelevant nursing-profession literature. When \"nurs*\" was excluded, records in Medline Complete and Embase substantially decreased by 65% and 63%, respectively, without observed loss of relevant breastfeeding studies. The findings demonstrate that ambiguous terminology can substantially inflate retrievals without enhancing comprehensiveness. CONCLUSION: Routine inclusion of nurse and nursing in breastfeeding searches may reduce efficiency and should be carefully considered in relation to the review context.Implications for Practice and Policy:Precision in search terminology is essential to maintain methodological rigor. Researchers, librarians, editors, and peer reviewers should critically evaluate term selection and promote validated, breastfeeding-specific search filters to strengthen evidence informing lactation policy and clinical practice.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42365493/",
+      "keywords": []
+    },
+    {
+      "pmid": "42366304",
+      "title": "\"Why not take that pill?\": A Mixed-Methods Study of Gender, Risk Perception, and PrEP Uptake Among Drug-Involved Heterosexual Couples Under Community Supervision.",
+      "journal": "AIDS and behavior",
+      "date": "2026 Jun 29",
+      "abstract": "People under community supervision who use drugs face elevated HIV risk. This randomized controlled trial used a mixed-methods approach to examine PrEP acceptance among community-supervised men who use drugs and their female partners. The study evaluated PrEP willingness among participants (N&#x2009;=&#x2009;394) randomized to either PACT (5-session couples' HIV intervention) or control (1-session HIV counseling). Qualitative interviews with 20 couples (n&#x2009;=&#x2009;40) explored PrEP attitudes. The PACT group showed significantly higher intentions to use condoms with PrEP compared to controls (64% vs. 53%, p = 0.03). Female partners in the PACT intervention demonstrated stronger PrEP use intentions than females in the control (aOR&#x2009;=&#x2009;2.85, p = 0.02). Qualitative findings revealed five key factors affecting PrEP acceptance: (1) partner infidelity concerns, (2) substance use and decision-making, (3) HIV acquisition fears, (4) low-risk perception despite objective risk factors, and (5) medical mistrust. Gender influences PrEP acceptance among criminal legal-involved couples. Effective interventions should address gender differences, risk perception disparities, and medical mistrust. TRIAL REGISTRATION: ClinicalTrials.gov NCT01690494 registered September 19, 2012. RESUMEN: Las personas bajo supervisi&#xf3;n comunitaria que consumen drogas enfrentan un elevado riesgo de VIH. Este ensayo controlado aleatorio utiliz&#xf3; un enfoque de m&#xe9;todos mixtos para examinar la aceptaci&#xf3;n de la PrEP entre hombres bajo supervisi&#xf3;n comunitaria que consumen drogas y sus parejas femeninas. Se evalu&#xf3; la disposici&#xf3;n hacia la PrEP entre participantes (N&#x2009;=&#x2009;394) asignados aleatoriamente a PACT (intervenci&#xf3;n para parejas de 5 sesiones) o al grupo de control (asesor&#xed;a de VIH de 1 sesi&#xf3;n). Entrevistas cualitativas con 20 parejas (n&#x2009;=&#x2009;40) exploraron las actitudes hacia la PrEP. El grupo PACT mostr&#xf3; intencio",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42366304/",
+      "keywords": []
+    },
+    {
+      "pmid": "42366615",
+      "title": "Characteristics of Child Deaths and Near-Deaths Resulting From Violence or Maltreatment.",
+      "journal": "Child maltreatment",
+      "date": "2026 Jun 28",
+      "abstract": "U.S. children suffer higher rates of death resulting from violence than children in economically comparable countries. Prevention of violent injury relies on robust data regarding demographic and contributing factors. This retrospective study of records from the New Mexico Office of the Medical Investigator (OMI), the University of New Mexico Children's Hospital (UNMH), and the UNMH child protection team examined demographic and risk factors for child deaths and near-deaths resulting from violence or maltreatment (abuse or neglect) during the period August 1, 2019 - September 30, 2022. The OMI is the only forensic laboratory in the state, and UNMH is the state's only pediatric trauma hospital. 76 children met inclusion criteria; 60 of these died. Most victims were male. Firearm injuries were most common among adolescents, and other injury mechanisms predominated among younger victims. Parent intimate partner violence (IPV) was more common among children who suffered non-fatal injuries than fatal; and parent IPV, current or prior child protective services involvement, and parent substance use were identified more often in children with non-firearm injuries versus firearm. Other risk factors did not discriminate between groups. Pooling data for serious non-accidental child injury would increase the data available for epidemiologic studies and prevention efforts.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42366615/",
+      "keywords": []
+    }
+  ]
+}
