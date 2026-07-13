@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-13",
+  "count": 6,
+  "papers": [
+    {
+      "pmid": "42437916",
+      "title": "Exploring specific-situational factors of risky sexual behaviors among Chinese college students: a mixed methods study.",
+      "journal": "BMC public health",
+      "date": "2026 Jul 13",
+      "abstract": "BACKGROUND: Risky sexual behavior refers to sexual activity that increases the likelihood of STIs, unintended pregnancies, and negative psychosocial outcomes. College students are susceptible to such behaviors. This study aimed to identify proximal situational factors contributing to risky sexual behaviors among Chinese college students and to integrate these with individual-level psychosocial correlates using a sequential explanatory mixed-methods design. METHODS: In phase 1 (cross-sectional, September-December 2022), college students from three universities in Daqing, Northeast China, completed an online questionnaire assessing attitudes toward sexuality, perceived social support, protection self-efficacy, sexual assertiveness, and sexual limit-setting self-efficacy. Univariate and binary logistic regression analyses identified factors associated with risky sexual behaviors. In phase 2 (March-July 2023), purposeful sampling selected students who had engaged in risky sexual behaviors for semi-structured interviews. Data were analyzed using NVivo 11.0. RESULTS: Among 1,761 participants, 25.72% reported sexual activity and 9.60% reported risky sexual behavior; among sexually active students, the prevalence was 37.3%. Specific-situational factors included material environment (economic status, resource accessibility), social environment (partner characteristics, peer influence, entertainment venues), antecedent states (attitudes toward premarital sex, sexual desire/impulse, negative emotions), objective elements (psychological needs, sexual mental health, social media for dating), and opportunity elements (relationship status, solitude). CONCLUSIONS: This study integrates individual-level psychosocial correlates with proximal situational factors to understand risky sexual behaviors among college students. The findings extend individual-level explanations by identifying material, social, emotional, motivational, and opportunity-related contexts that immediately precede",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437916/",
+      "keywords": []
+    },
+    {
+      "pmid": "42438967",
+      "title": "Nonmetallic Si Doping Constructs Cu2O/Co-O-Si Tandem Sites for Neutral Nitrate Reduction Electrocatalysis Toward Ammonia Recovery and Energy-Integrated Applications.",
+      "journal": "Angewandte Chemie (International ed. in English)",
+      "date": "2026 Jul 13",
+      "abstract": "The electrocatalytic nitrate reduction reaction (NO3RR) in neutral media is impeded by sluggish water dissociation and the lack of spatial coordination between distinct active phases. Here, we report a nonmetallic Si doping strategy to construct a Si-CoCu@CF catalyst featuring a \"Co-O-Si\" interfacial bridge. This unique bonding motif not only regulates the in situ evolution of Cu2O but also establishes robust electronic communication between &#x3b2;&#x2011;Co(OH)2 and Cu2O, enabling a precisely engineered tandem catalytic cascade. The catalyst achieves a remarkable NH3 yield rate of 26.6&#xa0;mg h-1 cm-2 and a Faradaic efficiency (FE) of 97.9% at -1.0&#xa0;V vs. RHE, maintaining stability for 25&#xa0;h in a neutral electrolyte of 100&#xa0;mM NO3 - + 0.5&#xa0;M Na2SO4. Mechanistic studies reveal a clear functional division: Cu2O governs the swift deoxygenation of NO3 - to NO2 -, while the \"Co-O-Si\" interface accelerates the Volmer step to enrich the surface with *H, promoting the subsequent hydrogenation of NO2 - to NH3 predominantly through a hydroxylamine pathway. The system further enables struvite recovery, energy-saving methanol-coupled electrolysis, and stable Zn-NO3 - battery operation. This work highlights the potential of nonmetallic elemental bridges in tandem electrocatalysis for integrated nitrate remediation and sustainable ammonia synthesis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42438967/",
+      "keywords": []
+    },
+    {
+      "pmid": "42438200",
+      "title": "Computational fluid structure interaction analysis between aqueous humor and corneal shell.",
+      "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine",
+      "date": "2026 Jul 12",
+      "abstract": "This study uses a one-way coupled fluid-structure interaction (FSI) model of the anterior area to assess the velocity field and shear stress distribution on the corneal endothelium under healthy circumstances. Key anatomical measurements were included in the reconstruction of a physiologically appropriate three-dimensional geometry, including anterior chamber width of 3.42&#x2009;mm and iridocorneal angle radii of 0.28 and 5.0&#x2009;mm. For these parameters, a transient FSI study was conducted in ANSYS 2023. AH was shown as an incompressible Newtonian fluid with a constant input rate of (1.5-3.0 with a step of 0.5) &#xb5;L/min to reproduce normal production. A linear elastic solid model represented the cornea, and limbal boundary conditions were imposed to replicate the physiological attachment of the tissue to the sclera. The transverse midplane velocity contours directed a parabolic shape with peak consequences near the chamber's geometric center. Regional heterogeneity in endothelial shear stress was estimated at the fluid-solid boundary. At peripheral curvature transitions, maximum stress concentrations correspond to R0.28 mm and R5 mm radii. The endothelial fluid wall shear stress (WSS) ranged from -129.19 to 129.32&#x2009;Pa. Constant input creates a cyclic shear environment by reversing stress polarity across the cornea. Results show that aqueous flow produces endothelial shear stresses over 120&#x2009;Pa, an order of magnitude greater than limits for mechanotransduction and cytoskeletal modification. The strong stress magnitude dependence on local curvature implies that angle geometry may affect mechanical sensitivity to corneal endothelium malfunction. This FSI paradigm confirms flow-induced shear as a significant, spatially altering mechanical input in the anterior chamber, furthering the pressure-centric IOP attitude. The model provides quantitative organization for patient-specific glaucomatous pathology and surgical planning investigations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42438200/",
+      "keywords": []
+    },
+    {
+      "pmid": "42437524",
+      "title": "Self-Assembled Wheat Gluten Peptide Nanoparticles as Dual-Functional Stabilizers for the Protection of Omega-3 Polyunsaturated Fatty Acids.",
+      "journal": "Journal of agricultural and food chemistry",
+      "date": "2026 Jul 12",
+      "abstract": "Omega-3 polyunsaturated fatty acids are highly susceptible to oxidation, limiting the shelf life and sensory quality of omega-3-fortified foods. Herein, wheat gluten peptide nanoparticles (WGPNs) with coupled emulsifying and antioxidant functions were produced by sequential pepsin-trypsin hydrolysis. LC-MS/MS showed a peptide pool (1-4 kDa) enriched in Gln/Pro, featuring hydrophobic motifs and C-terminal Lys/Arg residues that confer surfactant-like behavior. WGPNs formed spontaneously in aqueous media, mainly driven by hydrophobic association and hydrogen bonding, with concentration-dependent &#x3b2;-sheet formation and a critical aggregation concentration of &#x223c;0.17 mg/mL. Above this threshold, WGPNs exhibited enhanced radical-scavenging activity and colloidal stability across a wide ionic-strength range. Interfacial measurements demonstrated rapid adsorption of WGPNs at the oil-water interface, reduced interfacial tension, and formation of a stable interfacial layer. Consequently, WGPNs effectively stabilized fish oil emulsions and markedly retarded lipid oxidation. This work establishes WGPNs as a clean-label, dual-function platform for protecting oxidation-sensitive lipids in food systems.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437524/",
+      "keywords": []
+    },
+    {
+      "pmid": "42437814",
+      "title": "Dyadic coping profiles and emotional distress in Chinese infertile couples.",
+      "journal": "Scientific reports",
+      "date": "2026 Jul 12",
+      "abstract": "Infertility is a shared stressor that affects both partners, yet heterogeneity in dyadic coping patterns and their associations with emotional distress remain insufficiently understood. This cross-sectional study enrolled 251 infertile couples from reproductive clinics in Hengyang, China. Participants completed the Dyadic Coping Inventory, Brief Illness Perception Questionnaire, Generalized Anxiety Disorder-7, and Patient Health Questionnaire-9. Latent profile analysis identified four dyadic coping profiles: Low Interaction and Mutual Disengagement (31.6%), Wife-Active and Husband-Supported (6.7%), Husband-Active and Wife-Passive (38.4%), and High Interaction and Mutual Engagement (23.3%). Mediation analyses showed that more adaptive illness perceptions were associated with lower anxiety and depression. Indirect associations via illness perception were observed for wives across adaptive profiles and for husbands in specific profiles, with cross-partner effects present only for anxiety. The findings indicate that dyadic coping among infertile couples is heterogeneous and differentially associated with emotional adjustment in wives and husbands. Longitudinal studies are needed to confirm these associations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437814/",
+      "keywords": []
+    },
+    {
+      "pmid": "42437741",
+      "title": "Silent crises in the COVID-19 pandemic shadow: a six-year medico-legal review of non-lethal intimate partner violence in Morocco.",
+      "journal": "International journal of injury control and safety promotion",
+      "date": "2026 Jul 12",
+      "abstract": "Intimate partner violence (IPV) is a major global public health concern and one of the most prevalent forms of gender-based violence, with significant consequences. This study analyzes non-lethal IPV cases reported to a medico-legal unit of Casablanca between 2018 and 2023. Data from 4,784 female victims were reviewed, focusing on socio-demographics, violence types, perpetrator relationships, and judicial involvement across the pre-COVID, peak COVID-19, and post-COVID periods. Married women represented 59.2% of victims. Physical violence predominated (83.1%), while sexual violence was underreported (14.7%). The year 2020 marked a sharp increase in reported non-lethal IPV cases (n&#x2009;=&#x2009;1,005), correlating with pandemic confinement. Among married women, judicial requisition (legal request for forensic examination) and medico-legal certification (medical documentation for judicial use) rates were high (81.5% and 81.0%, respectively). Post-pandemic years declined moderately but remained above pre-COVID levels. International comparison confirmed a global rise in IPV during COVID-19, with Morocco displaying comparatively higher rates of medico-legal documentation and judicial involvement. IPV in Morocco is entrenched and intensified by COVID-19. While the medico-legal system is robust in documentation, the system must evolve by integrating systematic psychological assessment into medico-legal evaluations, standardizing certification and referral protocols, and strengthening coordination between medico-legal, health, and social support services to improve victim protection.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437741/",
+      "keywords": []
+    }
+  ]
+}
