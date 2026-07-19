@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-19",
+  "count": 6,
+  "papers": [
+    {
+      "pmid": "42472107",
+      "title": "Expanded tibiae enhance male mating success in the damselfly Platycnemis phyllopoda.",
+      "journal": "iScience",
+      "date": "2026 Aug 21",
+      "abstract": "In insects, elaborate male secondary sexual traits have evolved through sexual selection driven by visual signals. In odonates, such displays typically feature wing pigmentation or flight behavior; however, investigations into non-wing morphological ornaments remain relatively rare. To address this gap, we investigated the damselfly Platycnemis phyllopoda, in which males possess conspicuously expanded, white mid and hind tibiae. Our findings revealed that males perform sequential courtship displays utilizing their UV-reflective tibiae. Field monitoring demonstrated that males with larger hind tibial areas achieved significantly higher mating success; however, they exhibited lower resighting frequencies and shorter observation spans, suggesting potential survival costs or increased dispersal. Combined with positive allometry, these results indicate that the expanded tibiae may function as sexually selected ornaments. Ultimately, opposing selection acting on these structures likely constrains their evolutionary exaggeration, highlighting the complex interplay of selections shaping tibial morphology in odonates.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42472107/",
+      "keywords": []
+    },
+    {
+      "pmid": "42471324",
+      "title": "Convergent genomic trajectories shape adaptation to life on land across animal lineages.",
+      "journal": "Nature communications",
+      "date": "2026 Jul 18",
+      "abstract": "How animals repeatedly adapted to life on land is a central question in evolutionary biology. While terrestrialisation occurred independently across animal phyla, it remains unclear whether shared genomic mechanisms underlie these transitions. Here, we combine large-scale comparative genomics, machine learning, and multi-omics data, including proteomics and transcriptomics from stress experiments relevant to terrestrial environmental challenges in 17 species, to investigate the genomic basis of animal terrestrial adaptation. Gene co-expression networks reveal that genes relevant to stress are largely lineage-specific, yet converge in function through the co-option of gene families pre-dating terrestrialisation events. Phylogenomic and machine learning analyses support a dominant role for early-evolving genes, enriched in stress-related functions, paired with a higher gene loss than gain at terrestrialisation nodes. Our findings support a model of lineage-specific genomic changes involving mostly conserved genes that converged at the functional level during the independent transitions to terrestrial life.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42471324/",
+      "keywords": []
+    },
+    {
+      "pmid": "42470592",
+      "title": "High-performance microporous carbon for efficient tartrazine dye adsorption: experimental investigation coupled with molecular dynamics simulation.",
+      "journal": "Environmental science and pollution research international",
+      "date": "2026 Jul 18",
+      "abstract": "This study reports the preparation of potassium hydroxide-impregnated corn-cob-derived activated carbon (AC500-K1.1) as an efficient adsorbent for the rapid removal of the azo dye tartrazine (TZ) from aqueous solutions. The raw corn-cob (CC) powder was chemically activated at various KOH-to-biomass ratios and activation temperatures to optimise surface chemistry and porosity. Under optimal conditions (1.1 ratio at 500&#xa0;&#xb0;C), the prepared activated carbon exhibited an amorphous structure, a BET surface area of 276.34 m2&#xa0;g&#x207b;1, and a well-developed porous morphology. FTIR, XRD, FESEM-EDX, TEM, TGA, and BET characterisation confirmed the formation of abundant oxygen-containing acidic functional groups (which can also significantly enhance dye adsorption through electrostatic attraction and hydrogen-bond interactions). The batch adsorption studies revealed that the optimum adsorbent dosage was 0.04&#xa0;g, with a contact time of 60&#xa0;min, an initial dye concentration of 100&#xa0;mg L-1, a pH of 7, and a temperature range of 15-40&#xa0;&#xb0;C. The adsorption of TZ onto AC500-K1.1 was best represented by the Freundlich isotherm model (R2 &#x2248; 0.9986), suggesting heterogeneous and multilayer adsorption, whereas the kinetic behavior was adequately described by the pseudo-first-order model. Thermodynamic parameters demonstrated that the adsorption process was spontaneous and exothermic (&#x394;H&#xb0;&#x2009;=&#x2009;&#x2009;-&#x2009;8.157&#xa0;kJ&#xa0;mol&#x207b;1). Moreover, the prepared adsorbent exhibited excellent performance, achieving a maximum experimental adsorption capacity of 675.88&#xa0;mg&#xa0;g&#x207b;1 and a removal efficiency of 95.07% under the optimized conditions. All of them were shown to exhibit much higher stability in regeneration experiments with up to 10 adsorption-desorption cycles and in recycling experiments. For the TZ-spiked real water samples (distilled water, tap water, and river water), significant dye uptake (&gt;&#",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470592/",
+      "keywords": []
+    },
+    {
+      "pmid": "42470398",
+      "title": "Spreading Dynamics of Binary Solution Droplets on Heated Curved Surfaces: Experiments and Numerical Simulations.",
+      "journal": "Langmuir : the ACS journal of surfaces and colloids",
+      "date": "2026 Jul 18",
+      "abstract": "Efficient thermal management is critical for high-power electronic devices, and droplet impact boiling has emerged as a highly efficient cooling method because of its exceptional heat transfer capability driven by phase change dynamics. The alcohol droplet impacts on curved surfaces are crucial for optimizing spray cooling and surface coating, as well as for understanding multiphase flow interfaces. This study focuses on binary solution droplets composed of water and ethanol with low-concentration glycerol added as an additive. Experiments and numerical simulations analyze the impact behavior dynamics and heat transfer mechanisms of the droplets, which are influenced by the surface morphology, wettability, temperature, and impact height. Research indicates that the convex surface exhibits a combined advantage over the flat and concave surfaces in promoting droplet spreading and a concentrated rebound pattern. The hydrophobic convex surface suppresses droplet spreading and facilitates the bouncing. The synergistic interaction between the convex surface and temperature intensifies droplet heat transfer and phase transition processes, yielding five distinct impact regimes. A higher Weber number correlates with greater droplet spreading, faster morphological changes, higher bouncing heights, and shorter rebound onset times. Concurrently, the synergistic effect of surface temperature and Weber number determines the intensity of the droplet morphological transformations. Binary solution droplets with high glycerol concentrations exhibit more pronounced suppression of spreading, while their morphological changes and degrees of breakup after impact with the heated convex surface are significantly exacerbated. For binary solution droplets with varying glycerol concentrations, differences in the coupled effects of the droplet's thermophysical properties significantly influence their tendency toward fragmentation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470398/",
+      "keywords": []
+    },
+    {
+      "pmid": "42471686",
+      "title": "The interplay of risk and protective factors for psychosocial outcome in women after induced abortion - an interview study from Germany.",
+      "journal": "BMC women's health",
+      "date": "2026 Jul 18",
+      "abstract": "BACKGROUND: Abortions are one of the most common gynecological treatments worldwide. Although many studies investigate risk factors (RF) for a negative abortion-related psychosocial outcome (APO), less is known about protective factors (PF) and the interplay of RFs and PFs. METHODS: From May to August 2022, we conducted a semi-structured interview study in Germany and interviewed 23 women (21-43 years) who had undergone an elective abortion within the last 12 months, asking them about their experiences, perceived RF, PF and APO. The data was analyzed using qualitative content analysis. RESULTS: We found three different patterns: The first group of women found the process, especially the legal requirements, stressful but reported a mostly positive outcome with sufficient social support as PF. Women who reported neuroticism-related personality factors as RF sought less social support and more frequently used emotion-focused coping strategies such as self-care and distraction and often showed a mixed outcome. A third group of women experienced intimate partner violence (IPV) and also reported distraction as PF. Regardless, all women who survived IPV reported a negative APO. CONCLUSIONS: The majority of women find the legal requirements (e.g., mandatory counseling, waiting periods) burdensome. At the same time, they offer no benefit to women who find themselves in critical situations such as coercion and domestic violence, which was a major RF. The protection of women who survived IPV should therefore be improved and the access to abortion improved. Further research is needed to include effects on more vulnerable groups such as migrants or queer individuals.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42471686/",
+      "keywords": []
+    },
+    {
+      "pmid": "42471501",
+      "title": "Non-pharmacological interventions for informal cancer caregivers: a JBI scoping review and gap analysis.",
+      "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+      "date": "2026 Jul 18",
+      "abstract": "PURPOSE: With the rising global prevalence of cancer and the extensive demands of patient care, informal caregivers play an increasingly critical role. The substantial burden associated with caregiving can compromise their resilience and overall health. This review aimed to map the types of non-pharmacological interventions implemented for informal cancer caregivers and to identify understudied health domains. METHODS: This review followed the JBI scoping review framework and adhered to the PRISMA-ScR guidelines. Interventional studies involving informal caregivers of cancer patients were identified through searches of PubMed, Web of Science, and Scopus from January 1, 2015, to January 1, 2024. Data were extracted and synthesized descriptively, with critical appraisal conducted using the CONSORT 2025 checklist. RESULTS: Thirty-five studies were included. Most interventions targeted caregivers of patients undergoing active treatment. Between 2015 and 2017, interventions were predominantly psycho-educational; from 2018 to 2020, they shifted toward combined physical-psychological approaches; and from 2020 to 2024, online delivery formats became predominant. Overall, there was a clear evolution from traditional, largely paper-based or booklet-facilitated educational programs to psychological and predominantly psycho-educational online and smartphone-based digital interventions. CONCLUSION: Existing research has primarily focused on psycho-educational interventions, with quality of life, anxiety, and depression as the most frequently examined outcomes among informal cancer caregivers. However, several important domains-such as cultural and spiritual challenges, dyadic relationship quality, and insurance literacy-remain understudied. Future research should prioritize rigorous study designs with long-term follow-up, incorporate dyadic (patient-caregiver) and hybrid (in-person/online) interventions, and address emerging variables including resilience, digital health literac",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42471501/",
+      "keywords": []
+    }
+  ]
+}
