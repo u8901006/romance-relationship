@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-20",
+  "count": 3,
+  "papers": [
+    {
+      "pmid": "42472899",
+      "title": "Sexual experience of urostomy patients with bladder cancer: a qualitative explorative study.",
+      "journal": "Scientific reports",
+      "date": "2026 Jul 19",
+      "abstract": "Bladder cancer is a common malignant tumor of the urinary system worldwide. Radical cystectomy is the primary treatment for muscle-invasive bladder cancer and high-risk non-muscle invasive bladder cancer. Postoperatively, patients often undergo urostomy through urinary diversion to facilitate urine excretion. The physical presence of a stoma may impair patients' perception of bodily integrity, thereby affecting their sexual confidence and intimate behavior. A descriptive qualitative study using purposive sampling and semi-structured individual interviews was conducted among 21 bladder cancer patients who had undergone urostomy 6 months to 5 years previously. Interviews lasted approximately 60-90&#xa0;min and were audio-recorded with participants' consent. Data were analyzed using Braun and Clarke's six-phase thematic analysis. Each interviewee emphasized that the urostomy significantly influenced their sexual experience.Three main themes and six sub-themes were identified. The three main themes were Low self-esteem and fragility, Prominent physiological and functional problems, and Partner relationship problems. The six sub-themes included Perceived Changes in Body Image, Anxiety and Fear, Sexual Dysfunction, Reduced Sexual Desire, Partner's Worries and Discomfort, and Emotional Alienation. Participants described complex sexual difficulties involving body image, physiological impairment, psychological distress, and intimate relationship challenges following urostomy. Patients with bladder cancer who undergo urostomy experience multidimensional sexual challenges that extend beyond physical dysfunction to include psychological and relational difficulties. Healthcare professionals should provide individualized sexual counseling, psychosocial support, and multidisciplinary follow-up to promote sexual wellbeing and postoperative quality of life.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42472899/",
+      "keywords": []
+    },
+    {
+      "pmid": "42472973",
+      "title": "A hybrid GA-LP scenario-based framework for day-ahead scheduling of PV-BES systems with profit-robustness trade-off.",
+      "journal": "Scientific reports",
+      "date": "2026 Jul 20",
+      "abstract": "This paper proposes a scenario-based scheduling framework for a photovoltaic-battery energy storage (PV-BES) system participating in day-ahead energy arbitrage markets. The proposed framework accounts for uncertainties in both PV generation and electricity prices. A hybrid optimization approach is developed, combining a genetic algorithm (GA) with a linear programming (LP) model. The optimization problem is decomposed into two layers. In the first layer, the GA determines the BES commitment schedule, while in the second layer, a coupled LP is solved to obtain the shared BES dispatch schedule, held fixed across all scenarios, with the grid exchange power varying per scenario. A robustness weight is incorporated to control the trade-off between profitability and robustness. Solving the problem across multiple values of robustness weight yields a Pareto frontier, enabling operators to select a scheduling strategy aligned with their risk preference. A case study based on real PV generation and electricity price data is conducted to validate the effectiveness of the proposed framework. The results are further compared with those obtained from three benchmark approaches: deterministic MILP, a naive rule-based method, and classical robust optimization.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42472973/",
+      "keywords": []
+    },
+    {
+      "pmid": "42472398",
+      "title": "Violence Towards Companion Animals and Perceived Social Support Among Female Intimate Partner Violence Survivors: The Nonsupport scale of the Personality Assessment Inventory.",
+      "journal": "Journal of interpersonal violence",
+      "date": "2026 Jul 19",
+      "abstract": "Violence towards companion animals (CAs) is prevalent in cases of intimate partner violence (IPV), and several studies have emphasized its impact on survivors' well-being and decision-making process. However, little is known about its effect on perceived social support among female IPV survivors. This study aims to address this gap. In this study, a sample of 70 female IPV survivors who owned a CA at the time of the abuse completed a protocol including the Portuguese version of the Personality Assessment Inventory (PAI). Independent samples t-tests compared Nonsupport (NON) scale scores between survivors with and without reports of violence towards CAs, and linear regression examined the predictive effect of reported CA-directed violence, controlling for other relevant variables (e.g., unemployment, other PAI scales). Over half of the participants reported abuse directed at their CAs by their partners. Those who reported CAs abuse scored significantly higher on the NON scale, indicating a greater perceived lack of social support. The linear regression model was statistically significant, suggesting that reporting violence against CAs, higher Depression scale scores, lower Traumatic stress scale scores, and unemployment had a significant impact on NON scale scores. Potential explanations are discussed, including the dual role of CA as both social and emotional support providers, and as tools of coercion and control used by the perpetrator. These findings underscore the importance of integrated human and animal welfare services and support the development of professional training programs and legislative reforms to protect IPV survivors and their CAs.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42472398/",
+      "keywords": []
+    }
+  ]
+}
