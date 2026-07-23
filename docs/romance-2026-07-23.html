@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Romance Relationship &middot; 浪漫關係研究日報 &middot; 2026年7月23日</title>
+<meta name="description" content="2026年7月23日 浪漫關係研究日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; animation: fadeUp 0.5s ease 0.4s both; }
+  .banner-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .banner-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .banner-icon { font-size: 28px; flex-shrink: 0; }
+  .banner-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .banner-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💑</div>
+    <div class="header-text">
+      <h1>Romance Relationship &middot; 浪漫關係研究日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年7月23日</span>
+        <span class="badge badge-count">📊 28 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻顯示關係心理學研究正從單一模型走向多元文化與機制深探，長期關係中的『無聊感』新分類、數位約會與現代浪漫意義的消逝，以及邊緣群體（LGBTQ+、婦女）的關係韌性，成為了臨床與研究關注的三大核心亮點。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🤷‍♂️➡️🥱</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>理解伴侶間的無聊感：其維度與與性無聊的連結</h3>
+          <p class="journal-source">Journal of sex research &middot; Understanding Relationship Boredom: A Thematic Analysis of Its Dimensions and Links to Sexual Boredom.</p>
+          <p>研究透過主題分析識別出伴侶無聊感的四大主題（保護因子、促成因子、因應策略、後果），並強調這是一種正常且循環的現象，為改善長期關係滿意度提供了具體的分類架構。</p>
+          <div class="card-footer">
+            <span class="tag">關係滿意度</span><span class="tag">性行為與親密</span><span class="tag">情感調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42484060/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">📱🥀</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>浪漫愛的生存意義感如何受數位約會與色情使用的影響？</h3>
+          <p class="journal-source">BMC psychology &middot; Romeo swipes Juliet left!? Problematic online dating app use and problematic pornography consumption are associated with a weaker sense of existential meaning in romantic love.</p>
+          <p>發現過度使用約會軟體與色情片會降低浪漫愛的生存意義感，並增加情感泛濫與實用主義觀，而正念的社交媒體使用則具保護作用。</p>
+          <div class="card-footer">
+            <span class="tag">關係滿意度</span><span class="tag">性行為與親密</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42482268/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🏳️‍🌈🤝</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>LGBTQ+長者的關係不平等與孤獨感：多樣家庭形式的影響</h3>
+          <p class="journal-source">International psychogeriatrics &middot; Relational inequalities and loneliness: How diverse family forms shape loneliness among heterosexual and LGBTQ+ adults in later life.</p>
+          <p>研究指出，LGBTQ+長者若擁有穩定且承諾度高的「選擇家庭」伴侶，其孤獨感顯著較低，強調了多元化家庭結構在長期照護中的重要性。</p>
+          <div class="card-footer">
+            <span class="tag">LGBTQ+關係</span><span class="tag">關係滿意度</span><span class="tag">壓力與健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42486764/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">💝</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>被感激時更願意相助？探討感恩如何增強伴侶的互惠意願</h3>
+          <p class="journal-source">Personality & social psychology bulletin &middot; Appreciated and Motivated: Examining Whether, When, and Why Receiving Gratitude Enhances Instrumentality Intentions in Romantic Relationships.</p>
+          <p>證實接收伴侶的感謝能正向預測未來的主動幫助行為，且這種互惠效應在關係品質較低時更為明顯，是維持關係動力的關鍵機制。</p>
+          <div class="card-footer">
+            <span class="tag">關係滿意度</span><span class="tag">伴侶治療</span><span class="tag">情感調節</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40844736/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">⛪🕊️</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>愛已逝去時的宗教應對策略：天主教女性經歷外遇後的療癒</h3>
+          <p class="journal-source">Journal of religion and health &middot; When the Love is Gone: Religious Coping Strategies for the Well-Being of Selected Catholic Women Who had Experienced Marital Infidelity in the Philippines.</p>
+          <p>透過解釋現象學分析，發現宗教信仰、社會支持與靜修是幫助天主教女性在經歷伴侶外遇後修復身心與靈性健康的重要資源。</p>
+          <div class="card-footer">
+            <span class="tag">分手與失落</span><span class="tag">關係滿意度</span><span class="tag">道德與倫理</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42484792/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#6</span>
+            <span class="emoji-icon">🧠⚖️</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>童年ADHD特質與中年期伴侶暴力風險的長期追蹤</h3>
+          <p class="journal-source">The British journal of psychiatry : the journal of mental science &middot; Childhood attention-deficit hyperactivity disorder traits and experiences of intimate partner violence up to midlife: evidence from a longitudinal cohort over five decades.</p>
+          <p>長期追蹤顯示，童年具有高ADHD特質的人在中年時期經歷各類伴侶暴力（含性暴力、經濟虐待等）的風險顯著增加，揭示了神經發展與暴力風險的關聯。</p>
+          <div class="card-footer">
+            <span class="tag">依戀理論</span><span class="tag">伴侶衝突</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42487484/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#7</span>
+            <span class="emoji-icon">🤱🛡️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>產後母親的兒童虐待保護因子與家訪介入的關聯性</h3>
+          <p class="journal-source">Child abuse & neglect &middot; Protective factors against child maltreatment among postpartum mothers and engagement in home visiting.</p>
+          <p>研究發現母親的教育程度、社會支持與實質支持與家訪介入的配合度有顯著差異，指出需要針對不同背景母親提供差異化的家庭支持介入。</p>
+          <div class="card-footer">
+            <span class="tag">育兒與家庭</span><span class="tag">壓力與健康</span><span class="tag">伴侶衝突</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42485792/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#8</span>
+            <span class="emoji-icon">🧬🏳️‍⚧️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>性別少數群體的幫助尋求行為：理解暴力與污名化的影響</h3>
+          <p class="journal-source">Journal of child sexual abuse &middot; Interpersonal Trauma, Marginalization, and Low-Resource Settings: Understanding Sexual and Gender Minority People's Help-Seeking and Service Utilization Experiences.</p>
+          <p>探究性別少數群體在遭遇人際創傷（如性侵、家庭暴力）後的求助困境，揭示了預期污名、地理隔離與結構性不平等如何阻礙其獲取服務。</p>
+          <div class="card-footer">
+            <span class="tag">LGBTQ+關係</span><span class="tag">心理健康</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42487495/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🗳️🤝</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>伴侶政治影響力：伴侶間政黨支持相互傳遞的縱向證據</h3>
+          <p class="journal-source">Personality & social psychology bulletin</p>
+          <p>長期追蹤發現，伴侶之間的政黨傾向會隨時間相互影響，這種雙向傳遞機制可能加劇了政治極化。</p>
+          <div class="card-footer">
+            <span class="tag">社會心理學</span><span class="tag">關係滿意度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42488988/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐁🔊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>老鼠超音波叫聲與 distress calls 的產生與腦部 Fos 表達差異</h3>
+          <p class="journal-source">eNeuro</p>
+          <p>神經科學研究比較了老鼠在發出求偶叫聲與 distress 叫聲時，腦幹區域的神經活動模式，發現了兩種不同類型的神經元群體。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42486670/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦀🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>海洋等足類動物行為隔離的染色體架構</h3>
+          <p class="journal-source">Evolution; international journal of organic evolution</p>
+          <p>演化生物學摘要，探討不同物種間性別求偶行為差異如何受到染色體結構與重組率限制。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42484611/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐒🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>銅色垂耳猴的減數分裂重組模式研究</h3>
+          <p class="journal-source">Genome biology and evolution</p>
+          <p>研究報告了社會單配偶靈長類動物的染色體重組特徵，為行為演化研究提供了基因層面的基礎數據。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42483966/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿🌵</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>哺乳動物草食動物、氣候與火災如何塑造植物刺的演化</h3>
+          <p class="journal-source">The New phytologist</p>
+          <p>生態學研究綜合植群、氣候與環境因素，探討植物針刺狀構造在演化與分佈上的驅動力。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42482596/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐟⚗️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>淡水魚急性酸化下的交配行為與代謝改變</h3>
+          <p class="journal-source">Comparative biochemistry and physiology. Toxicology & pharmacology : CBP</p>
+          <p>探討環境酸化如何影響金魚的交配階段，發現雌魚的代謝調整更為敏感。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">演化心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42480638/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🕰️🌡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>古氣候重建中放射性同位素年代學的進展</h3>
+          <p class="journal-source">Journal of environmental radioactivity</p>
+          <p>回顧了用於重建古環境與氣候的各種放射性同位素測定方法的最新技術與應用。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42480352/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚡⚗️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>酸性CO2轉乙醇電合成中的質子耦合途徑</h3>
+          <p class="journal-source">Journal of the American Chemical Society</p>
+          <p>化學工程研究，透過改變界面氫鍵網絡來引導催化路徑，提高電合成效率。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42489017/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">♻️💧</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>廢棄PU泡沫衍生混合物對CO2吸附與水修復的熱力學研究</h3>
+          <p class="journal-source">The journal of physical chemistry. B</p>
+          <p>化學工程研究，展示了如何將廢棄聚胺酯泡沫轉化為兼具大氣與水體修復功能的材料。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42486850/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩺🚻</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>性別少數族群在資源匱乏環境中的避孕使用行為研究</h3>
+          <p class="journal-source">Journal of biosocial science</p>
+          <p>質性研究探討加納視障與聽障女性的避孕決策過程，揭示了障礙、宗教與社會支持的複雜交互影響。</p>
+          <div class="card-footer">
+            <span class="tag">LGBTQ+關係</span><span class="tag">公共衛生</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42487576/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🛡️💔</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>女性HIV預防措施不穩定性：塞拉利昂的縱向質性研究</h3>
+          <p class="journal-source"></p>
+          <p>追蹤研究發現，經濟不穩定與伴侶支持缺失會削弱女性的HIV預防行為，突顯結構性因素的重要性。</p>
+          <div class="card-footer">
+            <span class="tag">伴侶衝突</span><span class="tag">壓力與健康</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42485086/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊🇮🇷</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>藥品補貼改革的新聞議程設定：多流典分析</h3>
+          <p class="journal-source">BMC health services research</p>
+          <p>政���分析研究，探討伊朗藥品補貼改革如何在問題、政策與政治三股流中達成共識。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42482036/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩺🌍</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>帕金森病護理中的障礙與不平等：專家的個人反思</h3>
+          <p class="journal-source">Journal of Parkinson's disease</p>
+          <p>專家回顧了發展中國家與地區在帕金森病照護面臨的醫療可及性與資源分配不平等問題。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42481917/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎖️🩸</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>軍事手術與創傷學院的準備工作</h3>
+          <p class="journal-source">BMJ military health</p>
+          <p>報告英國軍醫學院如何透過研究與合作準備未來大規模衝突中的外科手術需求。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40829854/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📱🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>用於間歇性汗水皮質醇分析的柔性木基水凝膠貼片</h3>
+          <p class="journal-source">Biosensors & bioelectronics</p>
+          <p>生物傳感器技術，利用水凝膠貼片透過手機應用程式進行無創汗水皮質醇分析。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42485701/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬🦠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>癌症免疫治療相關胃炎的空間蛋白質組學研究</h3>
+          <p class="journal-source">Molecular cancer</p>
+          <p>透過空間蛋白質組學分析胃炎在疾病進展中的分子演變，為免疫副作用的管理提供參考。</p>
+          <div class="card-footer">
+            
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42482033/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩺👩</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>子宮切除術婦女的性自概念與性功能關係研究</h3>
+          <p class="journal-source">Open medicine (Warsaw, Poland)</p>
+          <p>橫斷面研究顯示，婦女的性自概念與性功能有高度正相關，教育程度與職業狀況也會影響性功能表現。</p>
+          <div class="card-footer">
+            <span class="tag">性行為與親密</span><span class="tag">女性健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42483219/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇧🇷🛡️</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>巴西城市與農村地區女性的童年性虐待盛行率與相關因素</h3>
+          <p class="journal-source">Child abuse & neglect</p>
+          <p>巴西的大型研究顯示，童年性虐待與成人期的家庭暴力（含性與身體暴力）密切相關。</p>
+          <div class="card-footer">
+            <span class="tag">約會暴力</span><span class="tag">伴侶衝突</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42485790/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦷🩺</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>2017-2024年加拿大薩斯喀徹溫省的頭頸部受傷與家庭虐待相關醫院就診報告</h3>
+          <p class="journal-source">Dental traumatology : official publication of International Association for Dental Traumatology</p>
+          <p>統計數據顯示，僅極小比例（0.10%）的頭頸部受傷與家庭虐待有關，但這是一個被忽視的關鍵臨床指標。</p>
+          <div class="card-footer">
+            <span class="tag">約會暴力</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42481834/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🤰🧠</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>青少年產前焦慮的相關因素：範圍性文獻回顧</h3>
+          <p class="journal-source">Journal of psychiatric research</p>
+          <p>回顧研究列出了青少年產前焦慮的主要風險因子與保護因子，強調了社會支持與認知評估的重要性。</p>
+          <div class="card-footer">
+            <span class="tag">育兒與家庭</span><span class="tag">壓力與健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42480275/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">LGBTQ+關係</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">關係滿意度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">性行為與親密</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶衝突</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">壓力與健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">育兒與家庭</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">分手與失落</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">依戀理論</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">社會心理學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">關係無聊感</span><span class="keyword">數位成癮</span><span class="keyword">性少數心理健康</span><span class="keyword">感恩機制</span><span class="keyword">伴侶暴力</span><span class="keyword">孕產期焦慮</span><span class="keyword">家庭暴力篩檢</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">🏥</span>
+      <span class="banner-name">李政洋身心診所首頁</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">📜</span>
+      <span class="banner-name">訂閱電子報</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="banner-link" target="_blank">
+      <span class="banner-icon">☕</span>
+      <span class="banner-name">Buy Me a Coffee</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：GLM-5-Turbo</span>
+    <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
