@@ -61,10 +61,14 @@ jobs:
             echo "No papers found, will generate empty report"
           fi
 
-      - name: Generate report with Zhipu AI
+      - name: Generate report with NVIDIA Nemotron
         env:
-          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: |
+          if [ "${{ steps.papers.outputs.count }}" != "0" ] && [ -z "$NVIDIA_API_KEY" ]; then
+            echo "::error::Missing NVIDIA_API_KEY repository secret"
+            exit 1
+          fi
           node scripts/generate_report.js \
             --input papers.json \
             --output docs/romance-${{ steps.date.outputs.target }}.html
