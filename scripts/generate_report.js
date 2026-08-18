@@ -5,8 +5,8 @@ import https from "node:https";
 import { URL } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const API_BASE = process.env.ZHIPU_API_BASE || "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODELS = ["GLM-5-Turbo", "GLM-4.7", "GLM-4.7-Flash"];
+const API_BASE = process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1";
+const MODELS = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-nano-30b-a3b"];
 
 const SYSTEM_PROMPT = `你是浪漫關係與親密關係研究領域的資深研究員與科學傳播者。你的任務是：
 1. 從提供的醫學與心理學文獻中，篩選出最具研究價值與臨床意義的論文
@@ -132,9 +132,10 @@ ${papersText}
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: prompt },
           ],
-          temperature: 0.3,
-          top_p: 0.9,
-          max_tokens: 100000,
+          temperature: 1.0,
+          top_p: 0.95,
+          max_tokens: 16384,
+          chat_template_kwargs: { enable_thinking: false },
         };
 
         const raw = await postJson(`${API_BASE}/chat/completions`, payload, headers, 660000);
@@ -359,7 +360,7 @@ function generateHtml(analysis) {
   </div>
 
   <footer>
-    <span>資料來源：PubMed &middot; 分析模型：GLM-5-Turbo</span>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
     <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
   </footer>
 </div>
@@ -369,11 +370,7 @@ function generateHtml(analysis) {
 
 async function main() {
   const opts = parseArgs();
-  const apiKey = process.env.ZHIPU_API_KEY;
-  if (!apiKey) {
-    console.error("[ERROR] ZHIPU_API_KEY env var is required");
-    process.exit(1);
-  }
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!opts.input || !opts.output) {
     console.error("[ERROR] --input and --output are required");
     process.exit(1);
@@ -396,6 +393,10 @@ async function main() {
       topic_distribution: {},
     };
   } else {
+    if (!apiKey) {
+      console.error("[ERROR] Missing NVIDIA_API_KEY repository secret");
+      process.exit(1);
+    }
     analysis = await analyzePapers(apiKey, papersData);
     if (!analysis) {
       console.error("[ERROR] Analysis failed");
