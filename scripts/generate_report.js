@@ -379,7 +379,8 @@ async function main() {
   const papersData = loadPapers(opts.input);
   let analysis;
 
-  if (!papersData?.papers?.length) {
+  const paperCount = Number(papersData?.count ?? papersData?.papers?.length ?? 0);
+  if (paperCount === 0 || !papersData?.papers?.length) {
     console.error("[WARN] No papers found, generating empty report");
     const now = new Date();
     const tz = new Date(now.getTime() + 8 * 3600000);
