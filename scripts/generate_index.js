@@ -91,7 +91,7 @@ ${links}  </ul>
   </div>
 
   <footer>
-    <p>Powered by PubMed + Zhipu AI &middot; <a href="https://github.com/u8901006/romance-relationship">GitHub</a></p>
+    <p>Powered by PubMed + NVIDIA Nemotron &middot; <a href="https://github.com/u8901006/romance-relationship">GitHub</a></p>
   </footer>
 </div>
 </body>

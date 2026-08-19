@@ -4,7 +4,7 @@
 
 ## 關於
 
-這個專案利用 **PubMed API** 抓取最新的浪漫關係、親密關係研究文獻，透過 **Zhipu AI (GLM-5-Turbo)** 進行摘要、分類與分析，自動生成精美的 HTML 日報並部署到 GitHub Pages。
+這個專案利用 **PubMed API** 抓取最新的浪漫關係、親密關係研究文獻，透過 **NVIDIA Nemotron**（nvidia/nemotron-3-super-120b-a12b）進行摘要、分類與分析，自動生成精美的 HTML 日報並部署到 GitHub Pages。
 
 ## 涵蓋主題
 
@@ -23,7 +23,7 @@
 
 - **Node.js 24** 執行環境
 - **PubMed E-utilities API** 抓取文獻
-- **Zhipu AI GLM-5-Turbo** 分析與摘要（fallback: GLM-4.7 → GLM-4.7-Flash）
+- **NVIDIA Nemotron** 分析與摘要（fallback: nvidia/nemotron-3-nano-30b-a3b）
 - **GitHub Actions** 每日 20:30 (UTC+8) 定時執行
 - **GitHub Pages** 自動部署
 

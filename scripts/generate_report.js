@@ -1,12 +1,13 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import https from "node:https";
-import { URL } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const API_BASE = process.env.ZHIPU_API_BASE || "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODELS = ["GLM-5-Turbo", "GLM-4.7", "GLM-4.7-Flash"];
+const API_BASE = (process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1").replace(/\/+$/, "");
+const MODEL_CHAIN = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-nano-30b-a3b"];
+const MAX_TOKENS = 16384;
+const TIMEOUT_MS = 660000;
+const MAX_RETRIES = 3;
 
 const SYSTEM_PROMPT = `你是浪漫關係與親密關係研究領域的資深研究員與科學傳播者。你的任務是：
 1. 從提供的醫學與心理學文獻中，篩選出最具研究價值與臨床意義的論文
@@ -35,34 +36,54 @@ function loadPapers(path) {
   return JSON.parse(readFileSync(path, "utf-8"));
 }
 
-function postJson(urlStr, body, headers, timeout = 660000) {
-  return new Promise((resolve, reject) => {
-    const url = new URL(urlStr);
-    const data = JSON.stringify(body);
-    const req = https.request(
-      url,
-      {
-        method: "POST",
-        headers: { ...headers, "Content-Length": Buffer.byteLength(data) },
-        timeout,
-      },
-      (res) => {
-        let buf = "";
-        res.on("data", (chunk) => (buf += chunk));
-        res.on("end", () => {
-          if (res.statusCode >= 400) {
-            reject(new Error(`HTTP ${res.statusCode}: ${buf.slice(0, 300)}`));
-          } else {
-            resolve(buf);
-          }
-        });
-      }
-    );
-    req.on("error", reject);
-    req.on("timeout", () => { req.destroy(); reject(new Error("Request timeout")); });
-    req.write(data);
-    req.end();
+function delay(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function backoffMs(attempt) {
+  return Math.min(15 * attempt, 60) * 1000;
+}
+
+async function callModelAPI(apiKey, model, payload) {
+  const resp = await fetch(`${API_BASE}/chat/completions`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(TIMEOUT_MS),
   });
+
+  const bodyText = await resp.text().catch(() => "");
+
+  if (resp.status === 429) {
+    const retryAfter = parseInt(resp.headers.get("retry-after") || "", 10);
+    throw new Error(`RATE_LIMIT:${Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter : 60}`);
+  }
+
+  if (resp.status === 401 || resp.status === 403) {
+    throw new Error(`AUTH_FAILED:${resp.status}:${bodyText.slice(0, 200)}`);
+  }
+
+  if (!resp.ok) {
+    throw new Error(`HTTP_${resp.status}:${bodyText.slice(0, 200)}`);
+  }
+
+  let data;
+  try {
+    data = JSON.parse(bodyText);
+  } catch {
+    throw new Error("INVALID_JSON_RESPONSE");
+  }
+  return data?.choices?.[0]?.message?.content?.trim() || "";
+}
+
+function isNetworkError(e) {
+  return e.name === "TimeoutError"
+    || e.name === "AbortError"
+    || e.name === "TypeError"
+    || /ETIMEDOUT|ENOTFOUND|ECONNRESET|ECONNREFUSED|fetch failed|network/i.test(e.message);
 }
 
 async function analyzePapers(apiKey, papersData) {
@@ -117,29 +138,30 @@ ${papersText}
 每篇 paper 的 tags 請從以下選擇：浪漫依附、關係滿意度、伴侶衝突、嫉妒與不忠、分手與失落、伴侶治療、性行為與親密、約會暴力、神經科學、荷爾蒙、演化心理學、婚姻與家庭、LGBTQ+關係、社會心理學、壓力與健康、依戀理論、育兒與家庭、跨文化研究、情感調節、溝通模式、道德與倫理。
 記住：回傳純 JSON，不要用 \`\`\`json\`\`\` 包裹。`;
 
-  const headers = {
-    Authorization: `Bearer ${apiKey}`,
-    "Content-Type": "application/json",
-  };
-
-  for (const model of MODELS) {
-    for (let attempt = 0; attempt < 3; attempt++) {
+  for (const model of MODEL_CHAIN) {
+    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
       try {
-        console.error(`[INFO] Trying ${model} (attempt ${attempt + 1})...`);
+        console.error(`[INFO] Trying ${model} (attempt ${attempt + 1}/${MAX_RETRIES})...`);
+
         const payload = {
           model,
           messages: [
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: prompt },
           ],
-          temperature: 0.3,
-          top_p: 0.9,
-          max_tokens: 100000,
+          temperature: 1.0,
+          top_p: 0.95,
+          max_tokens: MAX_TOKENS,
+          chat_template_kwargs: { enable_thinking: false },
         };
 
-        const raw = await postJson(`${API_BASE}/chat/completions`, payload, headers, 660000);
-        const resp = JSON.parse(raw);
-        let text = resp.choices?.[0]?.message?.content?.trim() || "";
+        const raw = await callModelAPI(apiKey, model, payload);
+        let text = raw.trim();
+        if (!text) {
+          console.error(`[WARN] Empty response from ${model} (attempt ${attempt + 1}), retrying...`);
+          await delay(backoffMs(attempt + 1));
+          continue;
+        }
 
         if (text.startsWith("```")) {
           text = text.split("\n").slice(1).join("\n").replace(/```$/, "").trim();
@@ -157,11 +179,30 @@ ${papersText}
           }
         }
 
-        console.error(`[INFO] Analysis complete: ${result.top_picks?.length || 0} top picks, ${result.all_papers?.length || 0} total`);
-        return result;
-      } catch (e) {
-        console.error(`[WARN] ${model} attempt ${attempt + 1} failed: ${e.message}`);
-        if (attempt < 2) await new Promise((r) => setTimeout(r, 5000));
+        console.error(`[INFO] Analysis complete via ${model}: ${result.top_picks?.length || 0} top picks, ${result.all_papers?.length || 0} total`);
+        return { ...result, _model: model };
+      } catch (err) {
+        if (err.message.startsWith("RATE_LIMIT:")) {
+          const base = parseInt(err.message.split(":")[1], 10);
+          const wait = Math.min(base * (attempt + 1), 180);
+          console.error(`[WARN] Rate limited (429), waiting ${wait}s...`);
+          await delay(wait * 1000);
+          continue;
+        }
+        if (err.message.startsWith("AUTH_FAILED:")) {
+          console.error(`[ERROR] Authentication failed: ${err.message}. Check that the NVIDIA_API_KEY repository secret is valid.`);
+          return null;
+        }
+        if (err.message.startsWith("HTTP_4")) {
+          console.error(`[ERROR] ${model}: ${err.message}`);
+          break;
+        }
+        if (isNetworkError(err)) {
+          console.error(`[WARN] Network/timeout error on attempt ${attempt + 1}: ${err.message}`);
+        } else {
+          console.error(`[ERROR] ${model} failed on attempt ${attempt + 1}: ${err.message}`);
+        }
+        await delay(backoffMs(attempt + 1));
       }
     }
   }
@@ -242,6 +283,7 @@ function generateHtml(analysis) {
   }
 
   const totalCount = topPicks.length + allPapers.length;
+  const modelUsed = analysis._model || "nvidia/nemotron-3-super-120b-a12b";
 
   return `<!DOCTYPE html>
 <html lang="zh-TW">
@@ -322,7 +364,7 @@ function generateHtml(analysis) {
       <div class="header-meta">
         <span class="badge badge-date">\uD83D\uDCC5 ${dateDisplay}</span>
         <span class="badge badge-count">\uD83D\uDCCA ${totalCount} 篇文獻</span>
-        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
       </div>
     </div>
   </header>
@@ -359,7 +401,7 @@ function generateHtml(analysis) {
   </div>
 
   <footer>
-    <span>資料來源：PubMed &middot; 分析模型：GLM-5-Turbo</span>
+    <span>資料來源：PubMed &middot; 分析模型：${modelUsed}</span>
     <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
   </footer>
 </div>
@@ -369,9 +411,9 @@ function generateHtml(analysis) {
 
 async function main() {
   const opts = parseArgs();
-  const apiKey = process.env.ZHIPU_API_KEY;
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!apiKey) {
-    console.error("[ERROR] ZHIPU_API_KEY env var is required");
+    console.error("[ERROR] NVIDIA_API_KEY env var is required");
     process.exit(1);
   }
   if (!opts.input || !opts.output) {
