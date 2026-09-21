@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-22",
+  "count": 5,
+  "papers": [
+    {
+      "pmid": "42764124",
+      "title": "A Novel L932F mutation in the Voltage-Gated Sodium Channel associated with Deltamethrin Resistance in Aedes aegypti (Diptera: Culicidae) from Southern Taiwan.",
+      "journal": "Acta tropica",
+      "date": "2026 Sep 20",
+      "abstract": "Aedes aegypti is a primary vector for major arboviruses such as dengue, Zika, and chikungunya, imposes a significant disease burden in tropical and subtropical regions. The widespread application of pyrethroid insecticides for vector control has led to the global dissemination of knockdown resistance (kdr) mutations, a major resistance mechanism. Continuous surveillance of kdr mutations is therefore essential to inform and optimize vector control strategies. To characterize the kdr profile, we first employed targeted capture sequencing on 12 individual mosquitoes from three field-derived strains collected in Taiwan in 2021. Subsequently, direct Sanger sequencing was performed on 99 mosquitoes field-collected in 2024. Furthermore, topical bioassay using a series of deltamethrin concentrations were conducted on 200 mosquitoes, followed by direct sequencing to link resistance phenotypes to specific genotypes. A characterized insecticide-susceptible strain (KHSM) served as a control. We identified a novel leucine to phenylalanine substitution at position 932 (L932F) in the voltage-gated sodium channel (VGSC) of Aedes aegypti in Taiwan. The emerging mutant was initially detected in a strain carrying the double kdr genotype (S989P and V1016G) and was subsequently detected in field population across Southern Taiwan, with its presence confirmed in archived samples dating from 2020-2022. The mutation was crucially associated with reduced susceptibility to deltamethrin in topical bioassays. This study provides the first report of the L932F kdr mutation in Ae. aegypti, indicating the emergence of a novel mutation in Taiwanese populations. Furthermore, the L932F mutation may contribute to reduced deltamethrin susceptibility, even in triple-mutant individuals co-harboring the well-established S989P and V1016G resistance alleles.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42764124/",
+      "keywords": []
+    },
+    {
+      "pmid": "42765330",
+      "title": "Dual-Targeted Biomimetic MoSe2 Nanozymes for Enhancing Peri-Implant Soft Tissue Integration.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026 Sep 21",
+      "abstract": "Peri-implant diseases (PID) remain major threats to titanium implant longevity, largely due to insufficient soft tissue integration (STI), which weakens the biological seal and promotes a pathogenic-immunological amplification loop involving early Staphylococcus aureus colonization and oxidative stress-induced macrophage dysfunction. Here, we developed a dual-targeting biomimetic nanozyme platform by camouflaging molybdenum diselenide (MoSe2) nanoflowers with membranes derived from S. aureus-pre-stimulated macrophages (SPMM). This biomimetic design couples S. aureus-targeting of SPMM with the photothermal activity of MoSe2 to achieve targeted contact-enhanced bacterial eradication, while integrating macrophage-targeting of SPMM with reactive oxygen species (ROS)-scavenging activity of MoSe2 to alleviate oxidative stress in macrophages. By disrupting the pathogenic-immunological amplification loop, MoSe2@SPMM reshaped a pro-regenerative peri-implant immune microenvironment. In a rat implantation model, near-infrared (NIR)-triggered MoSe2@SPMM suppressed bacterial colonization, promoted macrophage reprogramming, and preserved endothelial and fibroblast functions, thereby enhancing angiogenesis, matrix remodeling, connective tissue attachment, and integrin-mediated tissue-implant adhesion. This biomimetic nanozyme strategy provides a rational framework for coordinating pathogen control and immune regulation to promote peri-implant STI.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42765330/",
+      "keywords": []
+    },
+    {
+      "pmid": "42764682",
+      "title": "Dyadic coping, dyadic coping-based gratitude (DC-G) and perceived stress in patients with diabetes mellitus and their healthy partners in Pakistan: Actor-partner interdependence mediational analysis.",
+      "journal": "Journal of health psychology",
+      "date": "2026 Sep 20",
+      "abstract": "Recent approaches toward chronic illness adaptation demonstrate that illness-related stress deteriorates patients' and their partners' mental health and adversely impacts relationship functioning. Drawing on the Systemic Transactional Model, dyadic coping (DC) refers to the support one provides to a stressed partner (DC-self) and support perceived from a partner (DCpartner). Dyadic coping-based gratitude (DC-G) captures thankfulness expressed upon receiving emotional or practical support at self and partner levels. This study tested direct and indirect effects of DC on illness stress through DC-G among 81 Pakistani couples with one diabetic partner. Using Actor-Partner Interdependence Mediation Model (APIMeM), findings revealed that DC significantly and negatively predicted illness stress at actor and partner levels. DC-Gself significantly mediated the DC-self and illness stress relationship, whereas DC-G-partner did not. Findings underscore the relational nature of chronic illness stress adaptation and highlight gratitude-focused couple interventions for mitigating illness-related stress in Pakistani cultural context.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42764682/",
+      "keywords": []
+    },
+    {
+      "pmid": "42765430",
+      "title": "Reciprocal teacher-student transmissions: Linking teachers' emotions with students' emotions and relationship quality.",
+      "journal": "The British journal of educational psychology",
+      "date": "2026 Sep 21",
+      "abstract": "BACKGROUND: Reciprocal emotional transmissions between teachers and students have recently gained more research interest. Teacher-student relationship (TSR) quality is proposed to play an important role, but this transmission pathway lacks empirical evidence. Further, existing studies on this subject tend to focus on positive emotions, while associations of negative emotions are mostly observed within cross-sectional designs. AIMS: This study aims to investigate TSR quality as a transmission factor between teachers' and students' positive and negative emotions. We assume this to be a reciprocal process. Our sample consisted of n&#x2009;=&#x2009;1638 students (Mage&#x2009;=&#x2009;13.95, SD&#x2009;=&#x2009;0.86) and n&#x2009;=&#x2009;118 German and mathematics teachers (Mage&#x2009;=&#x2009;45.29, SD&#x2009;=&#x2009;10.68) from n&#x2009;=&#x2009;86 public secondary school classes in Brandenburg and Mecklenburg-Western Pomerania, Germany. METHODS: Longitudinal questionnaire data were gathered in three waves. The present analyses investigated whether teacher-reported relationship quality between the teacher and the class explained the effects of teacher-reported enjoyment of teaching and teachers' anxiety on students' enjoyment and anxiety in class across two subject domains. RESULTS: In mathematics, TSR at T1 was significantly related to teacher emotions at T2, and student emotions at T2 were significantly related to TSR at T3. In German, teacher emotions at T2 were significantly related to TSR at T3. A direct relation between teacher anxiety at T1 and student anxiety at T2 emerged. CONCLUSION: In our study, we could observe transmission effects, although the pathways differed more than anticipated. Further research incorporating contextual factors like school subject is needed.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42765430/",
+      "keywords": []
+    },
+    {
+      "pmid": "42764461",
+      "title": "School-Based Social Relationships and Adolescent Mental Health: A Multilevel and LASSO-Based Analysis.",
+      "journal": "The Journal of school health",
+      "date": "2026 Oct",
+      "abstract": "BACKGROUND: This study examined associations between school-based social relationship quality (school belonging, peer support, teacher-student interaction) and mental health outcomes among high school students in Iran, identifying protective and risk factors for depression, anxiety, and stress. METHODS: A cross-sectional survey was conducted in 2024 among 1200 students from 32 public and private high schools in Tehran-Iran. Standardized measures were used to assess school belonging, perceived peer support from friends, teacher-student relationship quality, and symptoms of depression, anxiety, and stress. Data were analyzed in R using multilevel mixed-effects models, quantile regression (50th and 90th percentiles), and LASSO-based variable selection (glmnet). RESULTS: Higher school-based relationship quality was associated with lower depression, anxiety, and stress. Effects were stronger in public schools than private schools: Depression &#x3b2;&#x2009;=&#x2009;-1.727 versus -0.966; Anxiety &#x3b2;&#x2009;=&#x2009;-1.513 versus -0.819; Stress &#x3b2;&#x2009;=&#x2009;-1.601 versus -0.868. Academic stress was the strongest risk factor (&#x3b2;&#x2009;&#x2248;&#x2009;+1.60), followed by social media use (&#x3b2;&#x2009;&#x2248;&#x2009;+0.33). Socioeconomic status (SES) showed protective effects (&#x3b2;&#x2009;&#x2248;&#x2009;-0.72-0.81). Gender and age were minor; quantile regression showed stability. IMPLICATIONS FOR SCHOOL HEALTH POLICY: Strengthening school belonging, peer support, and teacher-student relationships, reducing academic stress, and supporting low-SES students may improve mental health. CONCLUSION: School relationships are key protective factors, with stronger effects in public schools, supporting school-based interventions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42764461/",
+      "keywords": []
+    }
+  ]
+}
