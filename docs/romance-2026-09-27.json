@@ -1,0 +1,141 @@
+{
+  "date": "2026-09-27",
+  "count": 15,
+  "papers": [
+    {
+      "pmid": "42792491",
+      "title": "The Many Pathways to Personal Growth: Contemporary Perspectives and Future Directions.",
+      "journal": "Behavioral sciences (Basel, Switzerland)",
+      "date": "2026 Sep 20",
+      "abstract": "Although philosophers and psychologists have pondered for centuries on what it means to pursue personal development and to live a good life, psychological research on personal growth remains broad and diverse. This Editorial introduces a Special Issue comprising 25 contributions to Experiences and Well-Being in Personal Growth. These diverse perspectives conceptualize growth as an aspect of eudaimonic well-being, an intentional process of self-change, a response to adversity, or a process facilitated by relationships and broader contexts. Growth may emerge through coping with adversity or through engagement with life opportunities, and its likelihood and consequences depend on individual characteristics, close relationships, and wider social and cultural environments. The Editorial synthesizes recent developments in the field, with special attention paid to the central role of interpersonal relationships, highlighting contributions from this Special Issue to the broader discussion surrounding personal growth. Future research directions are identified, including the need to prioritize greater conceptual and measurement precision, stronger longitudinal and causal evidence, closer attention to individual and contextual variation, and consideration of how the growing use of conversational AI for support and guidance may reshape how personal growth is pursued, experienced, and understood.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42792491/",
+      "keywords": []
+    },
+    {
+      "pmid": "42791424",
+      "title": "Together and Apart: Dual Attachment Bonds to Cohabiting and Separated Partners Predict Relationship and Psychological Outcomes During COVID-19 Lockdowns.",
+      "journal": "Archives of sexual behavior",
+      "date": "2026 Sep 25",
+      "abstract": "During the COVID-19 pandemic, many people relied on romantic partners for support despite physical separation. This study expands the concept of a safe haven by examining how multi-partner attachment systems influenced intrapersonal (e.g., mental health) and interpersonal (e.g., relationship satisfaction, commitment) outcomes among people in at least two concurrent committed relationships during the COVID-19 pandemic. Specifically, 186 people practicing polyamory who were separated from one partner(s) and cohabiting with another partner(s) completed a survey during March to May of 2020. Analyses indicated that attachment anxiety and avoidance negatively predicted relationship satisfaction within each relationship with cohabiting and SPs. Attachment anxiety to both cohabiting and separated partners further predicted greater COVID distress. Attachment avoidance to a cohabiting partner negatively predicted COVID distress while attachment avoidance to a separated partner positively predicted COVID distress. One unique cross-relationship effect emerged: attachment anxiety to a separated partner predicted increased commitment to a cohabiting partner.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791424/",
+      "keywords": []
+    },
+    {
+      "pmid": "42791081",
+      "title": "Corrigendum to \"Towards the optimal performance of Mazinger, a shallow &#x3b3;-ray spectrometry system of high efficiency and very-low-level background, devoted to 210Pb and U-Th dating for paleoclimatic applications\" [Appl. Radiat. Isot. (229) 112419].",
+      "journal": "Applied radiation and isotopes : including data, instrumentation and methods for use in agriculture, industry and medicine",
+      "date": "2026 Sep 25",
+      "abstract": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791081/",
+      "keywords": []
+    },
+    {
+      "pmid": "42789716",
+      "title": "Pliny the Younger advances geochronology.",
+      "journal": "Science advances",
+      "date": "2026 Sep 25",
+      "abstract": "The eruption of Vesuvius volcano witnessed by Pliny the Younger in 79 CE is dated by the argon-40/argon-39 (40Ar/39Ar) method to 1938&#xa0;&#xb1;&#xa0;13 years (SD) before measurement in 2025 CE. Achievement of 0.7% precision and 0.4% accuracy at such a young age marks a precedent for 40Ar/39Ar dating and signals improved applicability of the method for constraining magma systems' evolution, including volcanic hazard assessment. Improvements in mass spectrometry, neutron irradiation strategy, and determination of interfering neutron-induced isotopes enable this result. The data serve to determine the decay constant for the radioactive decay of potassium-40 (40K) to 40Ar that is twice as precise as the value determined by disintegration counting, thus improving the accuracy of 40Ar/39Ar dating throughout geologic time, and serves as an important datum for intercalibrating 40Ar/39Ar with other dating methods.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789716/",
+      "keywords": []
+    },
+    {
+      "pmid": "42789239",
+      "title": "Misuse of the Term \"Romantic Love\".",
+      "journal": "Human nature (Hawthorne, N.Y.)",
+      "date": "2026 Sep 25",
+      "abstract": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789239/",
+      "keywords": []
+    },
+    {
+      "pmid": "42789000",
+      "title": "Exploring the Perspectives of Siblings of Autistic Adults With Distressing Behavior: Perceptions of Positive and Negative Impacts.",
+      "journal": "Journal of autism and developmental disorders",
+      "date": "2026 Sep 25",
+      "abstract": "PURPOSE: Siblings of individuals with disabilities, including autism, often plan to assume future caregiving roles. Yet, most extant research relies on convenience samples wherein the autistic brother/sister does not have distressing behaviors. In the limited research about siblings of individuals with distressing behaviors, siblings often report negative and distant sibling relationships. To discern the perceived effects of distressing behavior on siblings and its impact on future caregiving roles, it is critical to explore the perspectives of adult siblings of autistic individuals with distressing behaviors. METHODS: We conducted individual interviews with sixteen siblings of autistic adults with distressing behaviors. Using Trauma Exposure Theory and the Hidden Talents Framework, we explored their perspectives including positive, negative, and caregiving effects. RESULTS: There was a nuanced effect of having a sibling with distressing behavior with participants reporting some benefits (e.g., increased resilience) and some negative impacts (e.g., worse mental health). Further, participants reported effects on their life choices (e.g., decisions about dating, marriage, and family planning) that conflict with extant research. CONCLUSION: Implications for research and practice are discussed.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789000/",
+      "keywords": []
+    },
+    {
+      "pmid": "42797194",
+      "title": "3D Printing of Continuous-Fiber-Reinforced Composites: Advances in Multifunctional Integration and Intelligent Manufacturing.",
+      "journal": "Polymers",
+      "date": "2026 Sep 19",
+      "abstract": "Extrusion-based additive manufacturing has emerged as a transformative route for 3D-printed continuous-fiber-reinforced polymer composites (3DP-CFRPCs), offering unprecedented opportunities to engineer lightweight structures with programmable mechanical and multifunctional properties. However, existing studies largely treat constituent materials, printing processes, structural design, and functional integration as isolated research topics, limiting the development of robust design principles for intelligent composite systems. This review proposes an architecture-centric smart architecture framework that extends conventional material-process-structure-property relationships by explicitly incorporating reinforcement-path architecture, interface/defect evolution, multifunctional states, and cyber-physical feedback as coupled design and state variables. Within this framework, we critically synthesize the coupled roles of matrix rheology, fiber impregnation, interfacial bonding, and fiber trajectory engineering in determining printability, defect evolution, and mechanical performance. Recent advances in co-extrusion technologies, multi-axis printing, topology optimization, and programmable fiber placement are further discussed as enabling strategies for architected composite design. Particular emphasis is placed on defect-controlled reliability, multifunctional integration, and emerging AI-enabled digital twins that facilitate closed-loop process optimization and intelligent manufacturing. Finally, the remaining challenges regarding scalability, repeatability, and intelligent composite architectures are outlined to accelerate the transition from laboratory-scale demonstrations to industrial deployment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42797194/",
+      "keywords": []
+    },
+    {
+      "pmid": "42796615",
+      "title": "DFT Investigation of 4-Mercaptoimidazole-Copper(I/II) Redox Chemistry and C2-Substituent Effects: A Minimal Scaffold Study of Ovothiol-Type Redox Cycling.",
+      "journal": "Molecules (Basel, Switzerland)",
+      "date": "2026 Sep 19",
+      "abstract": "4-Mercaptoimidazole (4MC) is the minimal parent scaffold of the ovothiol family of redox-active mercaptohistidines. We present a DFT study of the tautomerism, copper coordination, redox chemistry, and electronic structure of 4MC and its C2-substituted derivatives in aqueous solution. Twelve parent species (neutral tautomers, anions, disulfides, and Cu(I)/Cu(II) complexes) were optimised at BP86/def2-SVP with single-point energies at BP86/def2-TZVP/IEFPCM(water). The thione tautomer (N3-H) and its anion dominate (&#x394;G=-2.56 kJmol-1 and -14.63 kJmol-1), leaving N1 free for copper coordination; the cis-(N3) Cu(II) isomer is the global minimum (81%). The disulfide/thiol and Boltzmann-weighted Cu(II)/Cu(I) reduction potentials are E&#x2218;=0.286 V and 0.828 V vs. SHE, giving a positive EMF of 0.542 V comparable to the natural ovothiols. An M06-2X functional benchmark quantifies the method contribution, raising the copper potential to 1.063 V and confirming that the residual offset to the ovothiol literature values reflects the minimal scaffold. Three C2 derivatives (CH3, Cl, NO2; &#x3c3;p from -0.17 to +0.78) show weak Hammett correlations for both redox couples, yet the EMF remains positive for all of them (0.302 to 0.738 V), indicating that C2 substitution tunes the thermodynamic coupling between the thiol-disulfide and copper centres without disrupting it. Electronic structure analysis (NBO, QTAIM) reveals polar covalent Cu-S bonding, spin delocalisation onto sulfur in Cu(II) complexes, and Cu-S dissociation with a switch to Cu-N coordination in the NO2 derivative. The core mercaptoimidazole scaffold thus retains the essential ovothiol redox chemistry, and C2 modification offers a genuine handle for modulating the driving force of the redox cycle.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42796615/",
+      "keywords": []
+    },
+    {
+      "pmid": "42796608",
+      "title": "Synergistic Sorption of Gallium(III) and Scandium(III) Ions by the Interpolymer System of Poly(Acrylic Acid)/Poly(4-vinylpyr-idine) Hydrogels: Kinetics, Selectivity, and Mechanism.",
+      "journal": "Molecules (Basel, Switzerland)",
+      "date": "2026 Sep 19",
+      "abstract": "Selective recovery of critical metals such as gallium and scandium from dilute, multicomponent process streams remains challenging due to their low concentrations and complex matrices. Here we investigate a remotely interacting intergel system based on crosslinked poly(acrylic acid) (hPAA) and poly(4-vinylpyridine) (hP4VP) hydrogels across seven mass ratios (6:0-0:6) for sorption of Ga(III) and Sc(III) from binary sulfate solutions. Inductively coupled plasma optical emission spectroscopy shows that mutual activation of the weak polyacid/polybase pair markedly enhances metal uptake, with maximum sorption degrees of 73.17% for Ga(III) at hPAA:hP4VP = 3:3 and 56.00% for Sc(III) at 2:4, corresponding to distribution coefficients up to 2726.7 mL g-1 and Ga/Sc selectivity factors &#x3b2; up to 6.41. Sorption is well described by Langmuir-type isotherms, and desorption with 2 wt.% HNO3 reveals an inverse sorption-release relationship, indicating stronger binding at compositions of maximal mutual activation. FTIR spectroscopy evidences inner-sphere complexation through bidentate carboxylate coordination in hPAA and M&#x2190;N dative bonding in hP4VP, while TGA/DSC shows that metal-loaded hydrogels retain their structural integrity up to approximately 320-340 &#xb0;C, with the onset of significant decomposition occurring at ~350 &#xb0;C for hP4VP-containing samples. The composition-dependent magnitude of Ga(III)-over-Sc(III) preferential uptake-with selectivity coefficients &#x3b2; = Kd(Ga)/Kd(Sc) remaining greater than 1 across all seven compositions studied-is rationalized using Hard-Soft Acid-Base considerations and demonstrates that hPAA:hP4VP intergels constitute a composition-tunable platform for enhancing Ga(III) recovery and partial Ga/Sc separation from simplified sulfate media, motivating future validation in real hydrometallurgical liquors and in the presence of competing multivalent cations.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42796608/",
+      "keywords": []
+    },
+    {
+      "pmid": "42790760",
+      "title": "Catalytic hydrogen bonds in alcalase-CI2A complexes revealed by ultra-high-resolution crystallography.",
+      "journal": "Journal of structural biology",
+      "date": "2026 Sep 25",
+      "abstract": "Serine proteases catalyze peptide-bond hydrolysis through a conserved catalytic triad and an extensive network of hydrogen bonds that facilitate proton transfer and stabilization of reaction intermediates. Despite decades of study, the nature of the hydrogen-bonding interactions within the catalytic machinery remains incompletely understood. Here, we report ultra-high-resolution crystal structures of alcalase, a subtilisin-family serine protease, in complex with native chymotrypsin inhibitor 2&#x202f;A (CI-2&#x202f;A) and with a low-affinity M59P inhibitor variant. The cryogenic structures were determined at 0.74&#x202f;&#xc5; resolution, while an additional 4&#x202f;&#xb0;C (277&#x202f;K) structure of the native complex was determined at 1.05&#x202f;&#xc5; resolution. The data allowed visualization and refinement of numerous hydrogen atoms within the active site and at the enzyme-inhibitor interface. Comparison of the 4&#x202f;&#xb0;C and cryogenic structures revealed a systematic shortening of hydrogen-bond donor-acceptor distances upon cooling, consistent with the global lattice contraction. A notable exception was the hydrogen bond between the catalytic residues Ser221 and His64, which remained unusually short at both temperatures. In the 4&#x202f;&#xb0;C structure, the corresponding hydrogen atom is associated with weak and diffuse electron density, suggesting increased proton mobility within this interaction. The structures further reveal temperature-dependent differences in interactions involving the scissile peptide bond of the inhibitor and the conserved backbone carbonyl oxygen of Ser125. These observations support a model in which Ser125 participates in a concerted hydrogen-bond network coupled to proton transfer within the catalytic triad. Together, the results provide atomic-level insights into hydrogen bonding, protonation equilibria, and catalytic mechanism in subtilisin-like serine proteases.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42790760/",
+      "keywords": []
+    },
+    {
+      "pmid": "42790366",
+      "title": "Aging-dependent cotransport of microplastics and plastic additives in soil: Contrasting vector roles, interfacial interactions, and remobilization risks.",
+      "journal": "Water research",
+      "date": "2026 Sep 23",
+      "abstract": "The coexistence of microplastics (MPs) and plastic additives in subsurface environments threatens groundwater quality, yet how aging influences their interactive transport remains poorly understood. This study systematically investigated the cotransport of two prevalent polymer types (polystyrene, PS; polyvinyl chloride, PVC) and typical additives (bisphenol A, BPA; diethyl phthalate, DEP). Mechanical-thermal coupled aging was applied to simulate landfill conditions. Column experiments revealed that transport behavior is critically governed by polymer identity and aging state. In contrast to pristine MPs, aged PS exhibited enhanced mobility (mass recovery of 90.3%) and functioned as a potent contaminant carrier, whereas aged PVC acted primarily as a retention sink, with its transport impeded by aging-induced surface roughness and physical straining. Sequential pulse experiments further demonstrated that, while stationary microplastics enhance additive retention, mobile microplastic colloids can trigger a distinct secondary elution of sequestered pollutants through competitive partitioning. Mechanistic probing via atomic force microscopy (AFM) coupled with DLVO theory showed that hydrophobic interactions effectively counteract long-range electrostatic repulsion, thereby promoting contaminant capture. Density functional theory (DFT) calculations elucidated the molecular-level driving forces, identifying &#x3c0;-&#x3c0; stacking and hydrogen bonding as key binding interactions. Collectively, these findings underscore that aging fundamentally redefines microplastics as dynamic vectors, substantially amplifying the vertical dispersion risk of co-existing organic contaminants in groundwater systems.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42790366/",
+      "keywords": []
+    },
+    {
+      "pmid": "42791010",
+      "title": "Making space for research: lessons from a research-practice partnership in adult social care.",
+      "journal": "Evidence &amp; policy : a journal of research, debate and practice",
+      "date": "2026 Sep 24",
+      "abstract": "BACKGROUND: Research-practice partnerships (RPPs) are increasingly recognised for their potential to build research capacity in adult social care (ASC), yet the mechanisms enabling or constraining their impact remain under-explored. This article reports on the SCRiPT study, a National Institute for Health and Care Research-funded RPP in England that utilised a Communities of Practice (CoP) approach. AIMS: To operationalise an RPP by establishing Research in Practice Teams (RiPTs) - comprising social care professionals, lived experience contributors and academics - and to evaluate the mobilisation of research learning and identify transferable lessons for embedding collaborative RPPs. METHODS: Using a convergent multi-method design across four RiPTs, the intervention included bespoke training and support for small-scale projects. Data from interviews, focus groups, observations and questionnaires were analysed using Normalisation Process Theory and informed by CoP principles. FINDINGS: RiPTs achieved strong organisational buy-in through senior leadership support and collaborative priority-setting. However, sustained engagement was hindered by systemic infrastructure gaps, operational pressures and complex governance. While lived experience contributions enhanced research relevance, RiPTs functioned more as traditional research teams than CoPs, highlighting tensions between collaborative ideals and organisational realities. CONCLUSIONS: RPPs can catalyse research engagement in ASC, but sustainability requires structural investment, protected time and context-relevant academic support. SCRiPT highlights that embedding RPPs in complex service environments depends on equitable collaboration, adaptability and multi-level organisational commitment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791010/",
+      "keywords": []
+    },
+    {
+      "pmid": "42789668",
+      "title": "How can complex interventions be adapted to context? A qualitative analysis of the implementation of DREAMS in three Kenyan settings.",
+      "journal": "PLOS global public health",
+      "date": "2026",
+      "abstract": "In Kenya, the DREAMS Partnership (\"Determined, Resilient, Empowered, AIDS-free, Mentored and Safe\") aims to reduce new HIV cases among adolescent girls and young women (AGYW; aged 10-24) through a comprehensive programme of interventions. The impact of DREAMS varies across settings but reasons for this are not well understood. One potential reason is the differential implementation of DREAMS interventions due to on-the-ground adaptations made by implementers. We sought to understand if, how, and why DREAMS delivery was adapted in three Kenyan settings, so that complex interventions like DREAMS can be tailored to diverse contexts and challenges.We analysed 40 transcripts from individual and group discussions with DREAMS implementing teams. Data were collected between 2017-2019 in rural Gem and two Nairobi informal settlements. Using both FRAME and CFIR frameworks, we identified programming and contextual challenges that affected implementation, local adaptations made in response to these realities and challenges, and the goals and reasoning for adaptation. Reasons for adapting DREAMS were similar across settings yet the type of adaptation varied by context. Adaptations were made to: 1) improve programme attendance; 2) tailor content to better suit AGYW, encourage programme attendance and address community concerns; 3) support participants' wellbeing, amidst poverty, hunger and violence; and 4) cope with insufficient programming resources. Given their close contact with participants and families, DREAMS mentors often developed unique context-specific strategies to make interventions more appealing and accessible to participants of different ages and circumstances. Understanding shared reasons for adaptation across settings can help anticipate challenges before implementation, and inform the co-design of interventions with communities. As context-specific issues inevitably arise during implementation, mentors can be instrumental in adapting DREAMS, serving as a bridge ",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789668/",
+      "keywords": []
+    },
+    {
+      "pmid": "42791122",
+      "title": "Backstepping actor-critic optimal control for full-pose tracking of tilt-rotor quadcopters.",
+      "journal": "ISA transactions",
+      "date": "2026 Sep 19",
+      "abstract": "Tilt-rotor quadcopters enable flight under non-zero attitudes, offering enhanced maneuverability for complex aerial tasks. However, despite their actuation redundancy, the translational and rotational dynamics remain partially coupled, posing challenges for accurate full-pose tracking. This paper proposes a backstepping actor-critic optimal control framework for an 8-input tilt-rotor quadcopter. A backstepping controller is developed to guarantee closed-loop stability, while a control strategy is designed to mitigate coupling effects and achieve effective decoupling between position and attitude. An actor-critic reinforcement learning mechanism is further incorporated to approximate the optimal control policy and improve tracking performance. Simulation and experimental results demonstrate accurate tracking, effective disturbance rejection, and robustness to parameter variations under non-zero attitude conditions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791122/",
+      "keywords": []
+    },
+    {
+      "pmid": "42791818",
+      "title": "Pet Nutrition and the Unmeasured Owner Outcome: A Bidirectional Framework for Relational Value in Human-Animal Relationships.",
+      "journal": "Animals : an open access journal from MDPI",
+      "date": "2026 Sep 20",
+      "abstract": "The emotional benefits of pet ownership depend critically on the pet's physical, behavioural, and cognitive health-all of which can be improved by targeted nutritional interventions that may reduce pain, anxiety, problem behaviours, and cognitive decline. However, almost no studies have tested whether nutrition-induced behavioural improvements translate into measurable gains in owner emotional well-being or relationship satisfaction. It is important to note that the evidence base for cats remains considerably more limited than that for dogs, and many conclusions drawn from canine studies should be extrapolated to cats with caution. Furthermore, the human-animal relationship is bidirectional: owner psychology and feeding practices feed back to affect pet health. This review synthesises evidence across veterinary medicine, nutritional science, and human- animal interaction research to support a central thesis: that the relational value of pet ownership may be a function of pet health, may be modifiable by targeted nutrition, and is hypothesized to be embedded in bidirectional feedback loops that require dyadic interventions. The review explicitly distinguishes between evidence-supported findings and the proposed conceptual framework. The field now requires dyadic randomised controlled trials with co-primary outcomes for both pet and owner, plus precision stratification, pragmatic effectiveness studies, mechanistic biomarkers, and one health approaches. Closing this translational gap requires a coordinated research effort focused on designing dyadic interventions that measurably improve the welfare of both pets and their owners.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42791818/",
+      "keywords": []
+    }
+  ]
+}
