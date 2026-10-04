@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Romance Relationship &middot; 浪漫關係研究日報 &middot; 2026年10月5日</title>
+<meta name="description" content="2026年10月5日 浪漫關係研究日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; animation: fadeUp 0.5s ease 0.4s both; }
+  .banner-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .banner-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .banner-icon { font-size: 28px; flex-shrink: 0; }
+  .banner-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .banner-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💑</div>
+    <div class="header-text">
+      <h1>Romance Relationship &middot; 浪漫關係研究日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年10月5日</span>
+        <span class="badge badge-count">📊 15 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於親密關係中的創傷經驗與治療干預，特別是親密伴侶暴力（IPV）對心理健康的影響及創傷知照護戶外健康教育的效能，顯示出將神經科學與社會心理學整合以提升關係干預實用性的趨勢。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🛡️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>創傷知照護女性健康教育計畫對親密伴侶暴力倖存者之效能評估：混合方法研究</h3>
+          <p class="journal-source">Violence and victims &middot; Development and Evaluation of a Trauma-Informed Women's Health Education Program for Intimate Partner Violence Survivors: A Mixed-Methods Study.</p>
+          <p>發現創傷知照護的健康教育顯著提升IPV倖存者對女性健康議題（如HPV、HIV、子宮頸癌）的認識，且醫師僅15%曾將IPV視為慢性病風險因子，凸显醫療系統介入缺口。</p>
+          <div class="card-footer">
+            <span class="tag">親密伴侶暴力</span><span class="tag">創傷知照護</span><span class="tag">婦女健康</span><span class="tag">社會心理學</span><span class="tag">壓力與健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42829211/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">💔</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>親密伴侶暴力暴露與廣東省臨床護士創傷後壓力症狀之關聯：透過心理韌性與情感耗竭的序列間接效應</h3>
+          <p class="journal-source">Medicine &middot; The association between intimate partner violence exposure and post-traumatic stress symptoms among clinical nurses in Guangdong province: Sequential indirect associations through psychological resilience and emotional exhaustion: a multicenter cross-sectional study.</p>
+          <p>IPV暴露與臨床護士PTSS呈強正相關（r=0.740），且此關聯透過降低心理韌性及增加情感耗竭進行間接影響，揭示雙重mediating路徑。</p>
+          <div class="card-footer">
+            <span class="tag">親密伴侶暴力</span><span class="tag">壓力與健康</span><span class="tag">情感調節</span><span class="tag">育兒與家庭</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826258/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">💬</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>利用自然語言處理預測酒精行為伴侶療法中的治癒與依附性：語言特徵為潛在預測因子</h3>
+          <p class="journal-source">Journal of substance use and addiction treatment &middot; Predicting treatment recovery and adherence in alcohol behavioral couple therapy using natural language processing.</p>
+          <p>伴侶使用較多集體代詞（如‘我們’）與正向酒精相關語句，能預測患者飲酒頻率與量的更大幅度下降，顯示伴侶語言模式為治療結果之關鍵調節因子。</p>
+          <div class="card-footer">
+            <span class="tag">伴侶治療</span><span class="tag">溝通模式</span><span class="tag">神經科學</span><span class="tag">物質使用</span><span class="tag">情感調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826816/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🌍</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>社區為基礎之計畫在南非非正式聚落降低親密伴侶暴力之人口層面效應：踏梯式 wedge 試驗</h3>
+          <p class="journal-source">Global public health &middot; Population-level effects of a community-based program on intimate partner violence: A stepped-wedge trial in South African informal settlements.</p>
+          <p>Asibonisane社區計畫透過十節課程與HIV/IPV教育，顯著降低女性情感（aOR=0.42）、性（aOR=0.27）與身體（aOR=0.70）IPV，證明結構性社區介入在高發區域具有可擴展預防效果。</p>
+          <div class="card-footer">
+            <span class="tag">約會暴力</span><span class="tag">社會心理學</span><span class="tag">壓力與健康</span><span class="tag">LGBTQ+關係</span><span class="tag">跨文化研究</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826221/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>神經科學視角：帕金遜與小腦失調症多系統萎縮中CCR2陽性髓樣細胞在血腦屏障功能障礙區域的積累</h3>
+          <p class="journal-source">Neuroscience letters &middot; Increased CCR2-immunopositive myeloid cells in the putamen and cerebellar white matter with blood-brain barrier disruption in multiple system atrophy.</p>
+          <p>MSA患者在殘疼核與小腦白質中CCR2陽性外周單核細胞顯著增加，且與纖維蛋白原洩漏共定位，提示外來免疫細胞經血腦屏障損傷進入中樞神經系統參與神經發炎。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">壓力與健康</span><span class="tag">荷爾蒙</span><span class="tag">情感調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42829174/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💭</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>浪漫愛的科學使用與概念範疇：對「浪漫愛」一詞之探討</h3>
+          <p class="journal-source">Human nature (Hawthorne, N.Y.)</p>
+          <p>探討『浪漫愛』在科學研究中的定義與使用方式，質疑其操作化與跨文化適用性，呼籲更精準的概念框架以避免研究混淆。</p>
+          <div class="card-footer">
+            <span class="tag">浪漫依附</span><span class="tag">演化心理學</span><span class="tag">哲學與科學史</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42828666/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>參與者在RIO試驗中停止抗逆轉錄病毒療法的體驗：英國的質性研究發現</h3>
+          <p class="journal-source">HIV research &amp; clinical practice</p>
+          <p>HIV患者在試驗性中斷藥物治療（ATI）期間經常規律中斷、親密關係受影響（減少親密與性快感），但亦報告解放感，顯示醫療決策對關係動態之深遠影響。</p>
+          <div class="card-footer">
+            <span class="tag">壓力與健康</span><span class="tag">約會暴力</span><span class="tag">性行為與親密</span><span class="tag">HIV/AIDS</span><span class="tag">伴侶治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826224/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>神經保護型黃花堇Sesquiterpenoids經由MAPK訊號通路抑制谷氨酸誘導之氧化應激</h3>
+          <p class="journal-source">Journal of ethnopharmacology</p>
+          <p>從黃花堇屬植物分離之黃花堇Sesquiterpenoids能減少神經細胞氧化壓力與凋亡，其機制涉及MAPK通路調節，支持其神經保護潛力，雖尚未直接關聯親密行為。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">荷爾蒙</span><span class="tag">民族藥物學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826807/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🪲</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>參數我的蛋白沉默 compromises 肌肉完整性並改變棉鈴夜蛾中的系統性海藻糖代謝</h3>
+          <p class="journal-source">Insect molecular biology</p>
+          <p>參數我的蛋白（HaPrm）沉默導致昆蟲肌肉結構損壞、發育延遲，並破壞海藻糖代謝與胰島素-mTOR訊號，顯示肌肉與能量穩態之緊密耦合，但與人類親密關係無關聯。</p>
+          <div class="card-footer">
+            <span class="tag">演化心理學</span><span class="tag">神經科學</span><span class="tag">昆蟲生理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42827270/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👨‍👩‍👧‍👦</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>兒童神經發展障礙者父母之親養經驗與家庭動態：橫斷面研究</h3>
+          <p class="journal-source">Journal of autism and developmental disorders</p>
+          <p>NDD兒童父母的親養壓力與家庭功能失調、親養風格及家庭環境顯著負相關，而親養效能感僅在控制家庭變數後成為壓力之正向預測因子，凸显系統性支援之重要性。</p>
+          <div class="card-footer">
+            <span class="tag">育兒與家庭</span><span class="tag">壓力與健康</span><span class="tag">依戀理論</span><span class="tag">家庭系統</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42828588/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>化學鄰近性主導開放世界紅外線微塑識別之雙證據校準</h3>
+          <p class="journal-source">Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy</p>
+          <p>開發SPARC-FTIR方法透過主成分與校準距離閘，提高HDPE/PP在複雜環境中的識別準確度，雖具技術創新，但與親密關係研究無直接關聯。</p>
+          <div class="card-footer">
+            <span class="tag">環境科學</span><span class="tag">分析化學</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42826664/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎨</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>約1900年精神病院住院者之藝術自我表象：『家』的意義探索</h3>
+          <p class="journal-source">Der Nervenarzt</p>
+          <p>透過海德堡Prinzhorn館藏分析，約1900年被邊緣化的精神病患者經由藝術表達對『家』的歸屬感，顯示其依賴記憶、風景或 institucional 空間之尋求，反映制度化對情感歸屬之影響。</p>
+          <div class="card-footer">
+            <span class="tag">依戀理論</span><span class="tag">藝術治療</span><span class="tag">精神病史</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42825953/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🛡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>超彈性導電氣膠經低溫乳化離析-induced 凝膠化與凝膠限定凍鑄，應用於無線步態監測</h3>
+          <p class="journal-source">Small (Weinheim an der Bergstrasse, Germany)</p>
+          <p>開發具有99.1%彈性回復的CNTs/WPU氣膠，成功製作可穿戴步態壓力感測陣列，展示其在人類運動監測與柔性電子中的應用潛力，但與親密關係無關。</p>
+          <div class="card-footer">
+            <span class="tag">材料科學</span><span class="tag">穿戴式技術</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42829865/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔋</span>
+            <span class="utility-low utility-sm">low</span>
+          </div>
+          <h3>穩定水分子於水凝膠電解質中使純水鋅-鋰混合電池達到2.8V等級</h3>
+          <p class="journal-source">Advanced materials (Deerfield Beach, Fla.)</p>
+          <p>透過極端水分子限制策略，使水凝膠電解質中的氧析電位提升至2.85V vs Zn/Zn²⁺，實現高電壓純水鋅電池，並成功驅動多功能無線感測系統，但與親密關係研究無直接關聯。</p>
+          <div class="card-footer">
+            <span class="tag">能源科學</span><span class="tag">電化學</span><span class="tag">穿戴式技術</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42829793/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👵</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>長者虐待五十年研究回顧：我們對風險、評估、預防與治療學到了什麼？</h3>
+          <p class="journal-source">Journal of elder abuse &amp; neglect</p>
+          <p>回顧半世紀長者虐待研究，指出雖風險因子與理論模型已豐富，但有效介入仍缺，建議參考兒童虐待與親密伴侶暴力之風險評估方法以改進長者保護實務。</p>
+          <div class="card-footer">
+            <span class="tag">壓力與健康</span><span class="tag">家庭暴力</span><span class="tag">社會心理學</span><span class="tag">育兒與家庭</span><span class="tag">道德與倫理</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42828443/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">親密伴侶暴力</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">壓力與健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">創傷知照護</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">情感調節</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">社會心理學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">育兒與家庭</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">親密伴侶暴力</span><span class="keyword">創傷知照護</span><span class="keyword">心理韌性</span><span class="keyword">伴侶治療</span><span class="keyword">自然語言處理</span><span class="keyword">社區介入</span><span class="keyword">神經發炎</span><span class="keyword">壓力與健康</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">🏥</span>
+      <span class="banner-name">李政洋身心診所首頁</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">📜</span>
+      <span class="banner-name">訂閱電子報</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="banner-link" target="_blank">
+      <span class="banner-icon">☕</span>
+      <span class="banner-name">Buy Me a Coffee</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
