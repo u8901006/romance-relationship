@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-13",
+  "count": 10,
+  "papers": [
+    {
+      "pmid": "42861886",
+      "title": "Dating Violence in Adolescence: An Exploratory Study on Personality Traits, Legitimizing Attitudes and Prevalence.",
+      "journal": "Journal of interpersonal violence",
+      "date": "2026 Oct 12",
+      "abstract": "Dating violence is recognized as a global priority for research and intervention. Although legitimizing attitudes toward dating violence and personality traits are considered risk factors, their joint contribution to adolescent dating violence remains limited. This study aimed to characterize the prevalence of dating violence among adolescents and its associations with legitimizing attitudes, neuroticism and agreeableness. The study included 410 Portuguese adolescents aged 14 to 19&#x2009;years (M&#x2009;=&#x2009;17.18, SD&#x2009;=&#x2009;1.39). Participants completed a sociodemographic questionnaire, the Conflict in Adolescent Dating Relationships Inventory-Short Form, the Attitudes Toward Dating Violence Scale and the Mini International Personality Item Pool. Results showed that 57.3% of adolescent reported perpetrating at least one form of dating violence and 58.9% reported victimization, with verbal/emotional violence being the most prevalent subtype. No significant gender, developmental stage, or interaction effects was found for overall dating violence perpetration and victimization. However, significant main effects of gender and developmental stage, as well as significant gender&#x2009;&#xd7;&#x2009;developmental stage interactions, were observed for legitimizing attitudes toward psychological and physical dating violence. Boys reported higher legitimizing attitudes than girls during middle adolescence, whereas no gender differences were observed during late adolescence. Moreover, only boys showed a significant decline in legitimizing attitudes from middle to late adolescence. Perpetration and victimization were positively associated. Neuroticism and agreeableness were associated with perpetration, but only neuroticism was associated with victimization. Legitimizing attitudes explained additional variance beyond traits. These findings support prevention programs targeting violence-supportive beliefs during adolescence and inform future research on the interp",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861886/",
+      "keywords": []
+    },
+    {
+      "pmid": "42861193",
+      "title": "Posterior simulation-based calibration tests of phylogenetic dating methods.",
+      "journal": "PeerJ",
+      "date": "2026",
+      "abstract": "Simulation-based calibration (SBC) checking is a method to ensure that the inference machinery for a Bayesian statistical analysis is functioning in a correct and unbiased manner. Typically, SBC begins with sampling parameter values from the model priors (prior SBC). However, it has been shown that prior SBC can miss problems when these manifest only in certain regions of parameter space. In phylogenetics, this is relevant not only because of the vastness of tree and parameter space, but also because many phylogenetic analyses involve some degree of model misspecification. Posterior SBC is a recently developed method for checking that the inference algorithms function correctly for a given empirical dataset. Here I use posterior SBC to test the implementation of phylogenetic dating methods in the inference software BEAST 2. I test both the tip-dated approach, employing an Indo-European vocabulary dataset, and the node-dated approach, employing a molecular rRNA dataset of Tabanidae (horseflies). In both cases, posterior SBC tests indicate good calibration. Despite this, posterior predictive datasets simulated from the posterior distribution provided no further increase in the precision of node age estimates compared to the original posterior, a result consistent with previous literature showing fundamental theoretical limits to the identifiability of node ages. Nevertheless, these results suggest that phylogenetic dating methods in BEAST 2 are not biased by problems with the inference machinery, thereby increasing confidence in results obtained using these methods.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861193/",
+      "keywords": []
+    },
+    {
+      "pmid": "42860653",
+      "title": "Looking for Love in the Age of AI: When Algorithms Enter the Dating Scene.",
+      "journal": "Cyberpsychology, behavior and social networking",
+      "date": "2026 Oct 11",
+      "abstract": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42860653/",
+      "keywords": []
+    },
+    {
+      "pmid": "42860128",
+      "title": "Exploring the sexual risk-taking practices of bi+ femmes: a two-wave qualitative study.",
+      "journal": "Sexual health",
+      "date": "2026 Oct 20",
+      "abstract": "BACKGROUND: Bi+ femmes are individuals who identify as women or femmes and are attracted to more than one gender. Despite evidence that bisexual women face higher risks of unintended pregnancy, STIs, sexual violence, and mental health challenges, they are underrepresented in sexual health research.&#xa0; Little is known about how partner gender, relationship context, and partner-meeting venues shape their sexual risk-taking. METHODS: We conducted a two-wave qualitative study with 15 bi+ femme participants aged 18-35 years. Participants completed a sexual agency scale and two in-depth interviews, 1 month apart, using the timeline follow-back method to document recent sexual experiences. Data were analyzed using framework analysis. RESULTS: Participants demonstrated high sexual agency (M&#xa0;=&#xa0;127.9/150) but described variability in practice. Three themes emerged: (1) 'Varied approaches to risk assessment by partner gender identity' where participants reported fewer protective behaviors and greater trust with women and non-cis male partners, while past trauma with men shaped cautious engagement with male partners; (2) 'Varied approaches to risk assessment by partner relationship' where protection was more common with casual partners and less consistent in long-term relationships; and (3) 'Evolving sexual risk awareness and intentionality' where participants described greater intentionality, communication, and boundary-setting over the course of the study. Participants did not describe that meeting venues (online vs offline) impacted risk behaviors. CONCLUSIONS: Findings underscore bi+ femme-specific patterns of sexual risk assessment, highlighting the need for more inclusive sexual health research and interventions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42860128/",
+      "keywords": []
+    },
+    {
+      "pmid": "42860090",
+      "title": "Linkage-polarized covalent organic frameworks couple antibiotic capture with triplet-sensitized singlet-oxygen oxidation.",
+      "journal": "Water research",
+      "date": "2026 Oct 06",
+      "abstract": "Integrating antibiotic adsorption with photosensitized singlet oxygen (1O2) generation offers a promising approach to antibiotic removal from water. Linkage polarization was introduced into two topologically analogous covalent organic frameworks (COFs), coupling sulfadiazine (SDZ) capture with triplet-sensitized singlet oxygen generation. The repeating-unit dipole rose from 0.82 D in imine-linked TAT-Tca to 3.06 D in &#x3b2;-ketoenamine-linked TAT-Tp. In separate dark-adsorption experiments, TAT-Tp adsorbed approximately 30% of SDZ after 120&#x202f;min, compared with 4% for TAT-Tca. Experimental and DFT computational evidence supported contributions from improved aqueous wettability and favorable hydrogen-bonding and aromatic interactions. Following 30&#x202f;min of dark pretreatment, visible-light irradiation for 120&#x202f;min resulted in total SDZ removal of approximately 95% for TAT-Tp, compared with 35% for TAT-Tca. Femtosecond transient absorption spectroscopy registered a fourfold extension of the excited-state absorption lifetime (143.12 versus 35.60&#x202f;ps) and ground-state bleach recovery averaging 1588.70&#x202f;ps for TAT-Tp. Delayed emission, quenching experiments, SOSG, and TEMP-EPR assigned the predominant oxidation route to triplet-mediated 1O2. TD-DFT calculations revealed stronger intraframework charge-transfer character and a smaller &#x394;Est for TAT-Tp. Together, the results show that &#x3b2;-ketoenamine formation combines enhanced SDZ retention with a more pronounced triplet-mediated 1O2 sensitization pathway, supporting a capture-coupled strategy for antibiotic treatment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42860090/",
+      "keywords": []
+    },
+    {
+      "pmid": "41342869",
+      "title": "The Hidden Costs of Gratitude: Gratitude Amplification Is Costly for Personal and Relationship Well-Being.",
+      "journal": "Personality &amp; social psychology bulletin",
+      "date": "2026 Nov",
+      "abstract": "Expressing gratitude often strengthens relationships, yet many people say \"thank you\" despite not feeling especially grateful. Although this may seem innocuous, are there hidden costs? We tested the effects of expressed, perceived, and accurate perceptions of gratitude amplification on romantic couples' personal and relational well-being across four dyadic studies (Ncouples = 639), including lab conversations (Studies 1a and 2a), naturalistically in daily life (Studies 1b and 2b), and over time (Studies 3 and 4). Findings indicated that higher expressed and perceived gratitude amplification did yield personal and interpersonal costs, which were mediated by lower authenticity and responsiveness. Effects could not be accounted for by alternative explanations, including expressers feeling lower relationship satisfaction or less grateful for their partner. Altogether, we identify a hidden cost of gratitude expressions, indicating that amplified gratitude can undermine couples' well-being by compromising authenticity and responsiveness.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41342869/",
+      "keywords": []
+    },
+    {
+      "pmid": "41178421",
+      "title": "I Get Knocked Down but I Get Up Again: Autonomous Motivation Sustains Identification and Collective Action After (Specific) Failure.",
+      "journal": "Personality &amp; social psychology bulletin",
+      "date": "2026 Nov",
+      "abstract": "Movements often experience setbacks while striving to achieve (or prevent) social change. We examined whether autonomous motivation-which captures supporters' internalized commitment to a cause-would sustain identification with the movement and collective action after experiencing failure (vs. success) outcomes following the marriage equality vote in Australia (Study 1; N = 186), and an experimental induction of movement failure (Study 2; N = 137). Autonomous motivation positively predicted identification and collective action, but there was no evidence of moderation by outcome. In Study 3 (N = 377), we experimentally manipulated outcomes (success/failure) and framing (specific/broad) of the climate action movement. We found evidence of a three-way interaction such that the effects of autonomous motivation on identification were strongest after a specific campaign failure. We conclude that autonomous motivation can help to buffer the demotivating effects of a specific failure as well as sustaining identification and commitment to action broadly.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41178421/",
+      "keywords": []
+    },
+    {
+      "pmid": "41306091",
+      "title": "Actor Power and Perceived Partner Power Differentially Relate to Sexual Behavior and Motivations.",
+      "journal": "Personality &amp; social psychology bulletin",
+      "date": "2026 Nov",
+      "abstract": "Assertively pursuing sexual needs versus complying or accommodating to partner's sexual desires has considerable implications. We apply and integrate general theories of power to identify how people's own power (actor power) and perceptions of their partner's power (perceived partner power) differentially relate to sexual behaviors and motivations in woman-man relationships. Across three studies (total N = 995), actors' power predicted sexual approach-inhibition: actors higher in power reported more comfort initiating and refusing sex, more assertive sexual communication, and less sexual compliance. By contrast, perceived partner power predicted sexual accommodation-neglect: when partners were perceived to be higher in power, actors expressed greater willingness to compromise and sexual communal strength, and greater understanding when partners rejected sex. These distinct effects were not magnified by asymmetries in perceived power, nor did they differ across gender. Facilitating actor and partner power in intimate relationships should reduce rather than amplify harmful sexual behavior.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41306091/",
+      "keywords": []
+    },
+    {
+      "pmid": "41166739",
+      "title": "Intimacy in Later Life: How Self- and Partner Health Shape Sexual Behavior and Satisfaction in Adults 50.",
+      "journal": "Journal of applied gerontology : the official journal of the Southern Gerontological Society",
+      "date": "2026 Nov",
+      "abstract": "Sexuality remains central to well-being in later life, yet how individual factors operate within dyadic health contexts is unclear. We examined whether age, gender, and attitudes toward sexuality (ASKAS) predict sexual behavior and sexual satisfaction and whether self-rated health (SRH) and perceived partner health (PPH) moderate these links. Cross-sectional Structural Equation Modeling (SEM) was conducted with 185 adults aged 50-90 years. Outcomes were two latent variables: Sexual Behavior (intimate activity, sexual talk, vaginal sex, or oral sex) and Sexual Satisfaction (physical and emotional pleasure). Age and gender predicted lower behavior and satisfaction; attitudes showed no direct effects. Moderation tests showed that better SRH buffered the negative associations of age and gender with sexual satisfaction and that higher PPH reduced gender differences in sexual behavior. The health of both partners shapes sexual outcomes in later life. Clinically, supporting vitality and addressing partner health may help mitigate age- and gender-linked disparities in sexual well-being.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41166739/",
+      "keywords": []
+    },
+    {
+      "pmid": "42861027",
+      "title": "Family-related Factors Associated With Readmission Among Children and Adolescents With Psychiatric Disorders.",
+      "journal": "Indian journal of psychological medicine",
+      "date": "2026 Oct 10",
+      "abstract": "BACKGROUND: Psychiatric readmission among children and adolescents is a major concern in mental health services and is influenced by clinical, familial, and demographic factors. However, the contribution of family-related variables remains insufficiently understood, particularly in non-Western contexts. METHODS: This cross-sectional study included 78 children and adolescents with psychiatric disorders and their primary caregivers. We collected data using standardized questionnaires assessing caregiver burden, parenting styles, and parent-child relationship quality, along with demographic and clinical variables. We used Poisson regression to identify predictors of psychiatric readmission. RESULTS: Family-related variables were significantly associated with psychiatric readmission. Higher caregiver burden, particularly emotional burden, was associated with increased readmission risk. Authoritarian parenting and greater parent-child conflict were also linked to higher readmission, whereas emotional closeness and permissive parenting showed protective associations. Contrary to conventional expectations, authoritative parenting was not significantly associated with readmission in the final model. Most demographic variables were also not significantly associated with readmission. CONCLUSIONS: Psychiatric readmission among children and adolescents appears to be strongly influenced by family emotional functioning. Notably, permissive parenting was associated with lower readmission risk, whereas authoritative parenting was not significantly associated with outcomes. These findings underscore the need for family-centered and culturally informed approaches in child and adolescent mental health care.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861027/",
+      "keywords": []
+    }
+  ]
+}
