@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Romance Relationship &middot; 浪漫關係研究日報 &middot; 2026年10月28日</title>
+<meta name="description" content="2026年10月28日 浪漫關係研究日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .links-banner { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; animation: fadeUp 0.5s ease 0.4s both; }
+  .banner-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .banner-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .banner-icon { font-size: 28px; flex-shrink: 0; }
+  .banner-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .banner-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">💑</div>
+    <div class="header-text">
+      <h1>Romance Relationship &middot; 浪漫關係研究日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年10月28日</span>
+        <span class="badge badge-count">📊 39 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻亮點在於深度剖析浪漫關係的核心驅動機制：EFT 理論的實證比較顯示「被重視感」超越依附成為滿意度首要預測因；新婚縱向研究發現權力感能雙向預測對抗行為下降；衝突記憶的情感調節策略對雙方關係品質有跨伙伴影響；高潮一致性與差異對性滿意度、關係滿意度及情感親密的性別差異效應；以及線上約會暴力的系統性分類與干預呼籲。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🏆</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>「被重視感」超越依附：EFT 兩大理模型的實證大比拚——誰才是伴侶滿意度的關鍵？</h3>
+          <p class="journal-source">Family Process &middot; The Great EFT Schism: Testing Johnson's and Greenberg's Alternative Models of What Drives Couple Satisfaction</p>
+          <p>全國代表性樣本 (N=545 對伴侶) 顯示：單純依附模型解釋 47% 變異，納入「吸引」與「被重視感」後飆升至 70.5%；被伴侶重視感獨佔解釋變異的 41.3%，挑戰依附首位假說，支持多重動機模型。</p>
+          <div class="card-footer">
+            <span class="tag">關係滿意度</span><span class="tag">情感聚焦治療</span><span class="tag">依戀理論</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42935019/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">📉</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>新婚兩年追蹤：覺得有話語權，雙方對抗行為才會自然減少</h3>
+          <p class="journal-source">Journal of Family Psychology &middot; Power predicts declines in oppositional behavior over time in newlyweds</p>
+          <p>2 年縱向追蹤新婚夫妻發現：個體感知權力可預測自己與伴侶對抗行為（指責、被動攻擊）雙雙下降，但對抗行為無法預測權力變化，支持權力抑制對抗的理論。</p>
+          <div class="card-footer">
+            <span class="tag">伴侶衝突</span><span class="tag">婚姻與家庭</span><span class="tag">權力動態</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42932809/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>怎麼「回想」吵架比吵架本身更重要：衝突記憶的情感調節預測雙方關係品質</h3>
+          <p class="journal-source">Journal of Family Psychology &middot; Emotion regulation in couples' conflict memories: A dyadic examination of relationship quality</p>
+          <p>109 對伴侶研究發現：回憶衝突時採「整合式調節」（接納、賦予意義）預測自我關係品質較好；採「失調式調節」（情緒淹沒）則預測雙方關係品質較差，效果超越平時調節習慣與衝突激烈度。</p>
+          <div class="card-footer">
+            <span class="tag">情感調節</span><span class="tag">伴侶衝突</span><span class="tag">關係滿意度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42932810/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🔥</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>高潮一致性 vs. 差異：誰贏誰輸？327 對異性伴侶的曲面分析揭示性別迥異劇本</h3>
+          <p class="journal-source">Journal of Sex Research &middot; More Than Just a Happy Ending? The Role of Orgasm Consistency for Sexual Satisfaction, Relationship Satisfaction, and Emotional Intimacy in Mixed-Gender Romantic Relationships</p>
+          <p>雙邊回應曲面分析顯示：高潮一致性越高，男性性/關係滿意度越高，女性情感親密越高；反直覺地，高潮差異越大者關係滿意度反而較高，提示性別劇本塑造「差異非成本」認知。</p>
+          <div class="card-footer">
+            <span class="tag">性行為與親密</span><span class="tag">關係滿意度</span><span class="tag">性別差異</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42932261/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🛡️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>線上約會暴力全景圖：42 種暴力形式、雙軸分類與平台治理急先鋒</h3>
+          <p class="journal-source">Trauma, Violence, & Abuse &middot; From Match to Menace: A Systematic Literature Review of Violence Across Online Dating Platforms</p>
+          <p>系統回顧 35 篇文獻識別 42 種暴力形式，以「傳遞方式」（訊息最多、線上轉線下次之）與「傷害類型」（性暴力、心理傷害居首）雙軸分類，揭露暴力常態化並呼籲平台與政策介入。</p>
+          <div class="card-footer">
+            <span class="tag">約會暴力</span><span class="tag">網路約會</span><span class="tag">系統性回顧</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42922106/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#6</span>
+            <span class="emoji-icon">🍷</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>酒精與親密伴侶暴力的「事件級」關聯：系統敘事回顧確認即時風險，呼喚當下介入</h3>
+          <p class="journal-source">Trauma, Violence, & Abuse &middot; The Event-Level Association Between Alcohol Use and Intimate Partner Violence Perpetration: A Systematic Narrative Review of the Literature</p>
+          <p>整合 24 篇每日日記型研究，跨大專生、社區、臨床等樣本一致支持：飲酒事件即時預測心理、身體、性暴力施暴；未來需細分飲酒模式、醉酒程度與暴力類型的交互作用。</p>
+          <div class="card-footer">
+            <span class="tag">約會暴力</span><span class="tag">酒精使用</span><span class="tag">親密伴侶暴力</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42902581/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#7</span>
+            <span class="emoji-icon">🇩🇪</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>東德 vs. 西德：社會政治體制塑造依附焦慮，統一後世代差異消失</h3>
+          <p class="journal-source">BMC Psychology &middot; The sociopolitical dimension of attachment: differences in attachment anxiety and attachment avoidance between East and West Germans</p>
+          <p>代表性樣本 (N=2,328) 顯示：前東德成長者依附焦慮顯著較低，避免無差異；1989 後出生世代無差異，證實社會政治環境能塑造依附焦慮，效果雖小但穩健。</p>
+          <div class="card-footer">
+            <span class="tag">依戀理論</span><span class="tag">跨文化研究</span><span class="tag">社會心理學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42919339/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#8</span>
+            <span class="emoji-icon">🤖</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>ChatGPT-3.5 當性教育師？質化分析 393 封青少年來信：回應結構佳、肯定情緒，但 17.8% 觸發內容審核</h3>
+          <p class="journal-source">Archives of Sexual Behavior &middot; Sex Education in the Age of Artificial Intelligence: A Qualitative Analysis of ChatGPT-3.5 Responses to Adolescents' Questions on Romantic Relationships and Sexuality</p>
+          <p>分析 ChatGPT-3.5 對青少年戀愛性問題的回覆：兩種結構化格式皆含正規化/認同情緒、建議清單、求助鼓勵；建議涵蓋真實自我、自我照顧、開放溝通、尋求支持；惟近兩成被標記敏感。</p>
+          <div class="card-footer">
+            <span class="tag">性教育</span><span class="tag">人工智慧</span><span class="tag">青少年發展</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42902095/" target="_blank">閱讀原文 &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐟</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>鯰魚 Wallago attu 圈養求偶與誘導產卵行為：鮠鯰繁殖策略的啟示</h3>
+          <p class="journal-source">Animals</p>
+          <p>首次記錄瀕危鯰魚 Wallago attu 圈養求偶（雄性主導追逐、U 型纏繞）與激素誘導產卵細節，移除親魚可顯著提高受精孵化率，塑膠繩為佳產卵床。</p>
+          <div class="card-footer">
+            <span class="tag">動物行為學</span><span class="tag">水產養殖</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42939227/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👁️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>視神經鞘膜瘤：臨床特徵、影像進展與管理的敘事回顧</h3>
+          <p class="journal-source">Cancers</p>
+          <p>罕見眼眶腫瘤 ONSM 的綜述：MRI 仍為診斷基石，68Ga-DOTATATE PET/CT 作為功能性影像輔助診斷、評估範圍與治療規劃具潛力；多學科決策優化視力預後。</p>
+          <div class="card-footer">
+            <span class="tag">神經眼科</span><span class="tag">腫瘤影像</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42938937/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>握力強化結合肩胛骨穩定訓練：改善衝撞症肩部肌力與功能的 RCT</h3>
+          <p class="journal-source">Medicine</p>
+          <p>36 例 RCT 顯示：握力訓練 + 肩胛穩定優於單獨肩胛穩定，顯著增強肩部肌力、握力並降低 SPADI 分數（P<0.001）。</p>
+          <div class="card-footer">
+            <span class="tag">物理治療</span><span class="tag">肩部復健</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42937737/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌲</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>安納托利亞年輪與美索不達米亞編年史：單年放射性碳與冰核證據錨定中低編年</h3>
+          <p class="journal-source">PNAS</p>
+          <p>單年輪 14C 模式錨定安納托利亞年輪編年 (2072–744 BCE)，結合冰核強力支持美索不達米亞中低編年框架。</p>
+          <div class="card-footer">
+            <span class="tag">考古科學</span><span class="tag">放射性碳定年</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42932655/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧒</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>中國青少年認知重評與表達抑制對感知社會支持的交互滯後效應</h3>
+          <p class="journal-source">Journal of Adolescence</p>
+          <p>316 位中國高中生 3 波 6 個月間隔追蹤：感知支持 → 認知重評 → 感知支持形成正向循環；表達抑制無交互滯後效應。</p>
+          <div class="card-footer">
+            <span class="tag">情感調節</span><span class="tag">青少年發展</span><span class="tag">社會支持</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42929060/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>膝關節骨關節炎步態生物力學研究的人口統計報告現狀：種族族裔嚴重缺報</h3>
+          <p class="journal-source">Journal of Applied Biomechanics</p>
+          <p>篩選 58 篇 2016-2024 年文獻：年齡性別報告率 98%，種族僅 12%、族裔 7%；樣本年齡性別具代表性，但種族族裔數據不足以比對臨床人口。</p>
+          <div class="card-footer">
+            <span class="tag">生物力學</span><span class="tag">研究方法學</span><span class="tag">健康公平</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42926126/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦷</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>牙髓-牙周病變：病理基礎、診斷困境與當代治療策略綜述</h3>
+          <p class="journal-source">Annals of African Medicine</p>
+          <p>綜述牙髓與牙周雙向感染路徑、分類、診斷鑑鑰（活力測試、探針、影像）及治療原則：多數先行牙髓治療再評估牙周。</p>
+          <div class="card-footer">
+            <span class="tag">牙醫學</span><span class="tag">牙髓病學</span><span class="tag">牙周病學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42925285/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🪱</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>泰國新種昆蟲病原線蟲 Steinernema chainatense</h3>
+          <p class="journal-source">Journal of Helminthology</p>
+          <p>泰國木薯田分離新種 S. chainatense，形態分子雙重鑑定歸屬 longicaudum 組，共生菌為 Xenorhabdus thailandensis。</p>
+          <div class="card-footer">
+            <span class="tag">寄生蟲學</span><span class="tag">生物防治</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42924466/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🇮🇩</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>印尼集體主義語境下肥胖青少年「重外貌輕健康」的現象學探究</h3>
+          <p class="journal-source">Journal of General and Family Medicine</p>
+          <p>11 位青少年、父母、同儕訪談發現：青少年更在意外貌而非 T2DM 風險；同儕提供情感支持、父母監督飲食運動；建議以外貌切入健康教育並納入同儕父母策略。</p>
+          <div class="card-footer">
+            <span class="tag">青少年健康</span><span class="tag">肥胖防治</span><span class="tag">跨文化研究</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42923765/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐝</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>蘭花蜂靠「現採現調」香水辨識配偶：異種香水讓雌蜂拒絕交配</h3>
+          <p class="journal-source">Behavioral Ecology</p>
+          <p>實驗證實：雄蜂蒐集環境揮發物合成物種特異香水；雌蜂強烈偏好同種香水雄蜂（77% vs 8% 交配率），環境獲取訊號可單獨媒介生殖隔離。</p>
+          <div class="card-footer">
+            <span class="tag">演化生物學</span><span class="tag">化學溝通</span><span class="tag">物種形成</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42923440/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩺</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>法語區前列腺癌癌性學照護專家共識：從術前告知到多元照護路徑</h3>
+          <p class="journal-source">The French Journal of Urology</p>
+          <p>25 位國際專家 Delphi 共識形成 58 項建議：涵蓋告知、篩檢、早期評估、多元照護路徑與公衛層面，建立全程癌性學照護指引。</p>
+          <div class="card-footer">
+            <span class="tag">癌性學</span><span class="tag">前列腺癌</span><span class="tag">專家共識</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42914056/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🎣</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>地震氣槍聲干擾鱈魚求偶：短期驚嚇減少求偶、長期僅誇示行為持續下降</h3>
+          <p class="journal-source">Marine Pollution Bulletin</p>
+          <p>大型產卵筏實驗：氣槍聲 (≤165 dB) 導致短期驚嚇、求偶減少、雌魚活動增加；長期僅誇示行為顯著下降，其他繁殖行為快速恢復。</p>
+          <div class="card-footer">
+            <span class="tag">海洋生物聲學</span><span class="tag">人為噪音</span><span class="tag">魚類行為</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42913328/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🍵</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>木本多年生茶樹 DNA 甲基化架構：基因體甲基化守穩定、甲基化谷守可塑</h3>
+          <p class="journal-source">Plant Physiology</p>
+          <p>整合兩茶樹品種甲基化體/轉錄體/染色質開放度：基因體甲基化(gbM)關聯穩定表達與選擇限制；甲基化谷(DMVs)關聯發育/逆境基因、轉錄因子足跡，跨品種保守。</p>
+          <div class="card-footer">
+            <span class="tag">植物表觀遺傳學</span><span class="tag">茶樹育種</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42913095/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>靜脈抗癌/支持藥物混合液延長使用期限的安全性與藥局啟示：系統性回顧與 Meta 分析</h3>
+          <p class="journal-source">Journal of Oncology Pharmacy Practice</p>
+          <p>33 研究池化平均最大穩定期 30.7 天（極大異質性 I²=99.7%）；單株抗體較細胞毒藥穩定、冷藏延長穩定、避光較佳；僅 12.1% 含微生物學評估，建議藥物特定驗證後再延長使用期限。</p>
+          <div class="card-footer">
+            <span class="tag">藥學</span><span class="tag">靜脈配劑穩定性</span><span class="tag">醫院藥務</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42907987/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐟</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>薑魚中催產素以性別特異方式調節熟悉度依賴的配偶選擇：雌魚較挑剔、雄魚較主動</h3>
+          <p class="journal-source">General and Comparative Endocrinology</p>
+          <p>野生型雌魚偏好熟悉雄魚、雄魚較不挑剔；OXT 通路突變導致雌魚不挑剔、雄魚對陌生雌魚求愛減少但對熟悉雌魚伴侶防衛增強，顯示 OXT 校準熟悉度在性別特異交配迴路的行為影響力。</p>
+          <div class="card-footer">
+            <span class="tag">神經內分泌</span><span class="tag">配偶選擇</span><span class="tag">催產素</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42906767/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🤰</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>胎兒生長受限的超音波評估與管理：AWMF S2k 指南精要</h3>
+          <p class="journal-source">Ultraschall in der Medizin</p>
+          <p>依指南綜述 FGR 診斷流程：精確孕齡、標準生物測量、羊水量、解剖評估；早/晚期 FGR 分界 32 週；多血管多普勒（臍動脈、大腦中動脈、腦胎盤比、靜脈導管）評估胎盤阻力與胎兒代償；監測間隔、住院指徵、類固醇/神經保護、終止妊娠時機。</p>
+          <div class="card-footer">
+            <span class="tag">產前診斷</span><span class="tag">胎兒醫學</span><span class="tag">超音波</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42906572/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>羅馬殖民與中世紀早期遷徙對伊比利亞半島人口結構的差異影響：古基因組揭示區域差異</h3>
+          <p class="journal-source">Cell</p>
+          <p>243 古基因組 (100-800 CE) 顯示：羅馬時期東地中海與北非血統湧入；5 世紀日耳曼/阿蘭人掌權但伊斯帕諾-羅馬人口連續；與不列顛、中地中海劇烈變遷形成對比。</p>
+          <div class="card-footer">
+            <span class="tag">古基因組學</span><span class="tag">人口史</span><span class="tag">伊比利亞半島</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42906537/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦋</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>配偶偏好演化在生殖干擾下的性別對立效應：雌性偏好利擴散、雄性偏好害共存</h3>
+          <p class="journal-source">Journal of Evolutionary Biology</p>
+          <p>理論模型證明：雌性偏好快速演化促進範圍擴散、淘汰競爭者；雄性偏好快速演化則損害共存區持續性；雙性同演化時雌性效應佔主導，凈效益為正。</p>
+          <div class="card-footer">
+            <span class="tag">演化生態學</span><span class="tag">生殖干擾</span><span class="tag">理論模型</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42905446/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏳️‍⚧️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>瑞典年輕跨性別女性的性主體性敘事：身體舒適度、被渴望感與生育抉擇</h3>
+          <p class="journal-source">Culture, Health & Sexuality</p>
+          <p>8 位 16-19 歲跨女訪談：以順性別女性身體為鏡評價女性氣質；害怕拒絕/出櫃而避約避性；陰莖性別不安限制性觸碰；雌激素減少不安、增加身體舒適、性慾轉為回應式；生育決策取決於基因父權與母親身分的協調。</p>
+          <div class="card-footer">
+            <span class="tag">跨性別健康</span><span class="tag">性別肯定照護</span><span class="tag">性主體性</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42904732/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>不確定基因檢測結果 (CFSPID) 的青年成人理解與反應：基於錯誤假設的差別對待</h3>
+          <p class="journal-source">Journal of Community Genetics</p>
+          <p>4 焦點團體發現：缺乏 CFSPID 知識時以囊性纖維化/傳染病知識填補；同儕/伴侶雖想支持但假設對方需更多照顧、會被不同對待；極少數會避免戀愛；提供差異資訊仍不足以消除依賴 CF 刻板印象。</p>
+          <div class="card-footer">
+            <span class="tag">基因諮商</span><span class="tag">不確定診斷</span><span class="tag">青年成人</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42900290/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🪲</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>白堊紀缅甸琥珀中無穴居前足的奇特蹄蹟甲新屬新種</h3>
+          <p class="journal-source">Invertebrate Systematics</p>
+          <p>描述缺乏典型穴居前足的白堊紀蹄蹟甲新種，系統發育置於 Scaritini，推估 Scaritinae 起源於中侏羅紀，主要演化支於白堊紀分化。</p>
+          <div class="card-footer">
+            <span class="tag">古昆蟲學</span><span class="tag">系統發育</span><span class="tag">琥珀化石</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42901761/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫁</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>特發性肺纖維化中 MUC5B/TGF-β/KL-6 訊號軸：遺傳易感性與纖維化進展的整合機制</h3>
+          <p class="journal-source">Lung</p>
+          <p>綜述 rs35705950 導致 MUC5B 過度表達 → 粘液纖毛清除受損 → 上皮持續損傷 → TGF-β/SMAD 活化 → 成纖維細胞活化/ECM 沉積；KL-6 作為上皮損傷/纖維化進展下游生物標記；端粒/表面活性基因突變進一步損害再生。</p>
+          <div class="card-footer">
+            <span class="tag">肺纖維化</span><span class="tag">分子機制</span><span class="tag">精準醫療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42900406/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>微管力學與流體動力學中彎曲、伸展與多分散性的綜合效應</h3>
+          <p class="journal-source">The Journal of Chemical Physics</p>
+          <p>整合動態光散射、優化散射理論，建構多分散半柔性聚合物框架，量化微管彎曲/伸展/多分散性與流體動力交互作用對力學性質的綜合影響。</p>
+          <div class="card-footer">
+            <span class="tag">生物物理</span><span class="tag">微管</span><span class="tag">軟物質物理</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42913410/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏥</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>非營利醫院社區效益計畫執行評估：ACA 通過 15 年回顧</h3>
+          <p class="journal-source">Annual Review of Public Health</p>
+          <p>回顧 ACA 第 9007 條實施 15 年文獻：總結 CB 活動現狀、支出、文獻缺口，提出未來 10 年研究議程，為政策改革提供基礎。</p>
+          <div class="card-footer">
+            <span class="tag">公共衛生政策</span><span class="tag">醫院社區效益</span><span class="tag">醫療改革</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42911984/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚖️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>心臟傳導系統損傷免疫組化定時標記物：現有知識與法醫啟示</h3>
+          <p class="journal-source">International Journal of Legal Medicine</p>
+          <p>敘事回顧：室壁心肌定時標記物 (C5b-9, cTn, fibronectin, Cx43) 因傳導系統組織學/分子差異（細胞組成、連接蛋白表現、胞外基質、基線蛋白量）不能直接外推；法醫誤判風險高，急需組織特異性驗證。</p>
+          <div class="card-footer">
+            <span class="tag">法醫病理</span><span class="tag">心臟傳導系統</span><span class="tag">免疫組化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42911401/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📜</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Gyrodactylidae 科名作者權歸屬：依 ICZN 第 11.7.2 條確認 van Beneden & Hesse 1863</h3>
+          <p class="journal-source">Systematic Parasitology</p>
+          <p>歷史文獻回顧滿足 ICZN 11.7.2 條件：van Beneden & Hesse 1863 法文俗名 Gyrodactylidés 為原始發表，Cobbold 1864 拉丁化；長期普遍引用前者，應歸屬 van Beneden & Hesse, 1863。</p>
+          <div class="card-footer">
+            <span class="tag">分類學命名法</span><span class="tag">寄生蟲學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42909735/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>沙門氏菌 Minnesota ST548 基因型與系統發育特徵：潛在公衛風險</h3>
+          <p class="journal-source">Brazilian Journal of Microbiology</p>
+          <p>巴西家禽 5 株非克隆 S. Minnesota ST548 WGS 分析：191 株 MDR 攜帶多重耐藥基因（氨基糖苷、喹諾酮、四環素、磺胺、β-內醯胺）；多種毒力基因（黏附、鞭毛、鎂轉運、巨噬細胞誘導、毒素、分泌系統）；與人類爆發株系統發育關係近，須加強人獸共患病監測。</p>
+          <div class="card-footer">
+            <span class="tag">食品安全</span><span class="tag">抗藥性監測</span><span class="tag">沙門氏菌</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42909713/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐟</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>古代 DNA 改寫歐洲大西洋鮭魚地理遺傳史：現代基因組忽略的冰河避難所真相</h3>
+          <p class="journal-source">iScience</p>
+          <p>1.88-1.67 萬年前古基因組顯示：伊比利亞冰河避難所古鮭魚較接近現代北歐群，而非現代伊比利亞群；鑑定與繁殖/性成熟相關古老 SNP；古線粒體有效群體大小揭示史前雌性谱系多樣性更高。</p>
+          <div class="card-footer">
+            <span class="tag">保育基因組學</span><span class="tag">古DNA</span><span class="tag">大西洋鮭魚</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42909251/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦴</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>中更新世徐家窩人屬丹尼索瓦人：古蛋白質與形態學雙重證據</h3>
+          <p class="journal-source">Nature</p>
+          <p>古蛋白質鑑定 18 內源蛋白，COL1A2-996 R>K 突變確認屬丹尼索瓦人；形態比較發現徐家窩、哈爾濱與金牛山、大荔、虎龍洞共享特徵，均屬丹尼索瓦谱系：兼具直立人厚顱骨、現代人強弧顳鱗、尼安德特人顳迷路/枕上窩，獨特低顱平臉、巨大眶上隆、弱顏額突。</p>
+          <div class="card-footer">
+            <span class="tag">古人類學</span><span class="tag">古蛋白質體學</span><span class="tag">丹尼索瓦人</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42907507/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐛</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Bryocorinae 亞科分子系統發育與分化年代：單系性未獲支持，多族群升級為亞科</h3>
+          <p class="journal-source">Invertebrate Systematics</p>
+          <p>線粒體+核基因重建：Bryocorinae 非單系；Bryocorini、Monaloniini 升為亞科；Dicyphus 與 Felisacini 成支，Dicyphini 限單屬並置於 Dicyphinae；其餘原 Dicyphini 歸 Macrolophinae；Eccritotarsini 升為亞科；三大熱帶亞科於中生代-新生代交界分化。</p>
+          <div class="card-footer">
+            <span class="tag">昆蟲系統發育</span><span class="tag">分子年代學</span><span class="tag">分類學修訂</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42913626/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦀</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>湄公河三角洲對比紅樹林環境下 Parasesarma eumolpe 洞穴形態與行為</h3>
+          <p class="journal-source">Zoology</p>
+          <p>量化 177 洞穴識別 8 形態型：I/J 型最常見；兩地形態型頻率顯著不同；深度長度隨形態型變異，口徑/腔徑無差異；觀察到挖掘、維護、領域、運食、求偶、幼蟹/卵狀顆粒等行為。</p>
+          <div class="card-footer">
+            <span class="tag">甲殼類行為</span><span class="tag">紅樹林生態</span><span class="tag">洞穴形態</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42914902/" target="_blank">PubMed &rarr;</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">關係滿意度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">伴侶衝突</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:75%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">情感調節</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">約會暴力</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">性行為與親密</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">依戀理論</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">跨文化研究</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">婚姻與家庭</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">權力動態</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">性別差異</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">青少年發展</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">社會支持</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">癌性學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">跨性別健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">基因諮商</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">人工智慧</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">伴侶滿意度</span><span class="keyword">依附理論</span><span class="keyword">情感調節</span><span class="keyword">權力動態</span><span class="keyword">高潮一致性</span><span class="keyword">線上約會暴力</span><span class="keyword">酒精相關暴力</span><span class="keyword">跨文化依附</span><span class="keyword">AI性教育</span><span class="keyword">不確定基因結果</span></div></div>
+
+  <div class="links-banner">
+    <a href="https://www.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">🏥</span>
+      <span class="banner-name">李政洋身心診所首頁</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="banner-link" target="_blank">
+      <span class="banner-icon">📜</span>
+      <span class="banner-name">訂閱電子報</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="banner-link" target="_blank">
+      <span class="banner-icon">☕</span>
+      <span class="banner-name">Buy Me a Coffee</span>
+      <span class="banner-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-ultra-550b-a55b</span>
+    <span><a href="https://github.com/u8901006/romance-relationship">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
