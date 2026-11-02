@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-03",
+  "count": 19,
+  "papers": [
+    {
+      "pmid": "42969349",
+      "title": "Antibiotic-loaded cement spacers: a comprehensive review.",
+      "journal": "Clinical microbiology reviews",
+      "date": "2026 Nov 02",
+      "abstract": "SUMMARYPeriprosthetic joint infections (PJIs) have become a costly complication of total joint arthroplasty, and the incidence continues to rise, given an increasing elderly population requiring total knee and total hip replacements. Traditionally, two-stage exchange (TSE) is the standard of care to combat chronic PJIs. The first stage of a TSE is defined by the removal of the prosthesis with implantation of an antibiotic-loaded cement spacer. There is a lack of guidance regarding the dosing of antimicrobials in cement spacers and a lack of safety data available in the infectious diseases literature. This paper aims to provide a comprehensive review of antibiotic-loaded cement spacers (ALCS) by reviewing published literature from peer-reviewed journals dating from 1988 to 2024 and discussing the authors' clinical experience. It was noted that with improvements to ALCS over the years, associated complications also evolved. Not only do mechanical challenges such as increased joint subluxation persist, but also complications of nephrotoxicity and allergic reactions occur due to unknown levels of systemic absorption of antibiotics. A multidisciplinary approach involving orthopedic surgeons, infectious diseases specialists, and pharmacists, in conjunction with patient-specific anti-microbial spacer dosing, would likely lead to improved outcomes in patients with chronic PJIs.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969349/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969538",
+      "title": "Multi-B-Site Cation Engineering in Stable Thiocyanate-Templated Layered Double-Perovskite Halides.",
+      "journal": "Inorganic chemistry",
+      "date": "2026 Nov 02",
+      "abstract": "Hybrid organic-inorganic perovskite halides offer a versatile structural platform owing to their flexible bonding nature. Beyond organic-cation engineering, halide-site engineering using molecular anions has recently emerged as an effective approach to alter the perovskite bonding network; however, accessible compositional and structural diversity remains limited. Here, we report, for the first time, hybrid layered Ag-Bi double perovskites, MA4AgBiX4(SCN)4 (X = Br, I), in which incorporation of thiocyanate (SCN-) at the halide-site reduces perovskite dimensionality. While the previously reported single-metal-cation compound, MA2PbI2(SCN)2, offers a unique van der Waals-coupled structural platform, its rapid decomposition, limited compositional space, and lack of bromide analogue hindered further development. First-principles calculations suggest that the structural instability of the lead-based bromide analogue arises from a bromide-induced lifting of the axial SCN ligand and resultant increased interlayer hydrogen-bond distance. Transitioning to an Ag-Bi architecture mitigates this destabilizing effect, as Ag+ (4d105s0) possesses isotropic s-orbital character and enhanced angular flexibility compared to Pb2+ (6s26p0) with a stronger orientational preference. This strategy yields a full range of solid solutions with band gaps tunable from 1.95 to 2.30 eV. The resulting materials, particularly the bromide-rich phases, exhibit markedly increased environmental robustness, demonstrating that multi-B-site cation design can expand the structural diversity of stable pseudohalide-based hybrid perovskites.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969538/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969181",
+      "title": "Valorization of eggshell membrane waste into a Co0.3Zn0.7Fe2O4 composite: a sustainable and sensitive platform for pesticide residue analysis.",
+      "journal": "Analytical methods : advancing methods and applications",
+      "date": "2026 Nov 02",
+      "abstract": "A sustainable magnetic composite, Co0.3Zn0.7Fe2O4-eggshell membrane (ESM), was fabricated by anchoring spinel ferrite nanoparticles onto waste eggshell membrane-an abundant and renewable biomass resource-and applied as a sorbent for magnetic solid-phase extraction coupled with high-performance liquid chromatography (MSPE-HPLC) analysis of four benzoylurea insecticides (BUs). The composite features a hierarchical porous architecture: a macroporous ESM fiber network facilitating rapid mass transport, coupled with mesoporous characteristics (type IV isotherm) and a high specific surface area of up to 96 m2 g-1, further enhancing adsorption capacity. Meanwhile, it combines the high saturation magnetization (&gt;30 emu g-1) of Co0.3Zn0.7Fe2O4 with the abundant active sites (-COOH, -NH2, -OH) provided by the natural protein-based ESM substrate, enabling rapid magnetic separation and enhanced analyte capture via hydrogen bonding and &#x3c0;-&#x3c0; interactions. Under optimized conditions, the method exhibited low limits of detection (0.03-0.10 &#xb5;g L-1), wide linear ranges, and high precision (RSD &lt; 6.81%, n = 3), with good matrix tolerance evidenced by satisfactory recoveries (84.95-106.15%) across tea beverage, apple, and wastewater matrices, while requiring only 1 mL of acetone for desorption, which is consistent with the trend toward greener analytical methods. This work provides a sensitive, efficient green analytical strategy for trace pesticide detection in complex food and environmental samples, and demonstrates the practical value of biowaste in high-performance sorbent design.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969181/",
+      "keywords": []
+    },
+    {
+      "pmid": "42967412",
+      "title": "Influence of material properties and environmental factors on VOC emission characteristics from automotive paint sludge.",
+      "journal": "Journal of hazardous materials",
+      "date": "2026 Oct 31",
+      "abstract": "Automotive paint sludge is a hazardous waste with significant volatile organic compound (VOC) emissions. Effective source control requires understanding how material properties and environmental factors govern key mass-transfer parameters: initial emittable concentration (Cm,0), diffusion coefficient (Dm), and partition coefficient (Km). This study couples a finite diffusion model and nonlinear optimization with chamber experiments on oil-based paint sludge to evaluate effects of temperature, humidity, air exchange rate, VOC type, porosity, moisture, and solid matrix. Temperature dominates: increasing temperature raises Cm,0 and Dm but lowers Km, and correlating Km with temperature yields apparent desorption activation energies (Ed). Although relative humidity induces minor non-monotonic fluctuations via competitive water adsorption and air exchange rate slightly alters surface convection, their standardized sensitivities are two orders of magnitude below temperature's, rendering their net impacts engineering-wise negligible. Low-molecular-weight, nonpolar VOCs have low Ed and desorb rapidly, whereas hydrogen bonding hinders polar alcohols. Dm increases with porosity via a power law, suggesting compaction for mitigation. Moisture forms water films that reduce Cm,0 and Dm but increase Km, and inorganic scaffolds exhibit higher adsorption potentials than organic matrices. These findings provide strategies for predicting and mitigating VOC emissions from hazardous wastes.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967412/",
+      "keywords": []
+    },
+    {
+      "pmid": "42896198",
+      "title": "Design of Smart Antifouling Surfaces Using Enzyme-Responsive Surface Topographies.",
+      "journal": "ACS applied bio materials",
+      "date": "2026 Nov 02",
+      "abstract": "Biofilm accumulation on polymeric surfaces remains a persistent challenge in biomedical, industrial, and environmental systems. Here, we report an enzyme-responsive antifouling surface that integrates particle-generated topography with biologically activated surface renewal. Microparticles of poly(ethylene terephthalate) (PET) and the chitinase-responsive polymer PHEVD were generated by mechanical abrasion and embedded into poly(dimethylsiloxane) (PDMS) to create polymer-composite surfaces with three-dimensionally distributed microparticles. PET served as a nonenzyme-responsive control while PHEVD provided an enzyme-degradable phase designed to respond to bacterial activity. Particle-containing PDMS surfaces significantly reduced 24 h Escherichia coli RP437/pRSH109 biofilm biomass, with 2000-grit PHEVD surfaces producing the strongest inhibition and reducing biomass by 86 &#xb1; 3% relative to flat PDMS. In contrast, Pseudomonas aeruginosa PAO1 biofilm biomass after 24 h was not significantly reduced by either PET- or PHEVD-containing surfaces, indicating species-dependent early-stage antibiofilm behavior. However, after 7 days, PHEVD-containing surfaces significantly reduced mature PAO1 biofilm biomass. Under static culture, 600- and 2000-grit PHEVD surfaces reduced PAO1 biomass by 60.0 &#xb1; 5.5% and 71.0 &#xb1; 13.4%, respectively. Under shaking culture at 200 rpm, 600-grit PHEVD reduced retained PAO1 biomass by 93.6 &#xb1; 0.03% compared with flat PDMS and by 93.1 &#xb1; 0.03% compared with 600-grit PET. These results suggest that PHEVD-containing surfaces do not primarily prevent early PAO1 attachment but instead promote mature biofilm destabilization and removal. The observed 7-day PAO1 reduction is consistent with a coupled mechanism in which mechanical disturbance exposes PHEVD-rich domains, enabling PAO1-associated enzymatic activity to degrade the exposed PHEVD phase and weaken the biofilm-surface interface. This work establishes a facile strategy for des",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42896198/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969807",
+      "title": "Nurse Leadership Impact: The Multiplier Effect of Collaboration Across Professional Nursing Organizations.",
+      "journal": "The Journal of nursing administration",
+      "date": "",
+      "abstract": "Strategic collaboration among professional nursing organizations amplifies leadership development, research, education, governance, and policy influence. This article illustrates national and international partnerships advancing nursing leadership science, establishing shared competencies, strengthening governance pathways, and expanding global knowledge generation. These collaborative initiatives create a multiplier effect, positioning nurse leaders as catalysts for innovation, evidence-based practice, and sustained systems transformation to improve health and nursing workforce outcomes. Nursing's commitment to improving population-centered and person-centered care through innovation and evidence is best achieved through strategic collaborations that strengthen the nursing profession and the care nurses deliver. The profession's influence grows through collective action and is strongest when professional organizations work in concert rather than in parallel. Priorities built on shared interests, including workforce development, preparation of the next generation of nurses, evidence generation and translation, practice innovation, and other partnerships, yield synergistic returns through cross-organizational collaboration. What follows is a brief tour of how several organizations align their strengths across research, education, practice, and innovative partnerships and why nurse leaders sit at the center of that alignment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969807/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969264",
+      "title": "Stigma, disclosure and support experienced by women enrolled in an HIV cure-related trial with an analytical treatment interruption in Durban, South Africa.",
+      "journal": "AIDS care",
+      "date": "2026 Nov 02",
+      "abstract": "Analytical treatment interruption (ATI) is a closely monitored pause of antiretroviral-therapy (ART) in HIV cure-related research used to assess whether people can maintain viral suppression off ART. We examined HIV-related stigma, disclosure, and support among young women in an ATI-inclusive trial in Durban, South Africa. Nineteen women (age range: 23-32) completed stigma surveys and in-depth-interviews at screening, pre-ATI, post-ATI, and trial-end. We grouped participants by time to restart ART: early (under 16 weeks); delayed (16-44 weeks), and long-term delayed (45-60 weeks). Stigma scores ranged from 1-5, with higher scores indicating greater stigma. Median stigma scores declined from 3.00 at screening to 2.63 at trial end. Scores declined in the early and delayed groups, while the long-term delayed group showed a temporary decline and then returned to baseline. Participants reduced social risk by disclosing HIV status and trial participation only to trusted people. Enacted stigma was uncommon and mainly involved negative reactions to pausing ART. Internalized stigma remained low, although early viral rebound triggered guilt for some. Trial staff and selected family members provided consistent support, while partner support varied. Findings highlight the need for participant-centered communication, disclosure planning, and monitoring and support in ATI trials.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969264/",
+      "keywords": []
+    },
+    {
+      "pmid": "42968426",
+      "title": "Negative Partner Support Strengthens the Association Between Intolerance of Uncertainty and Demoralization in Cardiac Couples.",
+      "journal": "European journal of cardiovascular nursing",
+      "date": "2026 Nov 02",
+      "abstract": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968426/",
+      "keywords": []
+    },
+    {
+      "pmid": "42968217",
+      "title": "Spousal Discrepancy in Perceived Importance of Care Needs Among Couples Managing Early-Stage Alzheimer's Disease.",
+      "journal": "Research on aging",
+      "date": "2026 Nov 01",
+      "abstract": "This study examined discrepancies between persons living with dementia (PLWD) and their spousal caregivers in the perceived importance of PLWD's care needs, and how caregivers' dementia knowledge and empathy were associated with these discrepancies. Data were drawn from 65 couples managing early-stage Alzheimer's disease. PLWD self-reported the importance of their physical, psychological, and social needs, while caregivers provided proxy ratings. PLWD perceived addressing their physical needs as more important than did their caregivers, whereas both partners agreed on the importance of psychological and social needs. Caregivers' greater empathic concern was associated with smaller discrepancies in the perceived importance of physical needs; greater personal distress was associated with smaller discrepancies in social needs. Caregivers' dementia knowledge was positively associated with discrepancies in psychological needs only when relationship quality was lower. These findings highlight the importance of caregivers' emotional responsiveness and relational dynamics in caregiver interventions, expanding the focus beyond dementia knowledge.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968217/",
+      "keywords": []
+    },
+    {
+      "pmid": "42967368",
+      "title": "Understanding a decade of progress in preventing vision loss among Aboriginal and Torres Strait Islander communities across Australia.",
+      "journal": "Clinical &amp; experimental optometry",
+      "date": "2026 Nov 01",
+      "abstract": "Aboriginal and Torres Strait Islander Peoples experience a substantially higher burden of avoidable vision loss compared with non-Indigenous Australians. Over the past two decades, multiple national and regional initiatives have sought to reduce this gap by improving access to eye&#x2011;care services, including spectacle provision, diabetic retinopathy screening, cataract surgery, and the delivery of culturally safe care. Despite these efforts, inequities in eye health outcomes persist, indicating the need for ongoing critical evaluation of current approaches. This narrative review synthesises evidence from peer-reviewed literature and publicly available government reports published from 2015 to 2025 to examine the scope, implementation, and reported outcomes of contemporary eye health initiatives targeting Aboriginal and Torres Strait Islander Peoples. There is a limited number of papers that systematically evaluate the frameworks and their long-term effectiveness and sustainability at a national level. Initiatives that prioritise Aboriginal and Torres Strait Islander leadership, governance, and community partnership could be expected to be more likely to align with local needs and support culturally safe service delivery. Embedding self-determination as a guiding principle, alongside sustained investment and continuity of care, is therefore central to achieving durable improvements in both access to services and eye health outcomes. This requires strengthened partnerships with Aboriginal and Torres Strait Islander communities, increased support for the Aboriginal and Torres Strait Islander eye health workforce, and the integration of cultural safety across the optometry and ophthalmology professions through long-term, coordinated commitment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967368/",
+      "keywords": []
+    },
+    {
+      "pmid": "42968464",
+      "title": "A Sustainable, Robust, Soft-Gated Janus Bio-Membrane for High-Flux Aromatic Recovery From Saline Industrial Wastewaters.",
+      "journal": "Advanced materials (Deerfield Beach, Fla.)",
+      "date": "2026 Nov 01",
+      "abstract": "The selective recovery of aromatic pollutants from saline wastewater remains a central challenge in sustainable chemical engineering. We present a bio-derived Janus membrane that couples a sorption-active, mechanically robust wood scaffold with an ultrathin polydimethylsiloxane (PDMS) layer for soft-gated aromatic transport. Spectroscopic, molecular, and free-volume analyses support transient hydroxyl-mediated phenol capture, favorable interfacial association, and onward diffusion through PDMS. The membrane achieves an overall phenol mass-transfer coefficient of 36.9 &#xd7; 10-7 m s-1 and 99.4% salt rejection under ambient conditions, with sustained performance in petrochemical and offshore oilfield wastewaters. It combines a tensile strength of &#x223c;70&#xa0;MPa with consistent separation performance across a meter-long sheet. Life-cycle and national-scale analyses indicate over 85% reductions in environmental impact and over 42&#xa0;000 tons of CO2-equivalent mitigation annually. This work establishes a scalable bio-derived membrane architecture that bridges molecular transport design with aromatic resource recovery, advancing the valorization of saline industrial wastewaters.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968464/",
+      "keywords": []
+    },
+    {
+      "pmid": "42967866",
+      "title": "Enabling Person-Centred Chronic Hepatitis B Care Among&#xa0;Migrant Men Who Have Sex With Men and Female&#xa0;Sex Workers.",
+      "journal": "Journal of advanced nursing",
+      "date": "2026 Nov 01",
+      "abstract": "AIM(S): To explore experiences of chronic hepatitis B (CHB) care among migrant MSM and female sex workers attending a specialist sexual health clinic and identify perceived enablers of person-centred care. DESIGN: Qualitative interview study. METHODS: Semi-structured interviews with 14 overseas-born men who have sex with men (MSM, n&#x2009;=&#x2009;7) and cisgender and transgender female sex workers (n&#x2009;=&#x2009;7) attending a publicly funded sexual health clinic in Sydney, Australia. Data were analysed using thematic analysis, with interpretation informed by the Person-Centred Practice Framework. RESULTS: Sexual health services were experienced as safe spaces where CHB was often identified during routine screening, enabling participants to initiate or re-engage with care. Care engagement was shaped by macro-context factors including visa status, Medicare access, language needs, culturally embedded understandings of CHB and referral pathways. Trusting relationships with sexual health practitioners supported discussion of sex, migration and CHB, although some interactions were experienced as directive and overly risk-focused, undermining relational safety. Participants described CHB as having low salience in everyday life but becoming more prominent during intimate moments such as disclosure, partner reassurance and sex work decisions. For some participants, PrEP or HIV therapy offered dual HIV-CHB benefits, making treatment feel more worthwhile and easier to take up. Participants navigated system barriers through peer networks, information-seeking, and services aligned with their needs. CONCLUSION: Person-centred CHB care for migrant MSM and female sex workers requires more than clinical monitoring. Care should be responsive to the intersecting effects of migration, sexuality, sex work, intimacy and access to health services, while creating culturally and relationally safe environments that support trust, disclosure and sustained engagement. IMPLICATIONS: This",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967866/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969677",
+      "title": "Threading Cultural Responsiveness Into the Response to Intimate Partner Violence.",
+      "journal": "Journal of interpersonal violence",
+      "date": "2026 Nov 02",
+      "abstract": "The role of cultural responsiveness in the response to intimate partner violence (IPV) continues to warrant attention. While progress has been made, there is still considerable work to be done. This article focuses on ways cultural responsiveness can be interwoven into strengthening understanding, prevention, and responses to IPV. There is a particular focus on help-seeking strategies and intimate partner homicide to build understanding of pathways to better support survivors of IPV. Next, there is an identification of using community engagement and the family and friend network as part of prevention efforts. Finally, the article ends with highlighting ways to grow responses that are comprehensive and intersectional, as well as lifting up indigenous practices within communities while not disrupting them.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969677/",
+      "keywords": []
+    },
+    {
+      "pmid": "42969460",
+      "title": "Individual Therapeutic Approaches to Reducing Mental Health Symptoms and Risk of Future Violence Among Adults Involved in Intimate Partner Violence: Systematic Review.",
+      "journal": "Trauma, violence &amp; abuse",
+      "date": "2026 Nov 02",
+      "abstract": "Intimate partner violence (IPV) among adults is a major global public health concern associated with significant physical and psychological consequences. Although therapeutic interventions have increasingly been developed to address the mental health effects of IPV and reduce future violence risk, limited evidence exists regarding the effectiveness of individual therapeutic interventions for survivors and perpetrators across diverse populations. This systematic review synthesizes evidence on individual therapeutic interventions for adults affected by IPV, focusing on five outcomes: depression, anxiety, trauma symptoms, IPV victimization, and IPV perpetration. A comprehensive search without date restrictions was conducted across six databases in October 2024. Peer-reviewed studies were included if they evaluated an individual therapeutic intervention for IPV survivors and/or perpetrators and incorporated a control or comparison group. After screening 6,966 titles and abstracts, 29 studies published between 2000 and 2024 met the inclusion criteria. Most studies used randomized controlled trial designs and primarily focused on women survivors of IPV. Intervention approaches varied, with cognitive behavioral therapy (CBT) being the most frequently evaluated, followed by humanistic, advocacy-based, motivational, and trauma-focused approaches. Improvements were most consistently observed in depression, anxiety, and trauma-related outcomes, whereas IPV-related outcomes demonstrated more variable effects. CBT showed promise for reducing depressive symptoms, whereas smaller studies examining humanistic and eye movement desensitization and reprocessing approaches indicated potential benefits for broader mental health outcomes. Future research should prioritize long-term follow-up, culturally responsive interventions, and integrated approaches that address both psychological recovery and IPV-related safety outcomes overall.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969460/",
+      "keywords": []
+    },
+    {
+      "pmid": "42967323",
+      "title": "The Rural Ecological Framework of Intimate Partner Violence (RE-IPV): Social-Ecological Factors and Constrained Agency Among Rural Women.",
+      "journal": "Nursing inquiry",
+      "date": "2027 Jan",
+      "abstract": "Intimate partner violence (IPV) is a pervasive public health crisis, with rural social and structural conditions creating additional challenges for survivors seeking safety and support. Existing applications of the Social-Ecological Model (SEM) have helped identify factors influencing IPV, but offer less explanation about how these factors interact to constrain survivors' agency and shape service navigation. This paper introduces the Rural Ecological Framework of Intimate Partner Violence (RE-IPV), a conceptual framework informed by the SEM, structural violence perspectives, and a synthesis of empirical literature, with refinement through engagement with rural community partners, nurse scholars, and public health scientists. RE-IPV illustrates how interacting societal, community, relational, and individual conditions shape the options available for rural women experiencing IPV. Central to the framework is constrained agency, which helps explain how survivors make decisions about safety, disclosure, and service utilization within circumstances that limit their available options. The framework also conceptualizes service navigation as a recursive process in which healthcare and advocacy encounters can influence survivors' trust, perceptions of safety, and subsequent help-seeking decisions. By moving beyond a descriptive categorization of ecological barriers, RE-IPV offers a rural-specific perspective on how structural conditions shape survivors' agency and engagement with services. The framework provides a foundation for future conceptual development, empirical examination, and survivor-centered nursing and healthcare practice. Trial Registration: Not applicable.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967323/",
+      "keywords": []
+    },
+    {
+      "pmid": "42957310",
+      "title": "Mental health issues among women experiencing domestic violence and their help-seeking behaviour in the WHO South-East Asian Region: a systematic review protocol.",
+      "journal": "BMJ open",
+      "date": "2026 Oct 29",
+      "abstract": "ABSTRACT: Domestic violence (DV) is a global health phenomenon that accounts for 33% of the intimate and non-partner violence against women in the WHO South-East Asian Region (SEAR). Despite its profound impact, DV remains largely overlooked due to stigma and misconceptions. It is often acknowledged as a social determinant of suicide yet masked under &#x2018;family issues&#x2019;. However, reviews addressing this silent epidemic, its associated mental health issues and help-seeking behaviours, including the barriers and facilitators that influence help-seeking among victims of DV, in the WHO SEAR remain underexplored. METHODS AND ANALYSIS: This protocol adheres to the Preferred Reporting Items for Systematic Review and Meta-Analysis Protocols (PRISMA-P) guidelines, ensuring methodological transparency. It will include studies such as cross-sectional surveys, case&#x2012;control studies, cohort studies, qualitative studies and mixed-method studies. Relevant studies will be retrieved from global databases such as CINAHL via EBSCOhost, MEDLINE via PubMed, Embase, Cochrane, Scopus, Web of Science and the ProQuest Medical Library. Two independent reviewers will subsequently screen the studies, with disagreements resolved by a senior reviewer. Data extraction will be performed via a tailored data extraction sheet. The Critical Appraisal Skills Programme tools and the Mixed Methods Appraisal Tool will be used to assess the quality of included studies. The findings of the studies will be narratively summarised, and a meta-analysis will be performed on the basis of homogeneity. ETHICS AND DISSEMINATION: Ethical approval is not required for this study. The findings will be disseminated through a peer-reviewed journal and at scientific conferences. TRIAL REGISTRATION NUMBER: CRD420251041787.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957310/",
+      "keywords": []
+    },
+    {
+      "pmid": "41576220",
+      "title": "Camaraderie for Care Partners: Addressing the Well-Being of Care Partners for Singing Group Participants With Parkinson's Disease Through a Phenomenological Qualitative Approach.",
+      "journal": "Dementia (London, England)",
+      "date": "2026 Nov",
+      "abstract": "Care partners of individuals with Parkinson's disease experience challenges while managing new responsibilities like transportation, finances, and activities of daily living, which influence their own mental and physical health. While previous qualitative research has investigated the perspectives of people with Parkinson's disease who participate in singing groups, the perspective of their care partners is less frequently studied. The purpose of this manuscript is to understand the involvement and perspective of care partners of people with Parkinson's disease participating in a singing group. Eight care partners were interviewed online over Zoom using pre-determined questions detailing the care partners' involvement and relationship to the group. All transcripts were analyzed using a phenomenological approach and content analysis. Seven primary and eight secondary themes were generated, and these findings indicated that care partners enjoy both observing their partner benefit from a singing group, while finding meaningful relationships with other care partners, supporting singing groups as a promising relational intervention.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41576220/",
+      "keywords": []
+    },
+    {
+      "pmid": "41198042",
+      "title": "Childhood and Adulthood Social Relationships and Trajectories of Cognitive Function Among Older Chinese Adults.",
+      "journal": "Journal of aging and health",
+      "date": "2026 Dec",
+      "abstract": "ObjectivesThis study investigates whether early-life and mid-life social relationships with family and friends shape the heterogeneity of later-life cognitive trajectories and whether household registration status moderates the associations.MethodsThe study uses data from 2011-2018 China Health and Retirement Longitudinal Study (N = 12,564). Cognitive function is assessed with a Chinese version of Telephone Interview for Cognition Status. Childhood social relationships are assessed with relationship quality with mother and father, whether respondent had a good friend, and had group of friends spending time with. Adulthood social relationships are assessed with weekly contact with children and social interactions with friends. Group-based trajectory modeling and multinomial logistic regression models are employed.ResultsThe study identifies four distinct cognitive trajectories. Results indicate respondents who had a better relationship with their mothers, who often had a group of friends during childhood, and who had social interactions with friends during adulthood are associated with more favorable cognitive trajectories. No moderation effects for Hukou status were found.ConclusionsThe findings underscore the enduring impacts of early-life social relationships and the impacts of adult social relationships in shaping later-life cognitive trajectory outcomes. Intervention programs aimed at establishing supportive social relationships may help slow later-life cognitive decline.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41198042/",
+      "keywords": []
+    },
+    {
+      "pmid": "40882994",
+      "title": "Together, but Isolated: A Dyadic Study of Social Isolation in Older Adults and Caregivers.",
+      "journal": "Journal of aging and health",
+      "date": "2026 Dec",
+      "abstract": "ObjectivesSocial isolation has negative health implications for older adults and caregivers. We examine the interdependency of social isolation among community-dwelling Medicare beneficiaries and their primary caregivers.MethodsUsing data from the National Study of Caregiving and the National Health and Aging Trends Study (2015-2017, N = 522 dyads), we conducted actor-partner interdependence models to examine the dyadic associations between baseline social isolation and social isolation at 2-year follow-up among older adults and caregivers. We also tested for effect modification by dementia status and relationship type.ResultsThere was a low but significant correlation of baseline social isolation levels within dyads. Older adults' baseline social isolation was positively associated with caregivers' social isolation at follow-up but not vice versa. No evidence of effect modification was found.ConclusionReducing social isolation among older adults may benefit their caregivers. Future investigation of relationship quality and shared social activities of caregiving dyads is warranted.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40882994/",
+      "keywords": []
+    }
+  ]
+}
