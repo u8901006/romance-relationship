@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-08",
+  "count": 2,
+  "papers": [
+    {
+      "pmid": "42993416",
+      "title": "Weathering continuum in an aged taiga peatland oil spill.",
+      "journal": "Environmental science and pollution research international",
+      "date": "2026 Nov 06",
+      "abstract": "Accidental oil spills in cold-region peatlands can result in long-term contamination, as low temperatures and waterlogged conditions may influence the rates and relative contributions of oil weathering processes. However, the progression and characteristics of oil weathering at aged oil spill sites in peatlands remain insufficiently characterized. To characterize the features and intensity of weathering processes, peat soil samples from an aged oil spill site in the taiga zone of Western Siberia were investigated using GC/MS. An approach combining mass chromatogram fingerprinting, n-alkane distribution and cross-plots of individual and integral parameters such as average number of C atoms, the decrease in the relative intensity of resolved peaks compared to the unresolved complex mixture, the (n-C17&#x2009;+&#x2009;n-C18)/(Pr&#x2009;+&#x2009;Ph) ratio, and changes in alkylbenzenes ratio was applied. This approach allowed to assess the degree, timing, and dominant mechanisms of oil weathering in soils, highlighting the necessity of a comprehensive analysis including integral parameters. Presence of different stages of weathering within a single spill site was revealed, from evaporation-dominated to advanced biodegradation, with indications of multiple biodegradation-related trends. Variations among samples, including deviations from general trends, indicate a strong influence of local environmental conditions on the evolution of oil contamination in cold-region soils. These findings contribute to a better understanding of oil transformation under cold-climate conditions and provide a framework for assessing the degree and characteristics of oil weathering and interpreting the weathering history of oil spills, which may support their assessment, management, and remediation in cold-region peatland environments.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42993416/",
+      "keywords": []
+    },
+    {
+      "pmid": "42994192",
+      "title": "Dyadic adjustment in a clinical sample of adult victims of cumulative childhood interpersonal trauma: The role of complex posttraumatic stress and attachment insecurities.",
+      "journal": "Child abuse &amp; neglect",
+      "date": "2026 Nov 06",
+      "abstract": "BACKGROUND: Cumulative childhood interpersonal trauma (CCIT) is highly prevalent and has been consistently associated with persistent relational difficulties in adulthood. Victims frequently report lower dyadic adjustment, a key determinant of health, well-being, and trauma recovery. However, the mechanisms linking CCIT to impaired couple functioning remain insufficiently understood. OBJECTIVE: This study examined a sequential model in which symptoms of complex posttraumatic stress disorder (C-PTSD) - including posttraumatic stress (PTS) and disturbances in self-organization (DSO) - and subsequent attachment insecurities (avoidance and anxiety) were tested as explanatory mechanisms in the association between CCIT and dyadic adjustment within a clinical sample. PARTICIPANTS AND SETTINGS: A total of 907 adults seeking therapy for sexual and relational difficulties completed validated measures as part of their intake assessment. RESULTS: Path analyses revealed significant sequential associations whereby CCIT was indirectly associated with lower dyadic adjustment through DSO then attachment avoidance (&#x3b2;&#x202f;=&#x202f;-0.034, 95% CI [-0.053, -0.020]), as well as through DSO then attachment anxiety (&#x3b2;&#x202f;=&#x202f;-0.008, 95% CI [-0.016, -0.003]). In contrast, CCIT was positively associated with dyadic adjustment through PTS alone (&#x3b2;&#x202f;=&#x202f;0.060, 95% CI [0.032, 0.093]) but negatively associated with dyadic adjustment through the sequential association via PTS then attachment anxiety (&#x3b2;&#x202f;=&#x202f;-0.006, 95% CI [-0.013, -0.002]). Although statistically significant, the sequential indirect effects were small in magnitude and should not be interpreted as evidence of substantial clinical effects. The final model explained 24.8% of the variance in dyadic adjustment. CONCLUSION: These results point to the relevance of addressing self-organization impairments and attachment dynamics in clinical interventions aimed at improving relatio",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42994192/",
+      "keywords": []
+    }
+  ]
+}
