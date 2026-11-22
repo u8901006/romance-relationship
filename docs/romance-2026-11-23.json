@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-23",
+  "count": 9,
+  "papers": [
+    {
+      "pmid": "43066970",
+      "title": "Momentary Suicidal Ideation in the Context of Romantic Conflict.",
+      "journal": "Archives of suicide research : official journal of the International Academy for Suicide Research",
+      "date": "2026 Nov 21",
+      "abstract": "OBJECTIVE: This study examined within-person and between-person associations among perceived romantic conflict, state anger, and suicidal ideation. METHOD: Participants were 113 United States-based adults in romantic relationships of at least three months who reported suicidal ideation in the past month. Over 14 consecutive days, they completed ecological momentary assessments of perceived romantic conflict, state anger, and suicidal ideation. Baseline measures assessed lack of emotional awareness, nonacceptance of emotional responses, perceived friend support, and depressive symptoms. Multilevel mediation and moderation models tested within-person and between-person associations. RESULTS: Within persons, perceived romantic conflict that was more intense than usual was associated with higher state anger and suicidal ideation, with a significant indirect association through state anger. Between persons, average state anger was more strongly associated with suicidal ideation among participants with greater lack of emotional awareness and nonacceptance of emotional responses, although the nonacceptance finding was attenuated in sensitivity analyses adjusting for relationship length. Perceived friend support did not significantly moderate the association between perceived romantic conflict and suicidal ideation. CONCLUSIONS: Findings link state anger to momentary suicidal ideation in the context of perceived romantic conflict and suggest that between-person associations between anger and suicidal ideation vary with baseline emotion-regulation difficulties.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066970/",
+      "keywords": []
+    },
+    {
+      "pmid": "43066466",
+      "title": "Does Romantic Involvement Benefit Everyone? Testing a Foundational Tenet in Relationship Science Through the Case of Asexuality.",
+      "journal": "Social psychological and personality science",
+      "date": "2027 Jan",
+      "abstract": "It is established that romantic relationships can benefit well-being and buffer against loneliness. But is that true for everyone? We put this foundational tenet of relationship science to the test by examining whether asexual people (i.e., people who generally do not experience sexual attraction and desire) benefit from romantic involvement. Results from the BBC Loneliness Experiment showed that, unlike heterosexual (N = 36,464) and other sexual minority people (N = 3,684), asexual people (N = 1,443) did not benefit-or did not benefit as strongly (depending on model choice)-from being in a romantic relationship, experiencing similar levels of loneliness regardless of relationship status or relationship satisfaction. However, being in a satisfying relationship did protect asexual people against expectations of loneliness in old age. These results highlight the importance of including populations that are typically excluded from research to test the robustness of established theories and findings in relationship science.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066466/",
+      "keywords": []
+    },
+    {
+      "pmid": "43067669",
+      "title": "Indirect Characterization of 14N Nuclei via 1H-Detected Rotating-Frame Relaxometry.",
+      "journal": "Angewandte Chemie (International ed. in English)",
+      "date": "2026 Nov 21",
+      "abstract": "14N NMR is notoriously difficult to perform in liquids due to the very fast spin relaxation and the large quadrupolar couplings, which render many signals invisible. We show here how 14N nuclei of biomolecular constituents can be probed indirectly by reintroducing the scalar relaxation of the second kind contribution as a relaxation pathway for J-coupled protons in double resonance spin-locking experiments. The enhanced 1H relaxation rates in the rotating-frame allow for direct evaluation of nitrogen chemical shifts and polarization lifetimes, from which one- and even two-bond 1H-14N scalar couplings as well as 14N quadrupolar interactions can be determined. We demonstrate the versatility of this method by characterizing 1H-14N spin pairs in several molecules of biological importance, showing proton relaxation enhancements beyond one order of magnitude. We further observe a pronounced effect from intermolecular hydrogen bonding. Our approach can be readily integrated into existing liquid-state NMR methodologies, as demonstrated here for 1H-detected relaxation-editing experiments with water suppression. This method provides access to nitrogen's picosecond-modulated quadrupolar interaction via sensitive proton detection in systems that would otherwise yield almost no detectable direct 14N signal even after averaging over thousands of transients.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067669/",
+      "keywords": []
+    },
+    {
+      "pmid": "43066236",
+      "title": "Research on Reversible Wetting Regulation and Interfacial Adaptive Behavior of Multi-Stimulus Responsive Nanoparticles.",
+      "journal": "ACS omega",
+      "date": "2026 Nov 17",
+      "abstract": "Stimulus-responsive nanomaterials with reversibly switchable wettability are promising for separation and interfacial engineering. Here, polymer-modified silica nanoparticles (Si@(MO)-NPs) grafted with MEO2MA-co-OEGMA were synthesized, showing dual salt- and acid-responsive wettability switching. High ionic strength induces dehydration and collapse of the polymer shell, switching wettability from hydrophilic to oleophilic and driving migration to the oil phase or interface; subsequent acid stimulation protonates carboxyl groups, restoring hydration and chain extension and enabling reverse migration to the aqueous phase. Molecular dynamics simulations show that increasing salt concentration reduces polymer-water hydrogen bonding and the radius of gyration while enhancing mobility toward the oil phase, whereas 5 wt % citric acid optimizes protonation, stabilizes extended chain conformations, and improves interfacial hydration and diffusion. These results establish a coupled hydration-conformation regulation mechanism for designing multistimuli-responsive nanomaterials.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066236/",
+      "keywords": []
+    },
+    {
+      "pmid": "43065919",
+      "title": "Molecular-Level Mechanisms Governing Methane-Induced Changes in Coal Interfacial Wettability.",
+      "journal": "ACS omega",
+      "date": "2026 Nov 17",
+      "abstract": "Understanding the wettability evolution of coal-water interfaces under methane-bearing conditions is of critical importance for coal seam water injection, gas drainage, and coal-gas outburst prevention in deep coal formations. However, the microscopic mechanisms by which methane influences interfacial wettability remain poorly understood. In this study, molecular dynamics simulations were performed to construct a coal-water-methane three-phase system based on the Wiser coal model, and the effects of temperature (298-343 K) and methane pressure (0-9 MPa) on coal-water interfacial wettability were systematically examined. The results show that increasing temperature significantly enhances coal-water wettability, whereas increasing methane pressure produces the opposite effect. From a molecular perspective, elevated temperature strengthens coal-water interaction energy, increases hydrogen-bond density, promotes water accumulation at the interface, and enhances molecular mobility, thereby facilitating droplet spreading behavior. In contrast, increasing methane pressure weakens coal-water interaction energy and hydrogen bonding, reduces water enrichment at the interface, and suppresses water molecular diffusion, thereby leading to reduced wettability. Further analysis reveals that methane molecules competitively adsorb on active coal surface sites, occupying interfacial space and disrupting hydrogen-bond networks, thereby inhibiting water adsorption and spreading processes. Radial distribution function and density profile analyses further confirm that temperature enhances the interfacial ordering of water molecules, whereas methane pressure reduces interfacial structural stability. Overall, wettability evolution is governed by the coupled effects of interfacial interaction energy, hydrogen-bond network, molecular distribution, and diffusion behavior. This work provides a molecular-level understanding of methane-regulated coal wettability and offers theoretical guidance f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065919/",
+      "keywords": []
+    },
+    {
+      "pmid": "43066541",
+      "title": "The Clinical and Neuro-Informed Benefits of Utilizing a Grief-Focused Camp for Supporting Childhood Bereavement.",
+      "journal": "Omega",
+      "date": "2026 Nov 21",
+      "abstract": "Grief-focused camps offer clinical and neuro-informed benefits for grieving children. This conceptual article highlights both design and implementation of a bereavement camp, exploring how structured, experiential, and expressive activities engage developing neural networks involved in emotion regulation, attachment, and stress response. Drawing on the Dual-Processing Model of Grief and the Window of Tolerance, the camp model emphasizes relational safety, peer normalization, and multisensory engagement to promote adaptive coping and support the grieving processes. Rotating small-group sessions, large-group activities, and ending with guardian-inclusive activities provides repeated corrective emotional experiences supporting neuroplasticity and resilience. The design intentionally balances opportunities for processing loss with restorative, play-based experiences fostering emotional growth and co-regulation. Clinical implications for counselors include program and staff structures and supervision, grounded in neuro-informed principles. By applying a neuroscience lens to grief-focused camp design, this model demonstrates potential to enhance coping, emotional development, and long-term adaptive functioning in bereaved children.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066541/",
+      "keywords": []
+    },
+    {
+      "pmid": "43066559",
+      "title": "Invariance in Measuring Intimate Partner Violence Across Latina and Non-Latina Women.",
+      "journal": "Journal of interpersonal violence",
+      "date": "2026 Nov 21",
+      "abstract": "Intimate partner violence (IPV) is a common experience for women in the United States. IPV is particularly common among Latina women whose experiences of IPV may be different from those of non-Latinas due to sociocultural factors (e.g., language barriers, fear and discrimination based on undocumented status, and lack of economic resources). Given these considerations, it is important to examine the degree to which widely used measurements of IPV apply to Latinas' IPV experience. In this study, we examine this question from a measurement invariance perspective using the physical, sexual, and psychological IPV subscales of the Revised Conflict Tactics Scale (CTS2) in a sample of Latina and non-Latina women living in the U.S. (N&#x2009;=&#x2009;550). Multiple-group confirmatory factor analysis showed that IPV was invariant at configural, metric, scalar, and strict levels, suggesting that the CTS2 measures IPV similarly for Latina and non-Latina women in terms of factor structure, factor loadings, intercepts, and residual variances. The study findings have implications for future research and clinical applications.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066559/",
+      "keywords": []
+    },
+    {
+      "pmid": "43067412",
+      "title": "The role of parent-child relationship quality in socioeconomic inequalities in unintentional injuries and alcohol poisonings among adolescents: A Danish cohort study.",
+      "journal": "Preventive medicine",
+      "date": "2026 Nov 21",
+      "abstract": "OBJECTIVE: Low socioeconomic position is associated with unintentional injury in adolescents. We examined whether parent-child relationship quality mediates the association between low parental socioeconomic position (SEP), unintentional injuries, and alcohol poisonings. METHODS: The Danish National Youth Cohort 2014 (15-19&#x202f;years old) was linked to nationwide registers (n&#x202f;=&#x202f;65,851). Outcomes were unintentional injuries and alcohol poisonings. Logistic regression assessed associations between parental SEP, parent-child relationship quality, and outcomes. Mediation analysis assessed if relationship quality accounted for socioeconomic differences in risk of harm. RESULTS: Lower SEP associated with higher risk of unintentional injury and alcohol poisonings and dose-dependent associations were observed between lower SEP and lower parent-child relationship quality. For instance, the odds ratios (95% confidence interval) of low parental interest were 1.13 (95% CI 1.04,1.22), 1.40 (1.29,1.52), and 1.92 (1.64,2.24) for medium, short, and elementary education, respectively, compared with long education. Low relationship quality was in turn associated with higher odds of unintentional injury and alcohol poisoning. No statistically significant effect operated through the parent-child relationship pathway. CONCLUSIONS: Findings highlight the potential importance of socioeconomic hardship in shaping parent-child relationships and injury risk however more research is needed to elucidate underlying causal mechanisms.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067412/",
+      "keywords": []
+    },
+    {
+      "pmid": "43066818",
+      "title": "Maternal and paternal adverse childhood experiences and parent-child disconnectedness in later life.",
+      "journal": "European journal of ageing",
+      "date": "2026 Nov 21",
+      "abstract": "Childhood is a sensitive life stage during which significant adversity can set in motion chains of disadvantage in social relationships across the life course. Thus, older parents' adverse childhood experiences (ACEs) may shape the quality of their relationships with adult children. Although rates of disconnectedness tend to be higher for fathers, prior research primarily focused on mothers, overlooking potential gender differences. Using data from the Survey of Health, Ageing and Retirement in Europe (SHARE; N&#x2009;=&#x2009;38,900), we run logistic regressions to examine how both mothers' and fathers' ACEs (physical abuse, emotional neglect, parental absence, poverty, and peer isolation) relate to parent-child disconnectedness, defined as having no contact with at least one child. Each of the five parental ACEs is associated with a higher likelihood of parent-child disconnectedness in later life, with cumulative effects across ACEs. Patterns are highly similar for mothers and fathers, suggesting that the mechanisms linking parental ACEs to adult intergenerational relationship quality are largely gender neutral. Our findings highlight how early adversity reverberates across generations, shaping the parent-child bond well into later life in similar ways for mothers and fathers. This underscores the need for policies that protect children from ACEs and mitigate their long-term consequences.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066818/",
+      "keywords": []
+    }
+  ]
+}
